@@ -237,7 +237,7 @@
       Observe that
       there is a composite function present in <m>\sin(t^2)</m>,
       but there is not an obvious function-derivative pair,
-      as we have <m>t^3</m> 
+      as we have <m>t^3</m>
       (rather than simply <m>t</m>)
       multiplying <m>\sin(t^2)</m>.
       In this problem we use both <m>u</m>-substitution and integration by parts.
@@ -370,7 +370,7 @@
           we see that we can use algebra to solve for the value of the desired integral.
           Adding <m>\int e^t \cos(t) \, dt</m> to both sides of the equation, we have
           <me permid="Jsq">
-            2 \int e^t \cos(t) \, dt = e^t \cos(t) +  e^t \sin(t)
+            2 \int e^t \cos(t) \, dt = e^t \cos(t) +  e^t \sin(t) + C
           </me>,
           and therefore
           <me permid="pzz">
@@ -379,8 +379,12 @@
         </p>
 
         <p permid="uER">
-          Note that since we never actually encountered an integral we could evaluate directly,
-          we didn't have the opportunity to add the integration constant <m>C</m> until the final step.
+          Note that in the second to last step we have an indefinite integral on the left hand side of
+          the equation. Since it is a family of functions we need a family of functions on the right
+          hand side as well which required the introduction of the integration constant <m>C</m>. Also
+          note that since <m>C</m> is an aribitrary constant dividing by 2 in the final step doesn't
+          change that. It is traditional to just write <m>C</m> although it is a different arbitrary
+          constant than the constant in the previous line. 
         </p>
       </solution>
     </example>
@@ -513,4 +517,3 @@
 
   <xi:include href="./exercises/ez-5-4.xml" />
 </section>
-
