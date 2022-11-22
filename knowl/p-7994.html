@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-08-08T11:46:03-06:00       *-->
+<!--*       on 2022-11-22T15:24:16-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,30 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>No, this solution is not valid for all time <span class="process-math">\(t\text{.}\)</span> The physical constraints of the problem tell us that the solution is only valid for <span class="process-math">\(0 \lt t \lt 2.5\)</span> since at <span class="process-math">\(t = 2.5\)</span> the tank is empty.</p>
-<span class="incontext"><a href="sec-7-4-separable.html#eYD" class="internal">in-context</a></span>
+<p>Given that <span class="process-math">\(\frac{1}{t} \frac{dy}{dt} = e^{t^2 - 2y}\text{,}\)</span> we first observe that <span class="process-math">\(e^{t^2 - 2y} = e^{t^2}e^{ -2y}\text{.}\)</span> Separating the variables,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+e^{2y} \frac{dy}{dt} = t e^{t^2}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Integrating with respect to <span class="process-math">\(t\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int e^{2y} dy = \int t e^{t^2} dt\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Using standard substitution techniques on both sides, we find that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{1}{2} e^{2y} = \frac{1}{2} e^{t^2} + c
+\end{equation*}
+</div>
+<p class="continuation">Writing <span class="process-math">\(2c = C\text{,}\)</span> we then have <span class="process-math">\(e^{2y} = e^{t^2} + C\text{,}\)</span> and taking logarithms to solve for <span class="process-math">\(y\text{,}\)</span> we find <span class="process-math">\(2y = \ln \left( e^{t^2} + C \right)\text{,}\)</span> and thus</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = \frac{1}{2} \ln \left( e^{t^2} + C \right)\text{.}
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-7-4-separable.html#tJY" class="internal">in-context</a></span>
 </body>
 </html>

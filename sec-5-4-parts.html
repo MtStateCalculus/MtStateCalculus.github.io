@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-08-08T11:44:13-06:00       *-->
+<!--*       on 2022-11-22T15:22:23-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -52,7 +52,7 @@
   },
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
-<script src="https://pretextbook.org/js/0.13/pretext-webwork/2.16/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="https://pretextbook.org/js/0.13/pretext-webwork/2.17/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
@@ -438,7 +438,7 @@ f(x)  g(x) = \int f(x) g'(x) \, dx + \int g(x)  f'(x) \, dx\text{.}\tag{5.4.2}
 <p id="OxI">We seem to be back where we started, as two applications of integration by parts has led us back to the original problem, <span class="process-math">\(\int e^t \cos(t) \, dt\text{.}\)</span> But if we look closely at <a href="" class="xref" data-knowl="./knowl/E_IBPtwice2.html" title="Equation 5.4.5">Equation (5.4.5)</a>, we see that we can use algebra to solve for the value of the desired integral. Adding <span class="process-math">\(\int e^t \cos(t) \, dt\)</span> to both sides of the equation, we have</p>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/E_IBPtwice2.html">
 \begin{equation*}
-2 \int e^t \cos(t) \, dt = e^t \cos(t) +  e^t \sin(t)\text{,}
+2 \int e^t \cos(t) \, dt = e^t \cos(t) +  e^t \sin(t) + C\text{,}
 \end{equation*}
 </div>
 <p class="continuation">and therefore</p>
@@ -447,7 +447,7 @@ f(x)  g(x) = \int f(x) g'(x) \, dx + \int g(x)  f'(x) \, dx\text{.}\tag{5.4.2}
 \int e^t \cos(t) \, dt = \frac{1}{2} \left( e^t \cos(t) +  e^t \sin(t) \right) + C\text{.}
 \end{equation*}
 </div>
-<p id="uER">Note that since we never actually encountered an integral we could evaluate directly, we didn't have the opportunity to add the integration constant <span class="process-math">\(C\)</span> until the final step.</p>
+<p id="uER">Note that in the second to last step we have an indefinite integral on the left hand side of the equation. Since it is a family of functions we need a family of functions on the right hand side as well which required the introduction of the integration constant <span class="process-math">\(C\text{.}\)</span> Also note that since <span class="process-math">\(C\)</span> is an aribitrary constant dividing by 2 in the final step doesn't change that. It is traditional to just write <span class="process-math">\(C\)</span> although it is a different arbitrary constant than the constant in the previous line.</p>
 </div></div>
 </div></article><article class="activity project-like" id="uHa"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.4.4</span><span class="period">.</span>
@@ -538,33 +538,33 @@ f(x)  g(x) = \int f(x) g'(x) \, dx + \int g(x)  f'(x) \, dx\text{.}\tag{5.4.2}
 </h4>
 <div id="webwork-147" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="147" data-sourceFilePath="Library/Michigan/Chap7Sec2/Q38.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-contents">
-<p id="p-5799">For each of the following integrals, indicate whether integration by substitution or integration by parts is more appropriate, or if neither method is appropriate.  Do not evaluate the integrals.</p>
-<p id="p-5800"><em class="alert">1.</em> <span class="process-math">\(\int\,x\sin x\,dx\)</span> <ul style="list-style:circle;">
-<li id="li-3443"><p id="p-5801">integration by parts</p></li>
-<li id="li-3444"><p id="p-5802">substitution</p></li>
-<li id="li-3445"><p id="p-5803">neither</p></li>
+<p id="p-5874">For each of the following integrals, indicate whether integration by substitution or integration by parts is more appropriate, or if neither method is appropriate.  Do not evaluate the integrals.</p>
+<p id="p-5875"><em class="alert">1.</em> <span class="process-math">\(\int\,x\sin x\,dx\)</span> <ul style="list-style:circle;">
+<li id="li-3509"><p id="p-5876">integration by parts</p></li>
+<li id="li-3510"><p id="p-5877">substitution</p></li>
+<li id="li-3511"><p id="p-5878">neither</p></li>
 </ul></p>
-<p id="p-5804"><em class="alert">2.</em> <span class="process-math">\(\int\,{x\over 1 + x^{2}}\,dx\)</span> <ul style="list-style:circle;">
-<li id="li-3446"><p id="p-5805">substitution</p></li>
-<li id="li-3447"><p id="p-5806">neither</p></li>
-<li id="li-3448"><p id="p-5807">integration by parts</p></li>
+<p id="p-5879"><em class="alert">2.</em> <span class="process-math">\(\int\,{x\over 1 + x^{2}}\,dx\)</span> <ul style="list-style:circle;">
+<li id="li-3512"><p id="p-5880">substitution</p></li>
+<li id="li-3513"><p id="p-5881">neither</p></li>
+<li id="li-3514"><p id="p-5882">integration by parts</p></li>
 </ul></p>
-<p id="p-5808"><em class="alert">3.</em> <span class="process-math">\(\int\,x e^{x^{2}}\,dx\)</span> <ul style="list-style:circle;">
-<li id="li-3449"><p id="p-5809">neither</p></li>
-<li id="li-3450"><p id="p-5810">integration by parts</p></li>
-<li id="li-3451"><p id="p-5811">substitution</p></li>
+<p id="p-5883"><em class="alert">3.</em> <span class="process-math">\(\int\,x e^{x^{2}}\,dx\)</span> <ul style="list-style:circle;">
+<li id="li-3515"><p id="p-5884">neither</p></li>
+<li id="li-3516"><p id="p-5885">integration by parts</p></li>
+<li id="li-3517"><p id="p-5886">substitution</p></li>
 </ul></p>
-<p id="p-5812"><em class="alert">4.</em> <span class="process-math">\(\int\,x \cos(x^{2})\,dx\)</span> <ul style="list-style:circle;">
-<li id="li-3452"><p id="p-5813">integration by parts</p></li>
-<li id="li-3453"><p id="p-5814">neither</p></li>
-<li id="li-3454"><p id="p-5815">substitution</p></li>
+<p id="p-5887"><em class="alert">4.</em> <span class="process-math">\(\int\,x \cos(x^{2})\,dx\)</span> <ul style="list-style:circle;">
+<li id="li-3518"><p id="p-5888">integration by parts</p></li>
+<li id="li-3519"><p id="p-5889">neither</p></li>
+<li id="li-3520"><p id="p-5890">substitution</p></li>
 </ul></p>
-<p id="p-5816"><em class="alert">5.</em> <span class="process-math">\(\int\,{1\over\sqrt{4 x + 1}}\,dx\)</span> <ul style="list-style:circle;">
-<li id="li-3455"><p id="p-5817">integration by parts</p></li>
-<li id="li-3456"><p id="p-5818">neither</p></li>
-<li id="li-3457"><p id="p-5819">substitution</p></li>
+<p id="p-5891"><em class="alert">5.</em> <span class="process-math">\(\int\,{1\over\sqrt{4 x + 1}}\,dx\)</span> <ul style="list-style:circle;">
+<li id="li-3521"><p id="p-5892">integration by parts</p></li>
+<li id="li-3522"><p id="p-5893">neither</p></li>
+<li id="li-3523"><p id="p-5894">substitution</p></li>
 </ul></p>
-<p id="p-5820"><em class="emphasis">(Note that because this is multiple choice, you will not be able to see which parts of the problem you got correct.)</em></p>
+<p id="p-5895"><em class="emphasis">(Note that because this is multiple choice, you will not be able to see which parts of the problem you got correct.)</em></p>
 </div>
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-147')">Make Interactive</button></div>
 </div></article><article class="exercise exercise-like" id="xSf"><h4 class="heading">
@@ -572,8 +572,8 @@ f(x)  g(x) = \int f(x) g'(x) \, dx + \int g(x)  f'(x) \, dx\text{.}\tag{5.4.2}
 </h4>
 <div id="webwork-148" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="148" data-sourceFilePath="Library/Rochester/setIntegrals15ByParts/sc5_6_3.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-contents">
-<p id="p-5821">Use integration by parts to evaluate the integral.</p>
-<p id="p-5822"><span class="process-math">\(\displaystyle\int 3 x \cos (4 x)\, dx =\)</span> <span class="fillin underline" role="img" aria-label="60-character blank" style="width: 27.2727272727273em;"></span>  <span class="process-math">\(+C\)</span></p>
+<p id="p-5896">Use integration by parts to evaluate the integral.</p>
+<p id="p-5897"><span class="process-math">\(\displaystyle\int 3 x \cos (4 x)\, dx =\)</span> <span class="fillin underline" role="img" aria-label="60-character blank" style="width: 27.2727272727273em;"></span>  <span class="process-math">\(+C\)</span></p>
 </div>
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-148')">Make Interactive</button></div>
 </div></article><article class="exercise exercise-like" id="dZo"><h4 class="heading">
@@ -581,8 +581,8 @@ f(x)  g(x) = \int f(x) g'(x) \, dx + \int g(x)  f'(x) \, dx\text{.}\tag{5.4.2}
 </h4>
 <div id="webwork-149" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="149" data-sourceFilePath="Library/Michigan/Chap7Sec2/Q07.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-contents">
-<p id="p-5824">Find the integral</p>
-<p id="p-5825"><span class="process-math">\(\int\, \left(z+1\right)e^{5z} dz =\)</span> <span class="fillin underline" role="img" aria-label="35-character blank" style="width: 15.9090909090909em;"></span></p>
+<p id="p-5899">Find the integral</p>
+<p id="p-5900"><span class="process-math">\(\int\, \left(z+1\right)e^{5z} dz =\)</span> <span class="fillin underline" role="img" aria-label="35-character blank" style="width: 15.9090909090909em;"></span></p>
 </div>
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-149')">Make Interactive</button></div>
 </div></article><article class="exercise exercise-like" id="Kgx"><h4 class="heading">
@@ -590,8 +590,8 @@ f(x)  g(x) = \int f(x) g'(x) \, dx + \int g(x)  f'(x) \, dx\text{.}\tag{5.4.2}
 </h4>
 <div id="webwork-150" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="150" data-sourceFilePath="Library/Rochester/setIntegrals15ByParts/sc5_6_15.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-contents">
-<p id="p-5827">Evaluate the definite integral.</p>
-<p id="p-5828"><span class="process-math">\(\displaystyle\int_{0}^{5} t e^{-t} dt =\)</span> <span class="fillin underline" role="img" aria-label="40-character blank" style="width: 18.1818181818182em;"></span></p>
+<p id="p-5902">Evaluate the definite integral.</p>
+<p id="p-5903"><span class="process-math">\(\displaystyle\int_{0}^{5} t e^{-t} dt =\)</span> <span class="fillin underline" role="img" aria-label="40-character blank" style="width: 18.1818181818182em;"></span></p>
 </div>
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-150')">Make Interactive</button></div>
 </div></article><article class="exercise exercise-like" id="qnG"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>

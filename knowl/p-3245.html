@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-08-08T11:44:44-06:00       *-->
+<!--*       on 2022-11-22T15:22:57-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,12 +15,24 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Consider <span class="process-math">\(f(x) = 3x^2 + 1\)</span> and <span class="process-math">\(g(x) = -0.5x^2 + 5x - 2\text{.}\)</span> Since these functions are polynomials of the same degree, we know</p>
+<p>Because this limit has indeterminate form <span class="process-math">\(\frac{\infty}{\infty}\text{,}\)</span> L'Hôpital's Rule tells us that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\lim_{x \to \infty} \frac{f(x)}{g(x)} = \frac{3}{-0.5} = -6\text{.}
+\lim_{x \to \infty} \frac{e^{x} + x}{2e^{x} + x^2} = \lim_{x \to \infty} \frac{e^{x} + 1}{2e^{x} + 2x}\text{.}
 \end{equation*}
 </div>
-<span class="incontext"><a href="sec-2-8-LHR.html#xop" class="internal">in-context</a></span>
+<p class="continuation">The latest limit is indeterminate for the same reason, and a second application of the rule shows</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x \to \infty} \frac{e^{x} + x}{2e^{x} + x^2} = \lim_{x \to \infty} \frac{e^{x}}{2e^{x} + 2}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Note how each application of the rule produces a simpler numerator and denominator. With one more use of L'Hôpital's Rule, followed by a simple algebraic simplification, we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x \to \infty} \frac{e^{x} + x}{2e^{x} + x^2} = \lim_{x \to \infty} \frac{e^{x}}{2e^{x}} = \lim_{x \to \infty} \frac{1}{2} = \frac{1}{2}\text{.}
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-2-8-LHR.html#PwG" class="internal">in-context</a></span>
 </body>
 </html>

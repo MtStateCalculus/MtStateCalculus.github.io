@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-08-08T11:44:43-06:00       *-->
+<!--*       on 2022-11-22T15:22:56-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,20 +14,39 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>Recall that the statement <span class="process-math">\(\lim_{x \to a} f(x) = L\text{,}\)</span> means that we can make <span class="process-math">\(f(x)\)</span> as close to <span class="process-math">\(L\)</span> as we'd like by taking <span class="process-math">\(x\)</span> sufficiently close (but not equal) to <span class="process-math">\(a\text{.}\)</span> We now expand this notation and language to include the possibility that either <span class="process-math">\(L\)</span> or <span class="process-math">\(a\)</span> can be <span class="process-math">\(\infty\text{.}\)</span> For instance, for <span class="process-math">\(f(x) = \frac{1}{x}\text{,}\)</span> we now write</p>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<p>First we need to find the slope of the line tangent to the curve, or <span class="process-math">\(\frac{dy}{dx}\text{.}\)</span> To do so, we differentiate both sides of the equation with respect to <span class="process-math">\(x\text{,}\)</span> treating <span class="process-math">\(y\)</span> as a function of <span class="process-math">\(x\)</span> to obtain</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+\frac{d}{dx} \left( \sin(x+y) + \cos(x-y) \right) &amp;= \frac{d}{dx}(1)\\
+\cos(x+y) \left(1+\frac{dy}{dx}\right) - \sin(x-y)\left(1-\frac{dy}{dx}\right) &amp;= 0\text{.}
+\end{align*}
+</div>
+<p class="continuation">Distributing on the left side of the equation,</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\lim_{x \to 0^+} \frac{1}{x} = \infty\text{,}
+\cos(x+y) + \cos(x+y)\frac{dy}{dx} - \sin(x-y) + \sin(x-y)\frac{dy}{dx} = 0\text{.}
 \end{equation*}
 </div>
-<p class="continuation">by which we mean that we can make <span class="process-math">\(\frac{1}{x}\)</span> as large as we like by taking <span class="process-math">\(x\)</span> sufficiently close (but not equal) to 0. In a similar way, we write</p>
+<p class="continuation">Removing a factor of <span class="process-math">\(\frac{dy}{dx}\)</span> from two terms on the right and moving the other two terms to the righthand side,</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\lim_{x \to \infty} \frac{1}{x} = 0\text{,}
+\frac{dy}{dx} \left(\cos(x+y) + \sin(x-y) \right) =  \sin(x-y) - \cos(x+y)\text{.}
 \end{equation*}
 </div>
-<p class="continuation">since we can make <span class="process-math">\(\frac{1}{x}\)</span> as close to 0 as we'd like by taking <span class="process-math">\(x\)</span> sufficiently large (i.e., by letting <span class="process-math">\(x\)</span> increase without bound).</p>
-<span class="incontext"><a href="sec-2-8-LHR.html#jXV" class="internal">in-context</a></span>
+<p class="continuation">Therefore,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{dy}{dx} = \frac{\sin(x-y) - \cos(x+y)}{\cos(x+y) + \sin(x-y)}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">At the point <span class="process-math">\(\left(\frac{\pi}{2}, \frac{\pi}{2}\right)\)</span> we have that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{dy}{dx}\biggm|_{\left(\frac{\pi}{2}, \frac{\pi}{2}\right)} = \frac{\sin(0)-\cos(\pi)}{\cos(\pi) + \sin(0)} = -1\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Therefore, the equation of the line tangent to the curve at the point <span class="process-math">\(\left(\frac{\pi}{2}, \frac{\pi}{2}\right)\)</span> is <span class="process-math">\(y = \frac{\pi}{2} - \left(x-\frac{\pi}{2}\right)\text{.}\)</span> A portion of the graph of the curve defined by <span class="process-math">\(\sin(x+y) + \cos(x-y) = 1\)</span> and the tangent line to the curve at the point <span class="process-math">\(\left(\frac{\pi}{2}, \frac{\pi}{2}\right)\)</span> are shown in the following figure.</p>
+<span class="incontext"><a href="sec-2-7-implicit.html#brQ" class="internal">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-08-08T11:46:45-06:00       *-->
+<!--*       on 2022-11-22T15:24:57-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,18 +15,40 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>In this example, if we can find a value of <span class="process-math">\(n\)</span> so that</p>
+<ol class="lower-alpha">
+<li>
+<p>For <span class="process-math">\(f(x) = \frac{1}{1-x}\text{,}\)</span> its Taylor series is</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-M\frac{|2-0|^{n+1}}{(n+1)!} \lt  10^{-20}
+P(x) = 1 + x + x^2 + x^3 + \cdots + x^n + \cdots
 \end{equation*}
 </div>
-<p class="continuation">then we will have</p>
+</li>
+<li>
+<p>For <span class="process-math">\(f(x) = \cos(x)\text{,}\)</span> its Taylor series is</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-|P_n(2) - f(2)| \leq M\frac{|2-0|^{n+1}}{(n+1)!} \lt  10^{-20}\text{.}
+P(x) = 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \cdots + (-1)^{n}\frac{1}{(2n)!}x^{2n} + \cdots\text{.}
 \end{equation*}
 </div>
-<span class="incontext"><a href="sec-8-5-taylor.html#WJg" class="internal">in-context</a></span>
+</li>
+<li>
+<p>For <span class="process-math">\(f(x) = \sin(x)\text{,}\)</span> its Taylor series is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+P(x) = x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \cdots + (-1)^{n}\frac{1}{(2n+1)!}x^{2n+1} + \cdots\text{.}
+\end{equation*}
+</div>
+</li>
+<li>
+<p>For <span class="process-math">\(f(x) = \frac{1}{1-x}\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+P_n(x) = 1 + x + x^2 + x^3 + \cdots + x^n
+\end{equation*}
+</div>
+</li>
+</ol>
+<span class="incontext"><a href="sec-8-5-taylor.html#FwA" class="internal">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-08-08T11:46:44-06:00       *-->
+<!--*       on 2022-11-22T15:24:56-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,44 +15,42 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<ol class="lower-alpha">
+<ol class="lower-roman">
 <li>
-<p>Using the Ratio Test with the <span class="process-math">\(k\)</span>th term <span class="process-math">\(\frac{|x|^{2k}}{(2k)!}\)</span> we get</p>
+<p>The first four derivatives of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=0\)</span> are</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-\lim_{k \to \infty} \frac{ \frac{|x|^{2(k+1)}}{(2(k+1))!} }{ \frac{|x|^{2k}}{(2k)!} } \amp = \lim_{k \to \infty} \frac{|x|^{2(k+1)}(2k)!}{|x|^{2k}(2(k+1))!}\\
-\amp = \lim_{k \to \infty} \frac{|x|^{2}}{(2k+2)(2k+1)}\\
-\amp = 0\text{.}
+f(x) \amp = \cos(x) \amp   f(0) \amp = 1\\
+f'(x) \amp = -\sin(x) \amp   f'(0) \amp = 0\\
+f''(x) \amp = -\cos(x) \amp   f''(0) \amp = -1\\
+f^{(3)}(x) \amp = \sin(x) \amp   f^{(3)}(0) \amp = 0\\
+f^{(4)}(x) \amp = \cos(x) \amp   f^{(4)}(0) \amp = 1\text{.}
 \end{align*}
 </div>
-<p class="continuation">So the interval of convergence of the Taylor series for <span class="process-math">\(f(x) = \cos(x)\)</span> centered at <span class="process-math">\(x=0\)</span> is <span class="process-math">\((-\infty, \infty)\text{.}\)</span></p>
-</li>
-<li>
-<p>Using the Ratio Test with the <span class="process-math">\(k\)</span>th term <span class="process-math">\(\frac{|x|^{2k+1}}{(2k+1)!}\)</span> we get</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-\lim_{k \to \infty} \frac{ \frac{|x|^{2(k+1)+1}}{(2(k+1)+1)!} }{ \frac{|x|^{2k+1}}{(2k+1)!} } \amp = \lim_{k \to \infty} \frac{|x|^{2(k+1)+1}(2k+1)!}{|x|^{2k+1}(2(k+1)+1)!}\\
-\amp = \lim_{k \to \infty} \frac{|x|^{2}}{(2k+3)(2k+2)}\\
-\amp = 0\text{.}
-\end{align*}
-</div>
-<p class="continuation">So the interval of convergence of the Taylor series for <span class="process-math">\(f(x) = \sin(x)\)</span> centered at <span class="process-math">\(x=0\)</span> is <span class="process-math">\((-\infty, \infty)\text{.}\)</span></p>
-</li>
-<li>
-<p>Using the Ratio Test with the <span class="process-math">\(k\)</span>th term <span class="process-math">\(|x|^{k}\)</span> we get</p>
+<p class="continuation">It appears that the odd derivatives of <span class="process-math">\(f(x)\)</span> are all plus or minus <span class="process-math">\(\sin(x)\)</span> and so have values of 0 at <span class="process-math">\(x=0\)</span> and the even derivatives are <span class="process-math">\(\pm \cos(x)\)</span> and have alternating values of 1 and <span class="process-math">\(-1\)</span> at <span class="process-math">\(x-0\text{.}\)</span> Since the even numbers can be represented in the form <span class="process-math">\(2k\)</span> where <span class="process-math">\(k\)</span> is an integer we have</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\lim_{k \to \infty} \frac{ |x|^{k+1} }{ |x|^{k} } = \lim_{k \to \infty} |x| = |x|\text{,}
+f^{(k)}(0) = 0 \text{ if }  k \text{ is odd,
+and } f^{(2k)}(0) = (-1)^k\text{.}
 \end{equation*}
 </div>
-<p class="continuation">So the series <span class="process-math">\(\sum_{k=0}^{\infty} x^k\)</span> converges absolutely when <span class="process-math">\(|x| \lt  1\)</span> or for <span class="process-math">\(-1 \lt  x \lt  1\)</span> and diverges when <span class="process-math">\(|x| \gt 1\text{.}\)</span> Since the Ratio Test doesn't tell us what happens when <span class="process-math">\(x=1\text{,}\)</span> we need to check the endpoints separately.</p>
-<ul class="disc">
-<li><p>When <span class="process-math">\(x=1\)</span> we have the series <span class="process-math">\(\sum_{k=0}^{\infty} 1\)</span> which diverges since <span class="process-math">\(\lim_{k \to \infty} 1 \neq 0\text{.}\)</span></p></li>
-<li><p>When <span class="process-math">\(x=-1\)</span> we have the series <span class="process-math">\(\sum_{k=0}^{\infty} (-1)^k\)</span> which diverges since <span class="process-math">\(\lim_{k \to \infty} (-1)^k\)</span> does not exist.</p></li>
-</ul>
-<p>Therefore, the interval of convergence of the Taylor series for <span class="process-math">\(f(x) = \frac{1}{1-x}\)</span> centered at <span class="process-math">\(x=0\)</span> is <span class="process-math">\((-1,1)\text{.}\)</span></p>
+</li>
+<li>
+<p>Based on the previous part of this problem the <span class="process-math">\(n\)</span>th order Taylor polynomial for <span class="process-math">\(\cos(x)\)</span> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1 - \frac{x^2}{2} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots + (-1)^{n/2}\frac{x^n}{n!}
+\end{equation*}
+</div>
+<p class="continuation">if <span class="process-math">\(n\)</span> is even and</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1 - \frac{x^2}{2} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots + (-1)^{(n-1)/2}\frac{x^(n-1)}{(n-1)!}
+\end{equation*}
+</div>
+<p class="continuation">if <span class="process-math">\(n\)</span> is odd.</p>
 </li>
 </ol>
-<span class="incontext"><a href="sec-8-5-taylor.html#hil" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-8-5-taylor.html#TlK" class="internal">in-context</a></span>
 </body>
 </html>

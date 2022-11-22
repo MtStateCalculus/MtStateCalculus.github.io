@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-08-08T11:44:40-06:00       *-->
+<!--*       on 2022-11-22T15:22:53-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,13 +14,20 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>In what follows, we find a formula for the derivative of <span class="process-math">\(g(x) = \ln(x)\text{.}\)</span> To do so, we take advantage of the fact that we know the derivative of the natural exponential function, the inverse of <span class="process-math">\(g\text{.}\)</span> In particular, we know that writing <span class="process-math">\(g(x) = \ln(x)\)</span> is equivalent to writing <span class="process-math">\(e^{g(x)} = x\text{.}\)</span> Now we differentiate both sides of this equation and observe that</p>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<ol class="lower-alpha">
+<li>
+<p>Since <span class="process-math">\(h(x) = f(g(x))\text{,}\)</span> by the chain rule we know that <span class="process-math">\(h'(x) = f'(g(x)) \cdot g'(x)\text{.}\)</span> Using the facts that <span class="process-math">\(f(x)=x^3\)</span> and <span class="process-math">\(g(x) = \sin(x)\text{,}\)</span> it follows <span class="process-math">\(f'(x) = 3x^2\)</span> and <span class="process-math">\(f'(g(x)) = 3\sin^2(x)\text{,}\)</span> and <span class="process-math">\(g'(x) = \cos(x)\text{.}\)</span> Therefore,</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\frac{d}{dx}\left[e^{g(x)}\right] = \frac{d}{dx}[x]\text{.}
+h'(x) = 3\sin^2(x) \cdot \cos(x)
 \end{equation*}
 </div>
-<span class="incontext"><a href="sec-2-6-inverse.html#CiD" class="internal">in-context</a></span>
+<p class="continuation">and <span class="process-math">\(h'\left( \frac{\pi}{4} \right) = 3 \left( \frac{1}{\sqrt{2}} \right)^2 \cdot \frac{1}{\sqrt{2}} = \frac{3}{2\sqrt{2}}\text{.}\)</span></p>
+</li>
+<li><p>Note that <span class="process-math">\(r'(x) = g'(f(x)) \cdot f'(x) = \cos(x^3) \cdot 3x^2\text{.}\)</span> Thus, we have <span class="process-math">\(r'(0.25) = \cos(0.25^3) \cdot 3(0.25)^2 \approx 0.1875\text{,}\)</span> while using our work from (a), <span class="process-math">\(h'(0.25) = 3\sin^2(0.25) \cdot \cos(0.25) \approx 0.1779\text{,}\)</span> so since <span class="process-math">\(|h'(0.25) \lt r'(0.25)|\text{,}\)</span> we see that <span class="process-math">\(r\)</span> is changing more rapidly.</p></li>
+<li><p>We have observed in (a) and (b) that <span class="process-math">\(h'(x) = 3\sin^2(x) \cdot \cos(x)\)</span> and <span class="process-math">\(r'(x) = \cos(x^3) \cdot 3x^2\text{.}\)</span> Because both parts of the product in <span class="process-math">\(h'(x)\)</span> are periodic functions, <span class="process-math">\(h'(x)\)</span> is periodic (with period <span class="process-math">\(2\pi\)</span>). However, <span class="process-math">\(r'(x)\)</span> is not periodic, since <span class="process-math">\(3x^2\)</span> grows without bound as <span class="process-math">\(x\)</span> increases.</p></li>
+</ol>
+<span class="incontext"><a href="sec-2-5-chain.html#eOZ" class="internal">in-context</a></span>
 </body>
 </html>

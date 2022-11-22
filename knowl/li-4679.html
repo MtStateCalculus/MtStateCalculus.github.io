@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-08-08T11:46:01-06:00       *-->
+<!--*       on 2022-11-22T15:24:13-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,31 +15,15 @@
 </head>
 <body class="ignore-math">
 <article class="li"><h5 class="heading">
-<span class="type">Item</span><span class="space"> </span><span class="codenumber">b</span><span class="period">.</span>
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">7.3.4.5.b</span><span class="period">.</span>
 </h5>
-<p>Given that <span class="process-math">\(\frac{1}{t} \frac{dy}{dt} = e^{t^2 - 2y}\text{,}\)</span> we first observe that <span class="process-math">\(e^{t^2 - 2y} = e^{t^2}e^{ -2y}\text{.}\)</span> Separating the variables,</p>
+<p>Recalling that <span class="process-math">\(E_{0.05} = 2.6533\)</span> and <span class="process-math">\(E_{0.025} = 2.6851\text{,}\)</span> it follows that this data generates the similar linear system given by</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-e^{2y} \frac{dy}{dt} = t e^{t^2}\text{.}
-\end{equation*}
+\begin{align*}
+y(1) - 2.6533 =\mathstrut \amp  0.05K\\
+y(1) - 2.6851 =\mathstrut \amp  0.025K\text{.}
+\end{align*}
 </div>
-<p class="continuation">Integrating with respect to <span class="process-math">\(t\text{,}\)</span></p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\int e^{2y} dy = \int t e^{t^2} dt\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Using standard substitution techniques on both sides, we find that</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\frac{1}{2} e^{2y} = \frac{1}{2} e^{t^2} + c
-\end{equation*}
-</div>
-<p class="continuation">Writing <span class="process-math">\(2c = C\text{,}\)</span> we then have <span class="process-math">\(e^{2y} = e^{t^2} + C\text{,}\)</span> and taking logarithms to solve for <span class="process-math">\(y\text{,}\)</span> we find <span class="process-math">\(2y = \ln \left( e^{t^2} + C \right)\text{,}\)</span> and thus</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-y = \frac{1}{2} \ln \left( e^{t^2} + C \right)\text{.}
-\end{equation*}
-</div></article><span class="incontext"><a href="sec-7-4-separable.html#zzk" class="internal">in-context</a></span>
+<p class="continuation">Solving this system yields <span class="process-math">\(K = 1.272\)</span> and <span class="process-math">\(y(1) = 2.7169\text{.}\)</span> Knowing that the true value of <span class="process-math">\(y(1)\)</span> is <span class="process-math">\(e = 2.71828\ldots\text{,}\)</span> we see that the approximation here in (b) is much better. That is expected because we are already working with better approximations that come from using <span class="process-math">\(\Delta t = 0.05\)</span> and <span class="process-math">\(\Delta t = 0.025\text{,}\)</span> which have been twice halved from the smaller <span class="process-math">\(\Delta t\)</span> value in (a).</p></article><span class="incontext"><a href="sec-7-3-euler.html#MNI" class="internal">in-context</a></span>
 </body>
 </html>
