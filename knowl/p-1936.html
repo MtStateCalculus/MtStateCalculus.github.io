@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:22:47-07:00       *-->
+<!--*       on 2023-02-03T12:33:10-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,20 +14,67 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<ul class="disc">
-<li><p>Given a differentiable function <span class="process-math">\(y = f(x)\text{,}\)</span> we can express the derivative of <span class="process-math">\(f\)</span> in several different notations: <span class="process-math">\(f'(x)\text{,}\)</span> <span class="process-math">\(\frac{df}{dx}\text{,}\)</span> <span class="process-math">\(\frac{dy}{dx}\text{,}\)</span> and <span class="process-math">\(\frac{d}{dx}[f(x)]\text{.}\)</span></p></li>
-<li><p>The limit definition of the derivative leads to patterns among certain families of functions that enable us to compute derivative formulas without resorting directly to the limit definition. For example, if <span class="process-math">\(f\)</span> is a power function of the form <span class="process-math">\(f(x) = x^n\text{,}\)</span> then <span class="process-math">\(f'(x) = nx^{n-1}\)</span> for any real number <span class="process-math">\(n\)</span> other than 0. This is called the Rule for Power Functions.</p></li>
-<li><p>We have stated a rule for derivatives of exponential functions in the same spirit as the rule for power functions: for any positive real number <span class="process-math">\(a\text{,}\)</span> if <span class="process-math">\(f(x) = a^x\text{,}\)</span> then <span class="process-math">\(f'(x) = a^x \ln(a)\text{.}\)</span></p></li>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<ol class="lower-alpha">
 <li>
-<p>If we are given a constant multiple of a function whose derivative we know, or a sum of functions whose derivatives we know, the Constant Multiple and Sum Rules make it straightforward to compute the derivative of the overall function. More formally, if <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> are differentiable with derivatives <span class="process-math">\(f'(x)\)</span> and <span class="process-math">\(g'(x)\)</span> and <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are constants, then</p>
+<p>By definition,</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\frac{d}{dx} \left[af(x) + bg(x)\right] = af'(x) + bg'(x)\text{.}
+f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Using the fact that <span class="process-math">\(f(x)=a^x\)</span> along with <span class="process-math">\(a^{x+h} = a^x \cdot a^h\text{,}\)</span> we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+f'(x) &amp;= \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}\\
+&amp;= \lim_{h \to 0} \frac{a^{x+h}-a^x}{h}\\
+&amp;= \lim_{h \to 0} \frac{a^{x} \cdot a^{h} - a^x}{h}\\
+&amp;= \lim_{h \to 0} \frac{a^{x}(a^{h}-1)}{h}\text{,}
+\end{align*}
+</div>
+<p class="continuation">where the last equality follows by removing the common factor of <span class="process-math">\(a^x\)</span> from each term in the numerator.</p>
+</li>
+<li>
+<p>Since <span class="process-math">\(a^x\)</span> does not depend at all on <span class="process-math">\(h\text{,}\)</span> we may treat <span class="process-math">\(a^x\)</span> as constant in the noted limit. Thus,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(x) = \lim_{h \to 0} \frac{a^{x}(a^{h}-1)}{h} = a^{x} \cdot \lim_{h \to 0} \frac{a^{h}-1}{h}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Note that this tells us that the derivative of <span class="process-math">\(a^x\)</span> is some constant multiple of <span class="process-math">\(a^x\)</span> (and that the constant's values must be <span class="process-math">\(\lim_{h \to 0} \frac{a^{h}-1}{h}\text{.}\)</span>)</p>
+</li>
+<li><p>Using <span class="process-math">\(h = \pm 0.0001\text{,}\)</span> it appears that when <span class="process-math">\(a = 2\text{,}\)</span> <span class="process-math">\(L \approx 0.6931\text{,}\)</span> while when <span class="process-math">\(a = 3\text{,}\)</span> <span class="process-math">\(L \approx 1.0986\text{.}\)</span></p></li>
+<li><p>By experimenting, we see first that <span class="process-math">\(a \approx 2.7\)</span> (for which <span class="process-math">\(L \approx 0.993\text{,}\)</span> so <span class="process-math">\(a\)</span> needs to be slightly bigger than <span class="process-math">\(2.7\)</span>). Continuing to try values of <span class="process-math">\(a\)</span> that result in <span class="process-math">\(L\)</span> being closer and closer to <span class="process-math">\(1\text{,}\)</span> we find <span class="process-math">\(a \approx 2.71828\)</span> (for which <span class="process-math">\(L \approx 1.000\)</span>)</p></li>
+<li>
+<p>We note that <span class="process-math">\(\ln(2) \approx 0.6931\)</span> and <span class="process-math">\(\ln(3) \approx 1.0986\text{.}\)</span> Since these values correspond to the values of</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{h \to 0} \frac{a^{h}-1}{h}
+\end{equation*}
+</div>
+<p class="continuation">when <span class="process-math">\(a = 2\)</span> and <span class="process-math">\(a = 3\text{,}\)</span> we conjecture that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{d}{dx}[2^x] = 2^x \cdot \ln(2)
+\end{equation*}
+</div>
+<p class="continuation">and</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{d}{dx}[3^x] = 3^x \cdot \ln(3)
 \end{equation*}
 </div>
 </li>
-</ul>
-<span class="incontext"><a href="sec-2-1-elem-rules.html#TQv" class="internal">in-context</a></span>
+<li>
+<p>Our work suggests that <span class="process-math">\(\frac{d}{dx}[a^x] = a^x \cdot \ln(a)\text{,}\)</span> and when <span class="process-math">\(a = e \approx 2.71828\text{,}\)</span> it follows that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{d}{dx}[e^x] = e^x \cdot \ln(e) = e^x
+\end{equation*}
+</div>
+<p class="continuation">Thus, <span class="process-math">\(e^x\)</span> is a very special function: its derivative is itself!</p>
+</li>
+</ol>
+<span class="incontext"><a href="sec-2-1-elem-rules.html#AZt" class="internal">in-context</a></span>
 </body>
 </html>

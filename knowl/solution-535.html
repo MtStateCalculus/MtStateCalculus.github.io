@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:25:06-07:00       *-->
+<!--*       on 2023-02-03T12:35:30-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,15 +16,18 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">8.6.4.1.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">8.6.4.2.1</span><span class="period">.</span>
 </h4>
-<span class="process-math">\(\displaystyle \frac{5}{1-6 x} = 5 \cdot \sum_{n=0}^\infty (6 x)^n\text{.}\)</span> Then we can see that <span class="process-math">\(c_n = 5 \cdot 6^n\text{,}\)</span> making <span class="process-math">\(c_0 = 5\text{,}\)</span> <span class="process-math">\(c_1 = 5 \cdot 6 = 30\text{,}\)</span> <span class="process-math">\(c_2 = 5 \cdot 6^2 = 180\text{,}\)</span> etc. Regarding the radius of convergence, we perform the standard ratio test:<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\lim_{n\to\infty} \left| \frac{5(6 x)^{n+1}}{5(6 x)^n} \right|
-=	\lim_{n\to\infty} \left| 6 x \right|
-=	\left| 6 x \right|
-\end{equation*}
-</div>And then <span class="process-math">\(\left| 6 x \right| \lt  1 \iff \left| x \right| \lt  \frac 1 {6}\text{,}\)</span> making <span class="process-math">\(R = \frac 1 {6}\text{.}\)</span>
+<span class="process-math">\(\displaystyle c_n = \frac{f^{(n)}(0)}{n!}\text{,}\)</span> e.g. <span class="process-math">\(\displaystyle c_0 = \frac{f(0)}{0!} = 0\text{.}\)</span> <span class="process-math">\(\displaystyle c_1 = \frac{f'(0)}{1!}\text{;}\)</span> <span class="process-math">\(\displaystyle f'(x)=4 \arctan(5 x) + 4 x\frac{1}{(5 x)^2+1}5 
+= 4 \arctan(5 x) + \frac{20 x}{25 x^2+1}\text{;}\)</span> <span class="process-math">\(c_1 = 0\text{.}\)</span> <span class="process-math">\(\displaystyle c_2 = \frac{f''(0)}{2!}\text{;}\)</span> <span class="process-math">\(\displaystyle 
+f''(x) = \left( 4 \arctan(5 x) + \frac{20 x}{25 x^2+1} \right)'\)</span><span class="process-math">\(\displaystyle = 
+\frac{20}{25 x^2+1} + \frac{20(25 x^2+1)-20 x25\cdot 2x}{(25 x^2+1)^2}\)</span><span class="process-math">\(\displaystyle
+= \frac{500 x^2 + 20}{(25 x^2+1)^2} + \frac{20 - 500 x^2}{(25 x^2+1)^2}
+= \frac{40}{(25 x^2+1)^2}\text{;}\)</span> <span class="process-math">\(\displaystyle c_2 = \frac{40}{2} = 20\text{;}\)</span> and so on. Another way is to use the power series for arctan: <span class="process-math">\(\displaystyle \arctan(t) = \sum_{n=0}^{\infty} (-1)^n \frac{t^{2n+1}}{2n+1} 
+= t-\frac{t^3}{3}+\frac{t^5}{5}-\frac{t^7}{7}+...\text{.}\)</span> Then <span class="process-math">\(\displaystyle 4 x \arctan(5 x) = 
+4 x \sum_{n=0}^\infty (-1)^n \frac{(5 x)^{2n+1}}{2n+1} = 
+\sum_{n=0}^\infty (-1)^n \frac{4\cdot 5^{2n+1}}{2n+1} x^{2n+2}\)</span><span class="process-math">\(\displaystyle  
+= 20 x^2 - \frac{500}{3} x^4 + \frac{12500}{5} x^6 - \frac{312500}{7} x^7+...\text{.}\)</span> So <span class="process-math">\(c_0=0\text{,}\)</span> <span class="process-math">\(c_1=0\text{,}\)</span> <span class="process-math">\(c_2=20\text{,}\)</span> <span class="process-math">\(c_3=0\text{,}\)</span> <span class="process-math">\(c_4=-\frac{500}{3}=-166.666666666667\text{...}\)</span> This is an alternating series. It converges if and only if <span class="process-math">\(\displaystyle \lim_{n\to\infty}\frac{4 \cdot (5 x)^{2n+1}}{2n+1}=0\text{.}\)</span> This limit is equal to 0 if and only if <span class="process-math">\(|5 x| \le 1\text{,}\)</span> so <span class="process-math">\(\displaystyle |x|\le \frac{1}{5}\text{.}\)</span> Therefore the radius of convergence is <span class="process-math">\(\displaystyle \frac{1}{5}\text{.}\)</span>
 </div>
 <span class="incontext"><a href="sec-8-6-powerseries.html#solution-535" class="internal">in-context</a></span>
 </body>

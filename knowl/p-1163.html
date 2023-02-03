@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:22:43-07:00       *-->
+<!--*       on 2023-02-03T12:33:05-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,19 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>The velocity function <span class="process-math">\(y = v(t)\)</span> appears to be increasing on the intervals <span class="process-math">\(0\lt t\lt 1\text{,}\)</span> <span class="process-math">\(3\lt t\lt 4\text{,}\)</span> <span class="process-math">\(7\lt t\lt 8\text{,}\)</span> and <span class="process-math">\(10\lt t\lt 11\)</span> because the curve <span class="process-math">\(y = s(t)\)</span> is concave up which corresponds to an increasing first derivative <span class="process-math">\(y =s'(t)\text{.}\)</span> Similarly, <span class="process-math">\(y = v(t)\)</span> appears to be decreasing on the intervals <span class="process-math">\(1\lt t\lt 2\text{,}\)</span> <span class="process-math">\(4\lt t\lt 5\text{,}\)</span> <span class="process-math">\(8\lt t\lt 9\text{,}\)</span> and <span class="process-math">\(11\lt t\lt 12\)</span> because the curve <span class="process-math">\(y = s(t)\)</span> is concave down which corresponds to a decreasing first derivative <span class="process-math">\(y =s'(t)\text{.}\)</span> On the intervals <span class="process-math">\(2\lt t\lt 3\text{,}\)</span> <span class="process-math">\(5\lt t\lt 7\text{,}\)</span> and <span class="process-math">\(9\lt t\lt 10\text{,}\)</span> the position function <span class="process-math">\(y = s(t)\)</span> is constant, and thus linear, so neither concave up nor concave down.  This also corresponds to the velocity being constant (since <span class="process-math">\(v(t) = s'(t) = 0\)</span>) on these intervals.</p>
-<span class="incontext"><a href="sec-1-6-second-d.html#rvz" class="internal">in-context</a></span>
+<ol class="lower-alpha">
+<li><p><span class="process-math">\(F'(t)\)</span> has units measured in degrees Fahrenheit per minute.</p></li>
+<li>
+<p>Using a central difference,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+F''(30) \approx \frac{F'(45)-F'(15)}{30} = \frac{2.45-6.03}{30} \approx -0.119\text{.}
+\end{equation*}
+</div>
+</li>
+<li><p>The value <span class="process-math">\(F''(30) \approx -0.119\text{,}\)</span> which is measured in degrees per minute per minute tells us, along with the other data, that at the moment <span class="process-math">\(t = 30\text{,}\)</span> the temperature of the potato is 251 degrees, that its temperature is rising at a rate of 3.85 degrees per minute, and that the rate at which the temperature is rising is <em class="emphasis">falling</em> at a rate of -0.119 degrees per minute per minute. That is, while the temperature is rising, it is rising at a slower and slower rate. At <span class="process-math">\(t = 31\text{,}\)</span> we'd expect that the rate of increase of the potato's temperature would have dropped to about 3.73 degrees per minute.</p></li>
+<li><p>The potato's temperature increasing at a decreasing rate because the values of the first derivative of <span class="process-math">\(F\)</span> are falling. Equivalently, this is because the value of <span class="process-math">\(F''(t)\)</span> is negative throughout the given time interval.</p></li>
+</ol>
+<span class="incontext"><a href="sec-1-6-second-d.html#bRc" class="internal">in-context</a></span>
 </body>
 </html>

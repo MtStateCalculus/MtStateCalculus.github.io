@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:22:50-07:00       *-->
+<!--*       on 2023-02-03T12:33:12-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,13 +15,14 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Observe that the units on <span class="process-math">\(g(v)\)</span> are ``kilometers per liter.'' Since the units on <span class="process-math">\(f(v)\)</span> are ``liters per kilometer,'' it follows that <span class="process-math">\(g\)</span> is the reciprocal of <span class="process-math">\(f\text{:}\)</span> <span class="process-math">\(g(v) = \frac{1}{f(v)}\text{.}\)</span> By the quotient rule, we then know that</p>
+<p>Note that <span class="process-math">\(g\)</span> is fundamentally a quotient, so we need to use the quotient rule. But the numerator of <span class="process-math">\(g\)</span> is a product, so the product rule will be required to compute the derivative of the top function. Executing the quotient rule and proceeding, we find that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-g'(v) = \frac{f(v) \cdot 0 - 1 \cdot f'(v)}{f(v)^2} = -\frac{f'(v)}{f(v)^2}\text{.}
-\end{equation*}
+\begin{align*}
+g'(r) =\mathstrut \amp  \frac{5^r \frac{d}{dr}[r \sec(r)] - r\sec(r) \cdot 5^r \ln(5) }{(5^r)^2}\\
+=\mathstrut \amp  \frac{5^r [r \sec(r) \tan(r) + \sec(r) \cdot 1] - r\sec(r) \cdot 5^r \ln(5) }{(5^r)^2}\\
+=\mathstrut \amp  \frac{r \sec(r) \tan(r) + \sec(r) - r \ln(5) \sec(r)}{5^r}
+\end{align*}
 </div>
-<p class="continuation">Further, using the given values we can say that <span class="process-math">\(g(80) = \frac{1}{f(80)} = \frac{1}{0.05} = 20\)</span> kilometers per liter, and <span class="process-math">\(g'(80) = -\frac{f'(80)}{f(80)^2} = -\frac{0.0004}{0.05^2} = -0.16\text{.}\)</span> Note that the units on <span class="process-math">\(g'(80)\)</span> are ``kilometers per liter per kilometer per hour.''</p>
-<span class="incontext"><a href="sec-2-3-prod-quot.html#nrA" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-2-4-other-trig.html#Igc" class="internal">in-context</a></span>
 </body>
 </html>

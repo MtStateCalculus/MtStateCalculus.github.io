@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:25:04-07:00       *-->
+<!--*       on 2023-02-03T12:35:30-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,11 +15,25 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<ol class="lower-alpha">
-<li><p>What is the Taylor series expansion for <span class="process-math">\(g(x) = \frac{1}{1-x}\text{?}\)</span> What is the interval of convergence of this series?</p></li>
-<li><p>How is <span class="process-math">\(g(-x^2)\)</span> related to <span class="process-math">\(f(x)\text{?}\)</span> Explain, and hence substitute <span class="process-math">\(-x^2\)</span> for <span class="process-math">\(x\)</span> in the power series expansion for <span class="process-math">\(g(x)\text{.}\)</span> Given the relationship between <span class="process-math">\(g(-x^2)\)</span> and <span class="process-math">\(f(x)\text{,}\)</span> how is the resulting series related to <span class="process-math">\(f(x)\text{?}\)</span></p></li>
-<li><p>For which values of <span class="process-math">\(x\)</span> will this power series expansion for <span class="process-math">\(f(x)\)</span> be valid? Why?</p></li>
-</ol>
-<span class="incontext"><a href="sec-8-6-powerseries.html#eQv" class="internal">in-context</a></span>
+<p>So</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+f(0) \amp = a_0\\
+f'(0) \amp = a_1\\
+f''(0) \amp = 2!a_2\\
+f^{(3)}(0) \amp = 3!a_3\\
+\vdots \amp  \ \qquad \vdots\\
+f^{(k)}(0) \amp = k!a_k\\
+\vdots \amp  \ \qquad \vdots
+\end{align*}
+</div>
+<p class="continuation">and</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+a_k = \frac{f^{(k)}(0)}{k!}
+\end{equation*}
+</div>
+<p class="continuation">for each <span class="process-math">\(k \geq 0\text{.}\)</span> But these are just the coefficients of the Taylor series expansion of <span class="process-math">\(f\text{,}\)</span> which leads us to the following observation.</p>
+<span class="incontext"><a href="sec-8-6-powerseries.html#hFO" class="internal">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:22:56-07:00       *-->
+<!--*       on 2023-02-03T12:33:17-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,23 +14,26 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like">
-<p>We differentiate implicitly with respect to <span class="process-math">\(x\text{.}\)</span> This gives</p>
+<p>We differentiate implicitly both sides of the equation with respect to <span class="process-math">\(x\text{.}\)</span></p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-2 x y - x^{2} \, \frac{dy}{dx}
-- 1 - 5 \, \frac{dy}{dx} = 0,
+\ln y + \frac xy \, \frac{dy}{dx}
++ 2 y\frac{dy}{dx} = \frac{5}{x},
 \end{equation*}
 </div>
-<p class="continuation">or</p>
+<p class="continuation">so</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-(x^{2}-5) \, \frac{dy}{dx} = 1-2xy,
+\left( \frac{x}{y} + 2 y \right) \,
+\frac{dy}{dx} = \frac{5}{x} - \ln y,
 \end{equation*}
 </div>
-<p class="continuation">and so</p>
+<p class="continuation">and thus</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\frac{dy}{dx} = \frac{1 - 2 x y}{x^{2} - 5}.
+\frac{dy}{dx}
+= \frac{\frac{5}{x} - \ln y}{\frac{x}{y} + 2 y}
+= \frac{y\!\left(5-x\ln\!\left(y\right)\right)}{x\!\left(x+2y^{2}\right)}.
 \end{equation*}
 </div>
 </div></body>

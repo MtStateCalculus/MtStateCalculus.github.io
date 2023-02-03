@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:23:59-07:00       *-->
+<!--*       on 2023-02-03T12:34:20-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,24 +16,16 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">6.5.5.2.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">6.5.5.3.1</span><span class="period">.</span>
 </h4>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<span class="process-math">\(w = 1 + e^{5 x}\text{,}\)</span> we have<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\int_{2}^{\infty} 3x^{2}e^{-x^{3}} dx = 
-\lim_{b \rightarrow \infty}
-\int_{2}^b 3x^{2}e^{-x^{3}} dx = 
-\left.\lim_{b \rightarrow  \infty} 
-\left({{-3} \over 3} e^{-x^3}\right) \right|_0^b =
+\int_{-\infty}^{0}\,{e^{5 x}\over 1 + e^{5 x}}\,dx = 
+\lim\limits_{b\to 1^{+}} \int_b^{1 + e^{0}} {1\over 5}{dw\over w} = 
+\lim\limits_{b\to 1^{+}} {1\over 5}(\ln(1 + e^{0}) - \ln(b)) = 
+{1\over 5}\ln(1 + e^{0}).
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\lim_{b \rightarrow \infty} \left({{-3} \over 3} e^{-b^3} - 
-{{-3} \over 3} e^{-2^3}\right) = 
-0 + {3\over 3} e^{-8} = {3\over 3} e^{-8}.
-\end{equation*}
-</div>This integral converges to <span class="process-math">\({3\over 3} e^{-8}\text{.}\)</span>
 </div>
 <span class="incontext"><a href="sec-6-5-improper.html#solution-404" class="internal">in-context</a></span>
 </body>

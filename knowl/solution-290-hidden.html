@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:23:22-07:00       *-->
+<!--*       on 2023-02-03T12:33:41-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,13 +14,25 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like">
-<span class="process-math">\(x\)</span>-axis for the <span class="process-math">\(x\)</span> values given in in the integral, we have<div class="displaymath process-math" data-contains-math-knowls="">
+<span class="process-math">\(x\)</span>-axis is greater than the area above the <span class="process-math">\(x\)</span>-axis.  We count boxes:  The area below the <span class="process-math">\(x\)</span>-axis includes approximately 11.5 boxes and each box has area <span class="process-math">\((2)(1) = 2\text{,}\)</span> so<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\int_{-5}^0 f(x) dx = -8.
+\int_0^5 f(x)dx \approx -23.
 \end{equation*}
-</div>In this case the area is negative because it lies below the <span class="process-math">\(x\)</span>-axis. For the second integral, note that the negative area between <span class="process-math">\(x=-5\)</span> and <span class="process-math">\(x=0\)</span> is exactly equal to the positive area between <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=5\text{,}\)</span> so that all that is left is the area of the shaded area.  Thus,<div class="displaymath process-math" data-contains-math-knowls="">
+</div>The area above the <span class="process-math">\(x\)</span>-axis includes approximately 2 boxes, each of area 2, so<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\int_{-5}^{7} f(x) dx = -A.
+\int_5^7 f(x)dx \approx 4.
+\end{equation*}
+</div>So we have<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_0^7 f(x)dx =\int_0^5 f(x)dx+\int_5^7 f(x)dx \approx -23 + 4 = -19.
+\end{equation*}
+</div>By the Fundamental Theorem of Calculus, we have<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+F(7)-F(0) = \int_0^7 f(x)dx
+\end{equation*}
+</div>so,<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+F(7) = F(0) + \int_0^7 f(x)dx \approx 40 + (-19) = 21.
 \end{equation*}
 </div>
 </div></body>

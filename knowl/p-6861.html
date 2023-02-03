@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:23:50-07:00       *-->
+<!--*       on 2023-02-03T12:34:13-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,8 +14,37 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>Now consider a thin bar over which density is distributed continuously. If the density is constant, it is obvious that the balancing point of the bar is its midpoint. But if density is not constant, we must compute a weighted average. Let's say that the function <span class="process-math">\(\rho(x)\)</span> tells us the density distribution along the bar, measured in g/cm. If we slice the bar into small sections, we can think of the bar as holding a collection of adjacent point-masses. The mass <span class="process-math">\(m_i\)</span> of a slice of thickness <span class="process-math">\(\Delta x\)</span> at location <span class="process-math">\(x_i\text{,}\)</span> is <span class="process-math">\(m_i \approx \rho(x_i) \Delta x\text{.}\)</span></p>
-<span class="incontext"><a href="sec-6-3-mass.html#AIL" class="internal">in-context</a></span>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<p>To find the center of mass of each bar, we use the standard formula:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\overline{x} = \frac{\int_0^{10} x \rho(x) \, dx}{\int_0^{10} \rho(x) \, dx}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Having already evaluated the denominator for each mass distribution, we simply need to compute the numerator. It is straightforward to show that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_0^{10} x \frac{1}{1+x^2} \, dx = \frac{1}{2} \ln(101) \approx 2.30756\text{,}
+\end{equation*}
+</div>
+<p class="continuation">so the first bar's center of mass is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\overline{x_1} = \frac{\arctan(10)}{\frac{1}{2}\ln(101)} \approx \frac{2.30756}{1.47113} \approx 1.56857\text{.}
+\end{equation*}
+</div>
+<p class="continuation">For the second bar,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_0^{10} x e^{-0.1x} \, dx = 100-200e^{-1} \approx 26.42411\text{,}
+\end{equation*}
+</div>
+<p class="continuation">so its center of mass is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\overline{x_2} = \frac{10 - 10e^{-1}}{100-200e^{-1}} \approx \frac{26.42411}{6.32121} \approx 4.18023\text{.}
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-6-3-mass.html#CCy" class="internal">in-context</a></span>
 </body>
 </html>

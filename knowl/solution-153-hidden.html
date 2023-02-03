@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:22:53-07:00       *-->
+<!--*       on 2023-02-03T12:33:15-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,8 +14,49 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like"><ol class="lower-alpha">
-<li><p>By the chain rule, <span class="process-math">\(C'(x) = p'(q(x)) \cdot q'(x)\text{,}\)</span> so <span class="process-math">\(C'(0) = p'(q(0)) \cdot q'(0)\)</span> and <span class="process-math">\(C'(3) = p'(q(3)) \cdot q'(3)\text{.}\)</span> From the graph, we see that <span class="process-math">\(q(0) = 2\text{,}\)</span> and thus <span class="process-math">\(C'(0) = p'(2) \cdot q'(0)\text{.}\)</span> Reading the slopes of the lines from the graph, it follows <span class="process-math">\(C'(0) = 2 \cdot 0 = 0\text{.}\)</span> Similarly, <span class="process-math">\(q(3) = 0\text{,}\)</span> so <span class="process-math">\(C'(3) = p'(0) \cdot q'(3) = \frac{1}{2} \cdot (-1) = -\frac{1}{2}\text{.}\)</span></p></li>
-<li><p>Consider <span class="process-math">\(C'(1)\text{.}\)</span> By the chain rule, we'd expect that <span class="process-math">\(C'(1) = p'(q(1)) \cdot q'(1)\text{,}\)</span> but we know that <span class="process-math">\(q'(1)\)</span> does not exist since <span class="process-math">\(q\)</span> has a corner point at <span class="process-math">\(x = 1\text{.}\)</span> This means that <span class="process-math">\(C'(1)\)</span> does not exist either.</p></li>
-<li><p>Since <span class="process-math">\(Y(x) = q(q(x))\text{,}\)</span> the chain rule implies that <span class="process-math">\(Y'(x) = q'(q(x)) \cdot q'(x)\text{,}\)</span> and thus <span class="process-math">\(Y'(-2) = q'(q(-2)) \cdot q'(-2) = q'(-1) \cdot q'(-2)\text{.}\)</span> But <span class="process-math">\(q'(-1)\)</span> does not exist, so <span class="process-math">\(Y'(-2)\)</span> also fails to exist. Using <span class="process-math">\(Z(x) = q(p(x))\)</span> and the chain rule, we have <span class="process-math">\(Z'(x) = q'(p(x)) \cdot p'(x)\text{.}\)</span> Therefore <span class="process-math">\(Z'(0) = q'(p(0)) \cdot p'(0) = q'(-0.5) \cdot p'(0) = 0 \cdot 0.5 = 0\text{.}\)</span></p></li>
+<li>
+<p>We are asked to find <span class="process-math">\(\frac{dV}{dh}\)</span> (the derivative of <span class="process-math">\(V\)</span> with respect to the independent variable <span class="process-math">\(h\)</span>) at the instant <span class="process-math">\(h = 1\text{.}\)</span> If we first expand <span class="process-math">\(V\)</span> to write</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+V = \frac{\pi}{3}\left(12h^2 - h^3\right)
+\end{equation*}
+</div>
+<p class="continuation">we find that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{dV}{dh} = \frac{\pi}{3} \left(24h - 3h^2\right) = \pi \left(8h-h^2 \right)\text{,}
+\end{equation*}
+</div>
+<p class="continuation">with units ``cubic feet per foot''.  Evaluating at <span class="process-math">\(h=1\text{,}\)</span> we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\left. \frac{dV}{dh} \right|_{h=1} = \pi \left(8 \cdot 1 - 1^2 \right) = 7\pi
+\end{equation*}
+</div>
+</li>
+<li><p>Since <span class="process-math">\(h(t) = \sin(\pi t) + 1\text{,}\)</span> the instantaneous rate of change of <span class="process-math">\(h\)</span> with respect to <span class="process-math">\(t\)</span> is <span class="process-math">\(h'(t) = \pi \cos(\pi t)\text{,}\)</span> and therefore <span class="process-math">\(h'(2) = \pi \cos(2\pi) = \pi\)</span> feet per hour.</p></li>
+<li>
+<p>First we want to find <span class="process-math">\(\frac{dV}{dt}\text{,}\)</span> the derivative of <span class="process-math">\(V\)</span> with respect to the independent variable <span class="process-math">\(t\text{.}\)</span> Here we can write <span class="process-math">\(V\)</span> as a function of <span class="process-math">\(t\)</span> by writing <span class="process-math">\(V(t) = \frac{\pi}{3}\left(12(h(t))^2 - (h(t))^3\right)\text{,}\)</span> where <span class="process-math">\(h(t) = \sin(\pi t) + 1\text{.}\)</span> By the chain rule, it follows that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{dV}{dt} = \frac{\pi}{3}\left( 12 \cdot 2 h(t) \cdot h'(t) - 3 (h(t))^2 \cdot h'(t) \right)
+\end{equation*}
+</div>
+<p class="continuation">and hence using <span class="process-math">\(h(t) = \sin(\pi t) + 1\)</span> and <span class="process-math">\(h'(t) = \pi \cos(\pi t)\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{dV}{dt} = \frac{\pi}{3}\left[ 12 \cdot 2 (\sin(\pi t) + 1) \cdot \pi \cos(\pi t) - 3 (\sin(\pi t) + 1)^2 \cdot \pi \cos(\pi t) \right]
+\end{equation*}
+</div>
+<p class="continuation">with units ``cubic feet per hour''.</p>
+<p>Now we want to find <span class="process-math">\(\frac{dV}{dt}\)</span> when <span class="process-math">\(t=2\text{.}\)</span> Using our most recent work, we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\left. \frac{dV}{dt} \right|_{t=2} = \frac{\pi}{3}\left[ 12 \cdot 2 (\sin(2\pi) + 1) \cdot \pi \cos(2\pi) - 3 (\sin(2\pi) + 1)^2 \cdot \pi \cos(2\pi) \right] = 7 \pi^2
+\end{equation*}
+</div>
+<p class="continuation">cubic feet per hour.</p>
+</li>
+<li><p>In (a) we are determining the instantaneous rate at which the volume changes as we increase the height of the water in the tank, while in (c) we are finding the instantaneous rate at which volume changes as we increase time. The first calculation is a direct one, while the second is more indirect, as it involves the composition of <span class="process-math">\(V\)</span> with <span class="process-math">\(h\)</span> as a function of time. In the latter case, both <span class="process-math">\(h\)</span> and <span class="process-math">\(V\)</span> are functions of time, which allows us to think not only of how <span class="process-math">\(V\)</span> is changing as a function of <span class="process-math">\(h\text{,}\)</span> but also as a function of <span class="process-math">\(t\text{.}\)</span></p></li>
 </ol></div></body>
 </html>

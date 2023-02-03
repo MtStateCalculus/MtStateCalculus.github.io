@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:23:19-07:00       *-->
+<!--*       on 2023-02-03T12:33:38-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,92 +16,61 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.4.5.7.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.4.5.8.1</span><span class="period">.</span>
 </h4>
 <ol class="lower-alpha">
 <li>
-<p>Since velocity is positive, distance traveled is the definite integral of velocity. Thus, on <span class="process-math">\([0,4]\text{,}\)</span> the total distance, <span class="process-math">\(D\text{,}\)</span> is</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-D = \int_0^4 v(t) \, dt = \int_0^4 \left( -\frac{1}{4}t^3 + \frac{3}{2}t^2 + 1 \right) \, dt\text{.}
-\end{equation*}
-</div>
-<p class="continuation">By the Fundamental Theorem of Calculus,</p>
+<p>The net signed area enclosed by <span class="process-math">\(f\)</span> and the <span class="process-math">\(x\)</span>-axis on the interval <span class="process-math">\([2,5]\)</span> is <span class="process-math">\(\int_2^5 f(x) \, dx\text{.}\)</span> The figure below shows a graph of <span class="process-math">\(f\)</span> on the interval <span class="process-math">\([0,5]\text{.}\)</span> To calculate the definite integral of <span class="process-math">\(f\)</span> on the interval <span class="process-math">\([2,5]\text{,}\)</span> we consider the integrals on the subintervals <span class="process-math">\([2,3]\)</span> and <span class="process-math">\([3,5]\text{.}\)</span> Doing so and using the Fundamental Theorem of Calculus,</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-\int_0^4 \left( -\frac{1}{4}t^3 + \frac{3}{2}t^2 + 1 \right) \, dt &amp;= \left. \left( -\frac{1}{16}t^4 + \frac{1}{2}t^3 + t \right) \right|_{t=0}^{t=4}\\
-&amp;= -\frac{1}{16}4^4 + \frac{1}{2}4^3 + 4\\
-&amp;= 20\text{,}
+\int_2^5 f(x) \, dx &amp;= \int_2^3 f(x) \, dx + \int_3^5 f(x) \, dx\\
+&amp;= \int_2^3 -x+3 \, dx + \int_3^5 x^2-8x+15 \, dx\\
+&amp;= \left. \left( -\frac{1}{2}x^2 + 3x \right)\right|_2^3 + \left. \left( \frac{1}{3}x^3 - 4x^2 + 15x  \right)\right|_3^5\\
+&amp;= \left(\frac{9}{2}-4\right) + \left( \frac{50}{3}-18 \right)\\
+&amp;= \frac{127}{6} - 22 = -\frac{5}{6}\text{.}
 \end{align*}
 </div>
-<p class="continuation">so the distance traveled by the object on <span class="process-math">\([0,4]\)</span> is <span class="process-math">\(20\)</span> meters.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/4_4_Ez2Soln.svg" role="img" class="contained"></div></div></div>
 </li>
 <li>
-<p>To find the average velocity of the object on <span class="process-math">\([12,24]\text{,}\)</span> we first evaluate <span class="process-math">\(\int_{12}^{24} v(t) \, dt\text{.}\)</span> To do so, we use the fact that <span class="process-math">\(v\)</span> is piecewise linear and employ standard geometric formulas to determine the value of the integral. The area of the trapezoid formed by <span class="process-math">\(v(t)\)</span> and the vertical line segments at <span class="process-math">\(t = 12\)</span> and <span class="process-math">\(t = 16\)</span> is</p>
+<p>To find the average value of <span class="process-math">\(f\)</span> on <span class="process-math">\([0,5]\)</span> we need to first calculate</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-A_1 = \frac{1}{2}(f(12) + f(16))(4) = 2(9 + 15) = 48\text{.}
+\int_0^5 f(x) \, dx\text{.}
 \end{equation*}
 </div>
-<p class="continuation">The area of the rectangle formed by <span class="process-math">\(v(t)\)</span> and the vertical line segments at <span class="process-math">\(t = 16\)</span> and <span class="process-math">\(t = 20\)</span> is</p>
+<p class="continuation">Using our work in (a) and considering the subintervals <span class="process-math">\([0,2]\)</span> and <span class="process-math">\([2,5]\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+\int_0^5 f(x) \, dx &amp;= \int_0^2 f(x) \, dx + \int_2^5 f(x) \, dx\\
+&amp;= \int_0^2 -x^2 + 2x + 1 \, dx - \frac{5}{6}\\
+&amp;= \left. \left( -\frac{1}{3}x^3 + x^2 + x \right)\right|_0^2 - \frac{5}{6}\\
+&amp;= \frac{10}{3} - \frac{5}{6}\\
+&amp;= \frac{5}{2}\text{.}
+\end{align*}
+</div>
+<p class="continuation">Therefore, the average value of <span class="process-math">\(f\)</span> on <span class="process-math">\([0,5]\)</span> is</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-A_2 = 4 \cdot 15 = 60\text{.}
+\displaystyle f_{\operatorname{AVG} [0,5]} = \frac{1}{5-0} \int_0^5 f(x) \, dx = \left(\frac{1}{5}\right) \left(\frac{5}{2}\right) = \frac{1}{2}\text{.}
 \end{equation*}
 </div>
-<p class="continuation">Finally, the area of the trapezoid formed by <span class="process-math">\(v(t)\)</span> and the vertical line segments at <span class="process-math">\(t = 20\)</span> and <span class="process-math">\(t = 24\)</span> is</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-A_3 = \frac{1}{2}(f(20) + f(24))(4) = 2(15 + 6) = 42\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Thus,</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\int_{12}^{24} v(t) \, dt = A_1 + A_2 + A_3 = 48 + 60 + 42 = 150\text{,}
-\end{equation*}
-</div>
-<p class="continuation">from which it follows that</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\displaystyle v_{\operatorname{AVG} [12,24]}  = \frac{1}{24-12} \int_{12}^{24} v(t) \, dt = \frac{150}{12} = 12.5
-\end{equation*}
-</div>
-<p class="continuation">meters per minute.</p>
 </li>
 <li>
-<p>To find where <span class="process-math">\(a(t)\)</span> is greatest, we recall that <span class="process-math">\(a(t) = v'(t)\text{,}\)</span> so we are seeking the location where the slope of the tangent line to <span class="process-math">\(v(t)\)</span> is maximized on the interval <span class="process-math">\([0,24]\text{.}\)</span> From the graph, there are only two possible intervals where this can occur: <span class="process-math">\(0 \lt t \lt 4\)</span> and <span class="process-math">\(12 \lt t \lt 16\text{,}\)</span> as these are both where <span class="process-math">\(v\)</span> is increasing and thus <span class="process-math">\(a(t) = v'(t)\)</span> is positive.</p>
-<p>On <span class="process-math">\(12 \lt t \lt 16\text{,}\)</span> <span class="process-math">\(a(t) = v'(t) = \frac{3}{2}\)</span> since this is the slope of the line that forms <span class="process-math">\(v(t)\)</span> on this interval. On <span class="process-math">\(0 \lt t \lt 4\text{,}\)</span> <span class="process-math">\(v(t) = -\frac{1}{4}t^3 + \frac{3}{2}t^2 + 1\text{,}\)</span> so <span class="process-math">\(a(t) = v'(t) = -\frac{3}{4}t^2 + 3t\text{.}\)</span> We see that <span class="process-math">\(a(t)\)</span> is a quadratic function that opens down, so its maximum occurs at its vertex, which is located where <span class="process-math">\(a'(t) = 0\text{.}\)</span> We know that <span class="process-math">\(a'(t) = -\frac{3}{2}t + 3\text{,}\)</span> and <span class="process-math">\(0 = -\frac{3}{2}t + 3\)</span> implies <span class="process-math">\(t = 2\text{.}\)</span> Moreover, <span class="process-math">\(a(2) = v'(2) = -\frac{3}{4} \cdot 2^2 + 3(2) = 3\text{.}\)</span> Clearly <span class="process-math">\(a(2) = 3 \gt \frac{3}{2}\text{,}\)</span> so the object's maximum acceleration is <span class="process-math">\(3\)</span> meters per minute per minute at the instant <span class="process-math">\(t = 2\text{.}\)</span></p>
-</li>
-<li>
-<p>Let <span class="process-math">\(V(t) = v(t) + c\)</span> be the new velocity function that is the original velocity <span class="process-math">\(v\)</span> increased by <span class="process-math">\(c\)</span> at every time. We want to know the value of <span class="process-math">\(c\)</span> for which total distance traveled on <span class="process-math">\([12,24]\)</span> is <span class="process-math">\(210\)</span> meters. For this to be true, we must have that</p>
+<p>Since <span class="process-math">\(\int_0^5 f(x) \, dx = \frac{5}{2}\text{,}\)</span> we need a function <span class="process-math">\(g\)</span> that matches <span class="process-math">\(f\)</span> but that is also defined on <span class="process-math">\([5,7]\)</span> so that <span class="process-math">\(\int_5^7 g(x) \, dx = -\frac{5}{2}\text{.}\)</span> To preserve continuity, we will choose a formula for <span class="process-math">\(g\)</span> that also satisfies <span class="process-math">\(g(5) = 0\text{.}\)</span> It's natural to pick a linear function whose graph encloses <span class="process-math">\(5/2\)</span> units of area, so one that has a slope of <span class="process-math">\(5/4\text{.}\)</span> To check, we compute</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-210 = \int_{12}^{24} V(t) \, dt = \int_{12}^{24} \left( v(t) + c \right) \, dt\text{.}
-\end{equation*}
+\begin{align*}
+\int_5^7 -\frac{5}{4}(x - 5) \, dx &amp;= -\left(\frac{5}{4}\right) \left. \left(\frac{x^2}{2} - 5x\right) \right|_5^7\\
+&amp;= -\left(\frac{5}{4}\right) \left( \frac{49-25}{2} - 5(7-5) \right)\\
+&amp;= -\left(\frac{5}{4}\right) \left( 12 - 10 \right)\\
+&amp;= -\left(\frac{5}{4}\right) \left( 2 \right) = -\frac{5}{2}\text{.}
+\end{align*}
 </div>
-<p class="continuation">Using the additive property of the definite integral and our earlier work in (b), we can say that</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-210 = \int_{12}^{24} v(t) \, dt + \int_{12}^{24} c \, dt = 150 + \int_{12}^{24} c \, dt\text{,}
-\end{equation*}
-</div>
-<p class="continuation">so</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\int_{12}^{24} c \, dt = 60\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Since the function <span class="process-math">\(f(t) = c\)</span> is constant, the integral <span class="process-math">\(\int_{12}^{24} c \, dt\)</span> represents the area of a rectangle <span class="process-math">\(12\)</span> units wide and <span class="process-math">\(c\)</span> units tall, so  <span class="process-math">\(\int_{12}^{24} c \, dt = 12c\text{.}\)</span> Hence,</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-12c = 60
-\end{equation*}
-</div>
-<p class="continuation">so <span class="process-math">\(c = \frac{60}{12} = 5\text{.}\)</span></p>
+<p class="continuation">So <span class="process-math">\(g\)</span> defined so that <span class="process-math">\(g(x) = f(x)\)</span> for <span class="process-math">\(0 \le x \lt 5\)</span> and <span class="process-math">\(g(x) = -\frac{5}{4}(x - 5)\)</span> on <span class="process-math">\(5 \le x \le 7\)</span> has the desired property. A graph of <span class="process-math">\(g\)</span> is shown in the figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/4_4_Ez2Solnc.svg" role="img" class="contained"></div></div></div>
 </li>
 </ol>
 </div>
-<span class="incontext"><a href="sec-4-4-FTC.html#uuw" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-4-4-FTC.html#GIO" class="internal">in-context</a></span>
 </body>
 </html>

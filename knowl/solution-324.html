@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:23:31-07:00       *-->
+<!--*       on 2023-02-03T12:33:50-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,27 +16,40 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.4.2.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.4.3.1</span><span class="period">.</span>
 </h4>
-<p>Let <span class="process-math">\(u = t^2\)</span> and <span class="process-math">\(dv = e^t \, dt\text{.}\)</span> Then <span class="process-math">\(du = 2t \, dt\)</span> and <span class="process-math">\(v = e^t\text{,}\)</span> and thus</p>
+<p>We can choose to let <span class="process-math">\(u\)</span> be either <span class="process-math">\(e^t\)</span> or <span class="process-math">\(\cos(t)\text{;}\)</span> we pick <span class="process-math">\(u = \cos(t)\text{,}\)</span> and thus <span class="process-math">\(dv = e^t \, dt\text{.}\)</span> With <span class="process-math">\(du = -\sin(t) \, dt\)</span> and <span class="process-math">\(v = e^t\text{,}\)</span> integration by parts tells us that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\int t^2 e^t \, dt = t^2 e^t - \int 2t e^t \, dt\text{.}
+\int e^t \cos(t) \, dt = e^t \cos(t) - \int e^t (-\sin(t))\, dt\text{,}
 \end{equation*}
 </div>
-<p>The integral on the right side is simpler to evaluate than the one on the left, but it still requires integration by parts. Now letting <span class="process-math">\(u = 2t\)</span> and <span class="process-math">\(dv = e^t \, dt\text{,}\)</span> we have <span class="process-math">\(du = 2\, dt\)</span> and <span class="process-math">\(v = e^t\text{,}\)</span> so that</p>
+<p class="continuation">or equivalently that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\int t^2 e^t \, dt = t^2 e^t - \left( 2t e^t - \int 2 e^t \, dt \right)\text{.}
-\end{equation*}
+\begin{equation}
+\int e^t \cos(t) \, dt = e^t \cos(t) + \int e^t \sin(t) \, dt\text{.}\tag{5.4.4}
+\end{equation}
 </div>
-<p>(Note the parentheses, which remind us to distribute the minus sign to the entire value of the integral <span class="process-math">\(\int 2t e^t \, dt\text{.}\)</span>) The final integral on the right is a basic one; evaluating that integral and distributing the minus sign, we find</p>
+<p>The new integral has the same algebraic structure as the original one. While the overall situation isn't necessarily better than what we started with, it hasn't gotten worse. Thus, we proceed to integrate by parts again. This time we let <span class="process-math">\(u = \sin(t)\)</span> and <span class="process-math">\(dv = e^t \, dt\text{,}\)</span> so that <span class="process-math">\(du = \cos(t) \, dt\)</span> and <span class="process-math">\(v = e^t\text{,}\)</span> which implies</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation}
+\int e^t \cos(t) \, dt = e^t \cos(t) + \left( e^t \sin(t) - \int e^t \cos(t) \, dt \right)\text{.}\tag{5.4.5}
+\end{equation}
+</div>
+<p>We seem to be back where we started, as two applications of integration by parts has led us back to the original problem, <span class="process-math">\(\int e^t \cos(t) \, dt\text{.}\)</span> But if we look closely at <a href="" class="xref" data-knowl="./knowl/E_IBPtwice2.html" title="Equation 5.4.5">Equation (5.4.5)</a>, we see that we can use algebra to solve for the value of the desired integral. Adding <span class="process-math">\(\int e^t \cos(t) \, dt\)</span> to both sides of the equation, we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/E_IBPtwice2.html">
 \begin{equation*}
-\int t^2 e^t \, dt = t^2 e^t - 2t e^t +  2 e^t + C\text{.}
+2 \int e^t \cos(t) \, dt = e^t \cos(t) +  e^t \sin(t) + C\text{,}
 \end{equation*}
 </div>
+<p class="continuation">and therefore</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/E_IBPtwice2.html">
+\begin{equation*}
+\int e^t \cos(t) \, dt = \frac{1}{2} \left( e^t \cos(t) +  e^t \sin(t) \right) + C\text{.}
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-5-4-parts.html#rar" class="internal">in-context</a></span>
+<p>Note that in the second to last step we have an indefinite integral on the left hand side of the equation. Since it is a family of functions we need a family of functions on the right hand side as well which required the introduction of the integration constant <span class="process-math">\(C\text{.}\)</span> Also note that since <span class="process-math">\(C\)</span> is an aribitrary constant dividing by 2 in the final step doesn't change that. It is traditional to just write <span class="process-math">\(C\)</span> although it is a different arbitrary constant than the constant in the previous line.</p>
+</div>
+<span class="incontext"><a href="sec-5-4-parts.html#XhA" class="internal">in-context</a></span>
 </body>
 </html>

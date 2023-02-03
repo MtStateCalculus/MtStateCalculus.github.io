@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:22:48-07:00       *-->
+<!--*       on 2023-02-03T12:33:10-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,31 +16,69 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">2.2.3.2.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">2.2.3.3.1</span><span class="period">.</span>
 </h4>
 <ol class="lower-alpha">
 <li>
-<p>The slope of the line tangent to the graph of <span class="process-math">\(f\)</span> at <span class="process-math">\(a = \frac{\pi}{4}\)</span> is given by <span class="process-math">\(f'\left(\frac{\pi}{4}\right)\text{.}\)</span> To find <span class="process-math">\(f'\left(\frac{\pi}{4}\right)\)</span> we first find <span class="process-math">\(f'(x)\text{,}\)</span> which is <span class="process-math">\(f'(x) = -3\sin(x) - 2\cos(x)\text{.}\)</span> Thus,</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-f'\left(\frac{\pi}{4}\right) &amp;= -3\sin\left(\frac{\pi}{4}\right) - 2\cos\left(\frac{\pi}{4}\right)\\
-&amp; -3\left(\frac{\sqrt{2}}{2}\right) - 3\left(\frac{\sqrt{2}}{2}\right) = -5\left(\frac{\sqrt{2}}{2}\right)\text{.}
-\end{align*}
-</div>
-</li>
-<li><p>The linearization <span class="process-math">\(L(x)\)</span> to <span class="process-math">\(f\)</span> at <span class="process-math">\(a = \pi\)</span> is <span class="process-math">\((x) = f(\pi) + f'(\pi)(x-\pi)\)</span>L. We calculated <span class="process-math">\(f'(x)\)</span> in part (a) and so <span class="process-math">\(f'(\pi) = -3\sin(\pi) - 2\cos(\pi) = 2\text{.}\)</span> We also have <span class="process-math">\(f(\pi) = 3\cos(\pi) - 2\sin(\pi) + 6 = 3\text{.}\)</span> Hence <span class="process-math">\(L(x) = 3+2(x-\pi)\text{.}\)</span></p></li>
-<li><p>A differentiable function <span class="process-math">\(f\)</span> is increasing at <span class="process-math">\(x=a\)</span> if and only if <span class="process-math">\(f'(a) \gt 0\)</span> and decreasing if and only if <span class="process-math">\(f'(a) \lt 0\text{.}\)</span> Now <span class="process-math">\(f'\left(\frac{\pi}{2}\right) = -3\sin\left(\frac{\pi}{2}\right) - 2\cos\left(\frac{\pi}{2}\right) = -3\text{,}\)</span> so <span class="process-math">\(f\)</span> is decreasing at <span class="process-math">\(a = \frac{\pi}{2}\text{.}\)</span></p></li>
-<li>
-<p>If a curve defined by a function <span class="process-math">\(f\)</span> is concave up at <span class="process-math">\(x=a\text{,}\)</span> then the tangent line to <span class="process-math">\(f\)</span> at <span class="process-math">\(x=a\)</span> lies below the curve and if the graph of <span class="process-math">\(f\)</span> is concave down at <span class="process-math">\(x=a\text{,}\)</span> then the tangent line to <span class="process-math">\(f\)</span> at <span class="process-math">\(x=a\)</span> lies above the curve. The concavity of a curve is determined by the second derivative and <span class="process-math">\(f''(x) = -3\cos(x)+2\sin(x)\text{.}\)</span> Since</p>
+<p>By definition, we know that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-f''\left(\frac{3\pi}{2}\right) = -3\cos\left(\frac{3\pi}{2}\right) + 2\sin\left(\frac{3\pi}{2}\right) = -2\text{,}
+f'(x) = \lim_{h \to 0} \frac{\sin(x+h) - \sin(x)}{h}\text{.}
 \end{equation*}
 </div>
-<p class="continuation">the graph of <span class="process-math">\(f\)</span> is concave down at <span class="process-math">\(a = \frac{3\pi}{2}\)</span> and the tangent line to <span class="process-math">\(f\)</span> lies above the curve at this point.</p>
+<p class="continuation">By the sum of two angles identity for the sine function, <span class="process-math">\(\sin(x+h) = \sin(x)\cos(h) + \cos(x)\sin(h)\text{,}\)</span> and thus</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(x) = \lim_{h \to 0} \frac{\sin(x)\cos(h) + \cos(x)\sin(h) - \sin(x)}{h}\text{..}
+\end{equation*}
+</div>
+<p class="continuation">Combining the first and last terms and removing a factor of <span class="process-math">\(\sin(x)\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(x) = \lim_{h \to 0} \frac{ \sin(x)(\cos(h)-1) + \cos(x)\sin(h) - \sin(x) }{h}\text{..}
+\end{equation*}
+</div>
 </li>
+<li>
+<p>Continuing our work in (a), we divide each part of the numerator by <span class="process-math">\(h\)</span> and see it follows</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(x) = \lim_{h \to 0} \left( \frac{\sin(x) (\cos(h)-1) }{h}  + \frac{\cos(x)\sin(h)}{h} \right)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Next, we note that <span class="process-math">\(\sin(x)\)</span> does not depend on <span class="process-math">\(h\text{,}\)</span> and likewise <span class="process-math">\(\cos(x)\)</span> is independent of <span class="process-math">\(h\text{.}\)</span> It thus makes sense to view those constants as being outside the limit being taken, and also that the limit of a sum is the sum of the limits. Hence we write</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(x) = \sin(x) \cdot \lim_{h \to 0} \left( \frac{\cos(h)-1}{h} \right)  + \cos(x) \cdot \lim_{h \to 0} \left( \frac{\sin(h)}{h} \right)\text{.}
+\end{equation*}
+</div>
+</li>
+<li>
+<p>Using small positive and negative values of <span class="process-math">\(h\)</span> to estimate the desired limits, we find that it appears</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{h \to 0} \left( \frac{\cos(h)-1}{h} \right) = 0
+\end{equation*}
+</div>
+<p class="continuation">and</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{h \to 0} \left( \frac{\sin(h)}{h} \right) = 1
+\end{equation*}
+</div>
+<p class="continuation">It suffices in each case to consider <span class="process-math">\(h\)</span>-values of <span class="process-math">\(h = \pm 0.01, \pm 0.001, \pm 0.0001\text{.}\)</span></p>
+</li>
+<li>
+<p>Combining our results in (b) and (c), we have found that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(x) = \sin(x) \cdot \lim_{h \to 0} \left( \frac{\cos(h)-1}{h} \right)  + \cos(x) \cdot \lim_{h \to 0} \left( \frac{\sin(h)}{h} \right) = \sin(x) \cdot 0 + \cos(x) \cdot 1 = \cos(x)\text{.}
+\end{equation*}
+</div>
+</li>
+<li><p>The argument for showing <span class="process-math">\(\frac{d}{dx}[\cos(x)] = -\sin(x)\)</span> is almost identical. Do note that the sum of two angles identity for <span class="process-math">\(\cos(\alpha + \beta)\)</span> is <span class="process-math">\(\cos(\alpha + \beta) = \cos(\alpha) \cos(\beta) - \sin(\alpha) \sin(\beta)\text{.}\)</span></p></li>
 </ol>
 </div>
-<span class="incontext"><a href="sec-2-2-sin-cos.html#NXF" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-2-2-sin-cos.html#alX" class="internal">in-context</a></span>
 </body>
 </html>

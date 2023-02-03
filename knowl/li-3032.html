@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:23:18-07:00       *-->
+<!--*       on 2023-02-03T12:33:38-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,16 +15,38 @@
 </head>
 <body class="ignore-math">
 <article class="li"><h5 class="heading">
-<span class="type">Item</span><span class="space"> </span><span class="codenumber">a</span><span class="period">.</span>
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">4.4.5.7.b</span><span class="period">.</span>
 </h5>
-<p>Since the units on a rectangle in a Riemann sum are cal/min for the height and min for the width, the units on the area of such a rectangle are calories, and hence the units on area under the curve <span class="process-math">\(y = c(t)\)</span> are given in total calories. Hence, the total calories burned during the first 10 minutes of the workout is given by the definite integral <span class="process-math">\(\int_0^{10} c(t) \, dt\text{.}\)</span> We use the FTC and evaluate the integral, finding that</p>
+<p>To find the average velocity of the object on <span class="process-math">\([12,24]\text{,}\)</span> we first evaluate <span class="process-math">\(\int_{12}^{24} v(t) \, dt\text{.}\)</span> To do so, we use the fact that <span class="process-math">\(v\)</span> is piecewise linear and employ standard geometric formulas to determine the value of the integral. The area of the trapezoid formed by <span class="process-math">\(v(t)\)</span> and the vertical line segments at <span class="process-math">\(t = 12\)</span> and <span class="process-math">\(t = 16\)</span> is</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-\int_0^{10} (-0.05t^2 + t + 10) \, dt =\mathstrut \amp  \left. \left( -\frac{0.05}{3} t^3 + \frac{1}{2} t^2 + 10t \right) \right|_0^{10}\\
-=\mathstrut \amp  \left( -\frac{0.05}{3} (10)^3 + \frac{1}{2} (10)^2 + 10(10) \right) - (-0 + 0 + 0)\\
-=\mathstrut \amp  \frac{400}{3} \ \text{calories}\text{.}
-\end{align*}
+\begin{equation*}
+A_1 = \frac{1}{2}(f(12) + f(16))(4) = 2(9 + 15) = 48\text{.}
+\end{equation*}
 </div>
-<p class="continuation">Thus, the person burned exactly <span class="process-math">\(\frac{400}{3}\)</span> calories in the first 10 minutes of the workout.</p></article><span class="incontext"><a href="sec-4-4-FTC.html#Hjn" class="internal">in-context</a></span>
+<p class="continuation">The area of the rectangle formed by <span class="process-math">\(v(t)\)</span> and the vertical line segments at <span class="process-math">\(t = 16\)</span> and <span class="process-math">\(t = 20\)</span> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+A_2 = 4 \cdot 15 = 60\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Finally, the area of the trapezoid formed by <span class="process-math">\(v(t)\)</span> and the vertical line segments at <span class="process-math">\(t = 20\)</span> and <span class="process-math">\(t = 24\)</span> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+A_3 = \frac{1}{2}(f(20) + f(24))(4) = 2(15 + 6) = 42\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Thus,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_{12}^{24} v(t) \, dt = A_1 + A_2 + A_3 = 48 + 60 + 42 = 150\text{,}
+\end{equation*}
+</div>
+<p class="continuation">from which it follows that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\displaystyle v_{\operatorname{AVG} [12,24]}  = \frac{1}{24-12} \int_{12}^{24} v(t) \, dt = \frac{150}{12} = 12.5
+\end{equation*}
+</div>
+<p class="continuation">meters per minute.</p></article><span class="incontext"><a href="sec-4-4-FTC.html#xYW" class="internal">in-context</a></span>
 </body>
 </html>

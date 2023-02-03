@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:25:05-07:00       *-->
+<!--*       on 2023-02-03T12:35:31-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,9 +14,27 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="li"><h4 class="heading">
-<span class="type">Item</span><span class="period">.</span>
-</h4>
-<p>We can often assume a solution to a given problem can be written as a power series, then use the information in the problem to determine the coefficients in the power series. This method allows us to approximate solutions to certain problems using partial sums of the power series; that is, we can find approximate solutions that are polynomials.</p></article><span class="incontext"><a href="sec-8-6-powerseries.html#Xbw" class="internal">in-context</a></span>
+<article class="li"><h5 class="heading">
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">8.6.4.4.a</span><span class="period">.</span>
+</h5>
+<p>Observe that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+f'(x) \amp = \sum_{k=1}^{\infty} ka_kx^{k-1}\\
+f''(x) \amp = \sum_{k=2}^{\infty} k(k-1)a_kx^{k-2}\\
+f^{(3)}(x) \amp = \sum_{k=3}^{\infty} k(k-1)(k-2)a_kx^{k-3}\\
+f^{(4)}(x) \amp = \sum_{k=4}^{\infty} k(k-1)(k-2)(k-3)a_kx^{k-4}
+\end{align*}
+</div>
+<p class="continuation">and therefore</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+f(0) \amp = a_0\\
+f'(0) \amp = a_1\\
+f''(0) \amp = 2!a_2\\
+f^{(3)}(0) \amp = 3!a_3\\
+f^{(4)}(0) \amp = 4!a_4\text{.}
+\end{align*}
+</div></article><span class="incontext"><a href="sec-8-6-powerseries.html#Itk" class="internal">in-context</a></span>
 </body>
 </html>

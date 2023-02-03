@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:24:13-07:00       *-->
+<!--*       on 2023-02-03T12:34:35-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,14 +15,19 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>As the heating unit turns on and off in the room, the temperature in the room is</p>
+<p>We use separation of variables and write <span class="process-math">\(\frac{1}{P} \frac{dP}{dt} = 1.03\text{.}\)</span> We then have</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-T_r=70+10\sin t\text{.}
+\int \frac{1}{P} \frac{dP}{dt} dt = \int 0.03 dt
 \end{equation*}
 </div>
-<p class="continuation">Implement Euler's method with a step size of <span class="process-math">\(\Delta t = 0.1\)</span> to approximate the temperature of Alice's coffee over the time interval <span class="process-math">\(0\leq t\leq
-50\text{.}\)</span> This will most easily be performed using a spreadsheet such as <em class="emphasis">Excel</em>. Graph the temperature of her coffee and room temperature over this interval.</p>
-<span class="incontext"><a href="sec-7-3-euler.html#OCV" class="internal">in-context</a></span>
+<p class="continuation">and thus <span class="process-math">\(\int \frac{1}{P} dP = \int 0.03 dt\text{.}\)</span> Evaluating the integrals on each side, we have <span class="process-math">\(\ln|P| = 0.03 t + c\)</span> By definition of the logarithm function, it follows that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+|P| = e^{0.03t + c} = e^c e^{0.03t} = C e^{0.03t}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Incorporating the <span class="process-math">\(\pm\)</span> that follows from the abslute value sign into the constant <span class="process-math">\(C\text{,}\)</span> we conclude that <span class="process-math">\(P = Ce^{0.03t}\text{.}\)</span></p>
+<span class="incontext"><a href="sec-7-4-separable.html#kbR" class="internal">in-context</a></span>
 </body>
 </html>

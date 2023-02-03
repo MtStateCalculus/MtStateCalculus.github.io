@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:23:46-07:00       *-->
+<!--*       on 2023-02-03T12:34:09-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,18 +15,18 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Slicing perpendicular to the axis of rotation, we get slices of thickness <span class="process-math">\(\Delta y\)</span> that are shaped like washers. The outer radius, <span class="process-math">\(R(y)\text{,}\)</span> is given by <span class="process-math">\(R(y) = 4\text{;}\)</span> the innner radius is given by the function <span class="process-math">\(y = \sqrt{x}\text{,}\)</span> but expressed with <span class="process-math">\(x\)</span> as a function of <span class="process-math">\(y\text{,}\)</span> so <span class="process-math">\(r(y) = y^2\text{.}\)</span> It follows that a representative washer slice has volume</p>
+<p>(You should draw a picture of the solid, based on the figure above, with the region <span class="process-math">\(R\)</span> revolved about <span class="process-math">\(y = -1\text{.}\)</span>)  We slice vertically so that our cross sections are washers with thickness <span class="process-math">\(\triangle x\text{.}\)</span> Because we are revolving about <span class="process-math">\(y = -1\text{,}\)</span> the outer radius is <span class="process-math">\(R(x) = 2+\frac{1}{2}(x-2)^2\text{,}\)</span> while the inner radius is <span class="process-math">\(1+\frac{1}{2}x^2\text{.}\)</span> Hence the volume of a typical slice, which has thickness <span class="process-math">\(\triangle x\)</span> is given by</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-V_{\text{slice}} = \pi (R(y)^2 - r(y)^2) \Delta y = \pi (16 - y^4) \Delta y\text{.}
+V_{\text{slice}} \approx \pi \left( R(x)^2 - r(x)^2 \right) \triangle x = \pi\left[\left(2+\frac{1}{2}(x-2)^2\right)^2 - \left(1+\frac{1}{2}x^2\right)^2 \right] \triangle x\text{.}
 \end{equation*}
 </div>
-<p class="continuation">Further, since <span class="process-math">\(y = \sqrt{x}\)</span> and <span class="process-math">\(x = 4\)</span> intersect at the point <span class="process-math">\((4,2)\text{,}\)</span> we integrate from <span class="process-math">\(y = 0\)</span> to <span class="process-math">\(y = 2\)</span> and thus find that the total volume is</p>
+<p class="continuation">Hence, the volume of the solid obtained by revolving the region <span class="process-math">\(R\)</span> around the line <span class="process-math">\(y=-1\)</span> is given by</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-V = \int_0^2 \pi (16 - y^4) \, dy\text{.}
+V = \int_0^{1.5} \pi\left[\left(2+\frac{1}{2}(x-2)^2\right)^2 - \left(1+\frac{1}{2}x^2\right)^2 \right] \ dx = \frac{315}{32} \pi
 \end{equation*}
 </div>
-<span class="incontext"><a href="sec-6-2-volume.html#spx" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-6-2-volume.html#kFY" class="internal">in-context</a></span>
 </body>
 </html>

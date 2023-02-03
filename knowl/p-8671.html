@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:24:32-07:00       *-->
+<!--*       on 2023-02-03T12:34:55-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,17 +14,34 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>The half-life of GLP-1 is the time it takes for half of the hormone to decay in its medium. For this exercise, assume the half-life of GLP-1 is 5 minutes. So if <span class="process-math">\(A\)</span> is the amount of GLP-1 in plasma at some time <span class="process-math">\(t\text{,}\)</span> then only <span class="process-math">\(\frac{A}{2}\)</span> of the hormone will be present after <span class="process-math">\(t+5\)</span> minutes. Suppose <span class="process-math">\(A_0 = 100\)</span> grams of the hormone are initially present in plasma.</p>
-<ol class="lower-alpha">
-<li><p>Let <span class="process-math">\(A_1\)</span> be the amount of GLP-1 present after 5 minutes. Find the value of <span class="process-math">\(A_1\text{.}\)</span></p></li>
-<li><p>Let <span class="process-math">\(A_2\)</span> be the amount of GLP-1 present after 10 minutes. Find the value of <span class="process-math">\(A_2\text{.}\)</span></p></li>
-<li><p>Let <span class="process-math">\(A_3\)</span> be the amount of GLP-1 present after 15 minutes. Find the value of <span class="process-math">\(A_3\text{.}\)</span></p></li>
-<li><p>Let <span class="process-math">\(A_4\)</span> be the amount of GLP-1 present after 20 minutes. Find the value of <span class="process-math">\(A_4\text{.}\)</span></p></li>
-<li><p>Let <span class="process-math">\(A_n\)</span> be the amount of GLP-1 present after <span class="process-math">\(5n\)</span> minutes. Find a formula for <span class="process-math">\(A_n\text{.}\)</span></p></li>
-<li><p>Does the sequence <span class="process-math">\(\{A_n\}\)</span> converge or diverge? If the sequence converges, find its limit and explain why this value makes sense in the context of this problem.</p></li>
-<li><p>Determine the number of minutes it takes until the amount of GLP-1 in plasma is 1 gram.</p></li>
-</ol>
-<span class="incontext"><a href="sec-8-1-sequences.html#yKD" class="internal">in-context</a></span>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<ul class="disc">
+<li>
+<p>An infinite geometric series is an infinite sum of the form</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation}
+a + ar + ar^2 + \cdots = \sum_{n=0}^{\infty} ar^n\text{,}\tag{8.2.6}
+\end{equation}
+</div>
+<p class="continuation">where <span class="process-math">\(a\)</span> and <span class="process-math">\(r\)</span> are real numbers such that <span class="process-math">\(r \ne 0\text{.}\)</span></p>
+</li>
+<li>
+<p>The <span class="process-math">\(n\)</span>th partial sum <span class="process-math">\(S_n\)</span> of an infinite geometric series is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+S_n = a+ar+ar^2+ \cdots + ar^{n-1}\text{.}
+\end{equation*}
+</div>
+</li>
+<li>
+<p>If <span class="process-math">\(|r| \lt  1\text{,}\)</span> then using the fact that <span class="process-math">\(S_n = a\frac{1-r^n}{1-r}\text{,}\)</span> it follows that the sum <span class="process-math">\(S\)</span> of the infinite geometric series <a href="" class="xref" data-knowl="./knowl/eq-8-2-geometric-series-2.html" title="Equation 8.2.6">(8.2.6)</a> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq-8-2-geometric-series-2.html">
+\begin{equation*}
+S = \lim_{n \to \infty} S_n = \lim_{n \to \infty} a\frac{1-r^n}{1-r} = \frac{a}{1-r}
+\end{equation*}
+</div>
+</li>
+</ul>
+<span class="incontext"><a href="sec-8-2-geometric.html#HZp" class="internal">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:23:23-07:00       *-->
+<!--*       on 2023-02-03T12:33:44-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,8 +14,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
-<p>In the last part of <a href="sec-5-1-antid-graphs.html" class="internal" title="Section 5.1: Constructing Accurate Graphs of Antiderivatives">Section 5.1</a>, we studied integral functions of the form <span class="process-math">\(A(x) = \int_c^x f(t) \, dt\text{.}\)</span> <a href="" class="xref" data-knowl="./knowl/F-5-1-IntFxn.html" title="Figure 5.1.5">Figure 5.1.5</a> is a particularly important image to keep in mind as we work with integral functions, and the corresponding <a class="external" href="https://gvsu.edu/s/cz" target="_blank">applet</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-89-hidden.html" title="Footnote 5.2.1"><sup> 1 </sup></a> can help us understand the function <span class="process-math">\(A\text{.}\)</span> In what follows, we use the First FTC to gain additional understanding of the function <span class="process-math">\(A(x) = \int_c^x f(t) \, dt\text{,}\)</span> where the integrand <span class="process-math">\(f\)</span> is given (either through a graph or a formula), and <span class="process-math">\(c\)</span> is a constant.</p>
-<span class="incontext"><a href="sec-5-2-FTC2.html#DvN" class="internal">in-context</a></span>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<ol class="lower-alpha">
+<li><p>By the Second FTC, <span class="process-math">\(\frac{d}{dx} \left[ \int_4^x e^{t^2} \, dt \right] = e^{x^2}\text{.}\)</span></p></li>
+<li><p>By the First FTC, <span class="process-math">\(\int_{-2}^x \frac{d}{dt} \left[ \frac{t^4}{1+t^4} \right] \, dt = \left. \left[ \frac{t^4}{1+t^4} \right] \right|_{-2}^{x} = \frac{x^4}{1+x^4} - \frac{16}{17}\text{.}\)</span></p></li>
+<li><p>Since <span class="process-math">\(\int_{x}^{1} g(t) \, dt = -\int_{1}^{x} g(t) \, dt\text{,}\)</span> it follows by this fact and the Second FTC that <span class="process-math">\(\frac{d}{dx} \left[ \int_{x}^1 \cos(t^3) \, dt \right] = -\frac{d}{dx} \left[ \int_{1}^x \cos(t^3) \, dt \right] = -\cos(x^3)\text{.}\)</span></p></li>
+<li><p>By the First FTC, <span class="process-math">\(\int_{3}^x \frac{d}{dt} \left[ \ln(1+t^2) \right] \, dt = \left. \ln(1+t^2) \right|_{3}^{x} = \ln(1+x^2)-\ln(10)\text{.}\)</span></p></li>
+<li><p>Letting <span class="process-math">\(F(x) = \int_4^x \sin(t^2) \, dt\)</span> it follows that we need to compute <span class="process-math">\(\frac{d}{dx} \left[F(x^3)] \right]\text{.}\)</span> By the Chain Rule, <span class="process-math">\(\frac{d}{dx} \left[F(x^3)] \right] = F'(x^3) \cdot 3x^2\text{.}\)</span> By the Second FTC, we know that <span class="process-math">\(F'(x) = \sin(x^2)\text{,}\)</span> and thus <span class="process-math">\(\frac{d}{dx} \left[ \int_4^{x^3} \sin(t^2) \, dt \right] = \frac{d}{dx} \left[F(x^3)] \right] = \sin(x^6) \cdot 3x^2\text{.}\)</span></p></li>
+</ol>
+<span class="incontext"><a href="sec-5-2-FTC2.html#PTs" class="internal">in-context</a></span>
 </body>
 </html>

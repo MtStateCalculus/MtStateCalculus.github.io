@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:24:14-07:00       *-->
+<!--*       on 2023-02-03T12:34:38-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,14 +14,25 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>The strategy of <a href="" class="xref" data-knowl="./knowl/Ex-7-4-1.html" title="Example 7.4.1">Example 7.4.1</a> may be applied to any differential equation of the form <span class="process-math">\(\frac{dy}{dt} = g(y) \cdot h(t)\text{,}\)</span> and any differential equation of this form is said to be <em class="emphasis">separable</em>. We work to solve a separable differential equation by writing</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/Ex-7-4-1.html">
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<p>Separating the variables to solve the differential equation yields</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\frac{1}{g(y)} \frac{dy}{dt} = h(t)\text{,}
+\frac{1}{M} \, dM = k \, dt
 \end{equation*}
 </div>
-<p class="continuation">and then integrating both sides with respect to <span class="process-math">\(t\text{.}\)</span> After integrating, we try to solve algebraically for <span class="process-math">\(y\)</span> in order to write <span class="process-math">\(y\)</span> as a function of <span class="process-math">\(t\text{.}\)</span></p>
-<span class="incontext"><a href="sec-7-4-separable.html#wIZ" class="internal">in-context</a></span>
+<p class="continuation">so</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int \frac{1}{M} \, dM = \int k \, dt\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Integrating and solving for <span class="process-math">\(M\text{,}\)</span> we find <span class="process-math">\(\ln|M| = kt + C\)</span> and thus <span class="process-math">\(|M| = e^{kt+C} = e^{kt}e^C = Ke^{kt}\)</span> for some constant <span class="process-math">\(K\text{.}\)</span> By absorbing the absolute value into the constant <span class="process-math">\(K\text{,}\)</span> we have <span class="process-math">\(M = Ke^{kt}\text{.}\)</span> Using the initial condition <span class="process-math">\(M(0) = M_0\text{,}\)</span> it follows that <span class="process-math">\(K = M_0\text{.}\)</span> Therefore, the mass at time <span class="process-math">\(t\)</span> is given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+M(t) = M_0e^{kt}\text{.}
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-7-4-separable.html#KvS" class="internal">in-context</a></span>
 </body>
 </html>

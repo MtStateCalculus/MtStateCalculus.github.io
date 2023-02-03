@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:24:55-07:00       *-->
+<!--*       on 2023-02-03T12:35:20-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,11 +15,13 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Let <span class="process-math">\(f(x) = \cos(x)\text{.}\)</span></p>
-<ol class="lower-roman">
-<li><p>Calculate the first four derivatives of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=0\text{.}\)</span> Then find the fourth order Taylor polynomial <span class="process-math">\(P_4(x)\)</span> for <span class="process-math">\(\cos(x)\)</span> centered at <span class="process-math">\(0\text{.}\)</span></p></li>
-<li><p>Based on your results from part (i), find a general formula for <span class="process-math">\(f^{(k)}(0)\text{.}\)</span> (Think about how <span class="process-math">\(k\)</span> being even or odd affects the value of the <span class="process-math">\(k\)</span>th derivative.)</p></li>
-</ol>
-<span class="incontext"><a href="sec-8-5-taylor.html#dKP" class="internal">in-context</a></span>
+<p>Using the Ratio Test with the <span class="process-math">\(k\)</span>th term <span class="process-math">\(|x|^{k}\)</span> we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{k \to \infty} \frac{ |x|^{k+1} }{ |x|^{k} } = \lim_{k \to \infty} |x| = |x|\text{,}
+\end{equation*}
+</div>
+<p class="continuation">So the series <span class="process-math">\(\sum_{k=0}^{\infty} x^k\)</span> converges absolutely when <span class="process-math">\(|x| \lt  1\)</span> or for <span class="process-math">\(-1 \lt  x \lt  1\)</span> and diverges when <span class="process-math">\(|x| \gt 1\text{.}\)</span> Since the Ratio Test doesn't tell us what happens when <span class="process-math">\(x=1\text{,}\)</span> we need to check the endpoints separately.</p>
+<span class="incontext"><a href="sec-8-5-taylor.html#cys" class="internal">in-context</a></span>
 </body>
 </html>

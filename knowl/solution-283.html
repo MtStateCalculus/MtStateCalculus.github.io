@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:23:19-07:00       *-->
+<!--*       on 2023-02-03T12:33:38-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,61 +16,85 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.4.5.8.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.4.5.9.1</span><span class="period">.</span>
 </h4>
 <ol class="lower-alpha">
 <li>
-<p>The net signed area enclosed by <span class="process-math">\(f\)</span> and the <span class="process-math">\(x\)</span>-axis on the interval <span class="process-math">\([2,5]\)</span> is <span class="process-math">\(\int_2^5 f(x) \, dx\text{.}\)</span> The figure below shows a graph of <span class="process-math">\(f\)</span> on the interval <span class="process-math">\([0,5]\text{.}\)</span> To calculate the definite integral of <span class="process-math">\(f\)</span> on the interval <span class="process-math">\([2,5]\text{,}\)</span> we consider the integrals on the subintervals <span class="process-math">\([2,3]\)</span> and <span class="process-math">\([3,5]\text{.}\)</span> Doing so and using the Fundamental Theorem of Calculus,</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-\int_2^5 f(x) \, dx &amp;= \int_2^3 f(x) \, dx + \int_3^5 f(x) \, dx\\
-&amp;= \int_2^3 -x+3 \, dx + \int_3^5 x^2-8x+15 \, dx\\
-&amp;= \left. \left( -\frac{1}{2}x^2 + 3x \right)\right|_2^3 + \left. \left( \frac{1}{3}x^3 - 4x^2 + 15x  \right)\right|_3^5\\
-&amp;= \left(\frac{9}{2}-4\right) + \left( \frac{50}{3}-18 \right)\\
-&amp;= \frac{127}{6} - 22 = -\frac{5}{6}\text{.}
-\end{align*}
-</div>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/4_4_Ez2Soln.svg" role="img" class="contained"></div></div></div>
+<p>Since the given climb rate, <span class="process-math">\(c(h)\text{,}\)</span> is in feet per minute, and the new function, <span class="process-math">\(m(h)\text{,}\)</span> is measured in minutes per foot, it follows that <span class="process-math">\(m(h)\)</span> is the reciprocal of <span class="process-math">\(c(h)\text{,}\)</span> so <span class="process-math">\(m(h) = \frac{1}{c(h)}\text{.}\)</span> Hence we get the following updated table.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular" id="vsL">
+<tr>
+<td class="l m b1 r0 l0 t1 lines">
+<span class="process-math">\(h\)</span> (feet)</td>
+<td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(1000\)</span></td>
+<td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(2000\)</span></td>
+<td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(3000\)</span></td>
+<td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(4000\)</span></td>
+<td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(5000\)</span></td>
+<td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(6000\)</span></td>
+<td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(7000\)</span></td>
+<td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(8000\)</span></td>
+<td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(9000\)</span></td>
+<td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(10{,}000\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">
+<span class="process-math">\(c\)</span> (ft/min)</td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(925\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(875\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(830\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(780\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(730\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(685\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(635\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(585\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(535\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(490\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(440\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">
+<span class="process-math">\(m\)</span> (min/ft)</td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{925}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{875}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{830}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{780}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{730}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{685}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{635}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{585}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{535}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{490}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{440}\)</span></td>
+</tr>
+</table></div></div></div>
 </li>
+<li><p>Given an original function, we know that the units on its derivative are ``units of input per unit of output.'' Since the units on <span class="process-math">\(m(h)\)</span> are ``minutes per foot'', it follows that the antiderivative of <span class="process-math">\(m(h)\)</span> should have output units of ``minutes'' since its input units are ``feet''. The antiderivative function should thus tell us the total number of minutes that it takes for the plane to climb to an altitude of <span class="process-math">\(h\)</span> feet.</p></li>
 <li>
-<p>To find the average value of <span class="process-math">\(f\)</span> on <span class="process-math">\([0,5]\)</span> we need to first calculate</p>
+<p>The number of minutes required for the airplane to ascend to <span class="process-math">\(10{,}000\)</span> feet of altitude is given by the definite integral</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\int_0^5 f(x) \, dx\text{.}
+M = \int_{0}^{10000} m(h) \, dh
 \end{equation*}
 </div>
-<p class="continuation">Using our work in (a) and considering the subintervals <span class="process-math">\([0,2]\)</span> and <span class="process-math">\([2,5]\text{,}\)</span></p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-\int_0^5 f(x) \, dx &amp;= \int_0^2 f(x) \, dx + \int_2^5 f(x) \, dx\\
-&amp;= \int_0^2 -x^2 + 2x + 1 \, dx - \frac{5}{6}\\
-&amp;= \left. \left( -\frac{1}{3}x^3 + x^2 + x \right)\right|_0^2 - \frac{5}{6}\\
-&amp;= \frac{10}{3} - \frac{5}{6}\\
-&amp;= \frac{5}{2}\text{.}
-\end{align*}
-</div>
-<p class="continuation">Therefore, the average value of <span class="process-math">\(f\)</span> on <span class="process-math">\([0,5]\)</span> is</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\displaystyle f_{\operatorname{AVG} [0,5]} = \frac{1}{5-0} \int_0^5 f(x) \, dx = \left(\frac{1}{5}\right) \left(\frac{5}{2}\right) = \frac{1}{2}\text{.}
-\end{equation*}
-</div>
+<p class="continuation">since the units on <span class="process-math">\(m(h)\)</span> are ``minutes per foot'' and the units on <span class="process-math">\(\triangle h\)</span> in the corresponding Riemann sum are ``feet'', so when we take the product of quantities with these units, the resulting numerical quantity is measured in minutes.</p>
 </li>
 <li>
-<p>Since <span class="process-math">\(\int_0^5 f(x) \, dx = \frac{5}{2}\text{,}\)</span> we need a function <span class="process-math">\(g\)</span> that matches <span class="process-math">\(f\)</span> but that is also defined on <span class="process-math">\([5,7]\)</span> so that <span class="process-math">\(\int_5^7 g(x) \, dx = -\frac{5}{2}\text{.}\)</span> To preserve continuity, we will choose a formula for <span class="process-math">\(g\)</span> that also satisfies <span class="process-math">\(g(5) = 0\text{.}\)</span> It's natural to pick a linear function whose graph encloses <span class="process-math">\(5/2\)</span> units of area, so one that has a slope of <span class="process-math">\(5/4\text{.}\)</span> To check, we compute</p>
+<p>For the Riemann sum <span class="process-math">\(M_5\text{,}\)</span> we have <span class="process-math">\(5\)</span> subintervals. Given the original data, this means that we need to evaluate the function at every other known data point. In particular,</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-\int_5^7 -\frac{5}{4}(x - 5) \, dx &amp;= -\left(\frac{5}{4}\right) \left. \left(\frac{x^2}{2} - 5x\right) \right|_5^7\\
-&amp;= -\left(\frac{5}{4}\right) \left( \frac{49-25}{2} - 5(7-5) \right)\\
-&amp;= -\left(\frac{5}{4}\right) \left( 12 - 10 \right)\\
-&amp;= -\left(\frac{5}{4}\right) \left( 2 \right) = -\frac{5}{2}\text{.}
+\int_{0}^{10000} m(h) \, dh &amp;\approx M_5\\
+&amp;= m(1000) \cdot 2000 + m(3000) \cdot 2000 + m(5000) \cdot 2000\\
+&amp;+ m(7000) \cdot 2000 + m(9000) \cdot 2000\\
+&amp;= \left( \frac{1}{875} + \frac{1}{780} + \frac{1}{685} + \frac{1}{585} + \frac{1}{490} \right) \cdot 2000\\
+&amp;\approx 0.007634980475 \cdot 2000\\
+&amp;\approx 15.27\text{.}
 \end{align*}
 </div>
-<p class="continuation">So <span class="process-math">\(g\)</span> defined so that <span class="process-math">\(g(x) = f(x)\)</span> for <span class="process-math">\(0 \le x \lt 5\)</span> and <span class="process-math">\(g(x) = -\frac{5}{4}(x - 5)\)</span> on <span class="process-math">\(5 \le x \le 7\)</span> has the desired property. A graph of <span class="process-math">\(g\)</span> is shown in the figure below.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/4_4_Ez2Solnc.svg" role="img" class="contained"></div></div></div>
+<p class="continuation">Thus, it takes the plane a bit more than <span class="process-math">\(15\)</span> minutes to climb to an altitude of 10,000 feet.</p>
 </li>
 </ol>
 </div>
-<span class="incontext"><a href="sec-4-4-FTC.html#GIO" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-4-4-FTC.html#SXg" class="internal">in-context</a></span>
 </body>
 </html>

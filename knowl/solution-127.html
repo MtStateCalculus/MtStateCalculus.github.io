@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:22:50-07:00       *-->
+<!--*       on 2023-02-03T12:33:12-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,24 +16,44 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">2.3.5.13.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">2.3.5.14.1</span><span class="period">.</span>
 </h4>
 <ol class="lower-alpha">
-<li><p>If we multiply <span class="process-math">\(A(t)\)</span> acres by <span class="process-math">\(Y(t)\)</span> bushels per acre, we arrive at <span class="process-math">\(C(t) = A(t)Y(t)\)</span> bushels as the total number of bushels of corn the farmer produces in year <span class="process-math">\(t\text{.}\)</span></p></li>
-<li><p>We are given that <span class="process-math">\(A(0) = 7000\)</span> acres with a yield of <span class="process-math">\(Y(0) = 170\)</span> bushels per acre, giving us <span class="process-math">\(C(0) = A(0)Y(0) = (7000)(170) = 1190000\)</span> bushels. Thus, the farmer produces <span class="process-math">\(1 190 000\)</span> bushels of corn in the present year.</p></li>
-<li><p>The product rule tells us that <span class="process-math">\(C'(t) = A(t)Y'(t) + A'(t)Y(t)\text{.}\)</span></p></li>
 <li>
-<p>We know <span class="process-math">\(A(0) = 7000\)</span> and <span class="process-math">\(Y(0) = 170\text{.}\)</span> We are also given that the farmer will increase his number of acres devoted to growing corn at a rate of <span class="process-math">\(600\)</span> acres/year, and he expects that right now his average yield is increasing at a rate of <span class="process-math">\(8\)</span> bushels per acre per year. This tells us that <span class="process-math">\(A'(t) = 600\)</span> and <span class="process-math">\(Y'(0) = 8\text{.}\)</span> So</p>
+<p>Observe that the units on <span class="process-math">\(g(v)\)</span> are ``kilometers per liter.'' Since the units on <span class="process-math">\(f(v)\)</span> are ``liters per kilometer,'' it follows that <span class="process-math">\(g\)</span> is the reciprocal of <span class="process-math">\(f\text{:}\)</span> <span class="process-math">\(g(v) = \frac{1}{f(v)}\text{.}\)</span> By the quotient rule, we then know that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-C'(0) = A(0)Y'(0) + A'(0)Y(0) = (7000)(8) + (600)(170) = 158 000\text{.}
+g'(v) = \frac{f(v) \cdot 0 - 1 \cdot f'(v)}{f(v)^2} = -\frac{f'(v)}{f(v)^2}\text{.}
 \end{equation*}
 </div>
-<p class="continuation">Note that the units of <span class="process-math">\(A(t)\)</span> are acres and the units of <span class="process-math">\(Y'(t)\)</span> are bushels per acre per year. So the units of <span class="process-math">\(A(0)Y'(0)\)</span> are bushels per year. Similarly, the units of <span class="process-math">\(A'(t)\)</span> are acres per year and the units of <span class="process-math">\(Y(t)\)</span> are bushels per acre, so the units of <span class="process-math">\(A'(0)Y(0)\)</span> are also bushels per acre. So the units of <span class="process-math">\(C'(0)\)</span> are bushels per acre. Therefore, <span class="process-math">\(C'(0) = 158 000\)</span> tells us that the number of bushels the farmer can produce will increase by approximately <span class="process-math">\(158 000\)</span> bushels for each year past the present year.</p>
+<p class="continuation">Further, using the given values we can say that <span class="process-math">\(g(80) = \frac{1}{f(80)} = \frac{1}{0.05} = 20\)</span> kilometers per liter, and <span class="process-math">\(g'(80) = -\frac{f'(80)}{f(80)^2} = -\frac{0.0004}{0.05^2} = -0.16\text{.}\)</span> Note that the units on <span class="process-math">\(g'(80)\)</span> are ``kilometers per liter per kilometer per hour.''</p>
 </li>
-<li><p>The linearization of <span class="process-math">\(C\)</span> at <span class="process-math">\(t=0\)</span> is <span class="process-math">\(L(t) = C(0) + C'(0)(t-0) = 119 0000 + 158 000t\text{,}\)</span> <span class="process-math">\(C(1) \approx L(1) = 119 0000 + 158 000(1) = 1 348 000\)</span>bushels.</p></li>
+<li>
+<p>Since the units on <span class="process-math">\(h(v)\)</span> are ``liters per hour,'' and the units on <span class="process-math">\(f(v)\)</span> are ``liters per kilometer,'' we note that if we multiply <span class="process-math">\(f(v)\)</span> by <span class="process-math">\(v\)</span> (whose units are ``kilometers per hour''), we get that the units on <span class="process-math">\(v \cdot f(v)\)</span> match the units of <span class="process-math">\(h(v)\text{.}\)</span> Thus,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+h(v) = v \cdot f(v)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">By the product rule, it follows that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+h'(v) = v \cdot \frac{d}{dv}[f(v)] + \frac{d}{dv}[v] \cdot f(v) = v \cdot f'(v) + 1 \cdot f(v)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Using the known function and derivative values of <span class="process-math">\(f\text{,}\)</span> we determine that <span class="process-math">\(h(80) = 80 \cdot 0.05 = 4\)</span> liters per hour and <span class="process-math">\(h'(80) = 80 \cdot 0.0004 + 0.05 = 0.082\)</span> liters per hour per kilometer per hour.</p>
+</li>
+<li>
+<p>To explain the meaning of these function and derivative values to someone who doesn't know calculus, we could say something like the following:</p>
+<ul class="disc">
+<li><p>The given values of <span class="process-math">\(f(80) = 0.05\)</span> and <span class="process-math">\(f'(80) = 0.0004\)</span> tell us that when the car is going <span class="process-math">\(80\)</span> kilometers per hour, it is using <span class="process-math">\(0.05\)</span> liters of fuel for every kilometer it travels. In addition, for each additional kilometer per hour of velocity above <span class="process-math">\(80\)</span> kph, we expect that the car will use about an additional <span class="process-math">\(0.0004\)</span> liters of fuel per kilometer.</p></li>
+<li><p>The values of <span class="process-math">\(g(80) = 20\)</span> and <span class="process-math">\(g'(80) = -0.16\)</span> tell us that when the car is going <span class="process-math">\(80\)</span> kilometers per hour, it is able to travel <span class="process-math">\(20\)</span> kilometers for each liter of fuel used. In addition, for each additional kilometer per hour of velocity above <span class="process-math">\(80\)</span> kph, we expect that the car will be able to travel about <span class="process-math">\(0.16\)</span> fewer kilometers per liter of fuel.</p></li>
+<li><p>Finally, the values of <span class="process-math">\(h(80) = 4\)</span> and <span class="process-math">\(h'(80) = 0.82\)</span> tell us that when the car is going <span class="process-math">\(80\)</span> kilometers per hour, it is using <span class="process-math">\(4\)</span> liters of fuel for every hour it travels. In addition, for each additional kilometer per hour of velocity above <span class="process-math">\(80\)</span> kph, we expect that the car will ues about <span class="process-math">\(0.082\)</span> more liters of fuel per hour.</p></li>
+</ul>
+<p class="continuation">Note that all three of these observations are saying fundamentally the same thing, just from different perspectives: the first regards fuel consumption measured in liters per kilometer; the second regards fuel consumption in kilometers per liter; and the last regards fuel consumption in liters per hour.</p>
+</li>
 </ol>
 </div>
-<span class="incontext"><a href="sec-2-3-prod-quot.html#Mbo" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-2-3-prod-quot.html#YpG" class="internal">in-context</a></span>
 </body>
 </html>

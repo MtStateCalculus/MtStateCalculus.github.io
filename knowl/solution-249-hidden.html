@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-11-22T15:23:10-07:00       *-->
+<!--*       on 2023-02-03T12:33:30-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,37 +15,18 @@
 </head>
 <body class="ignore-math"><div class="solution solution-like"><ol class="lower-alpha">
 <li>
-<p>To find the exact total distance traveled, we need to calculate the area under the velocity function on the interval <span class="process-math">\([0,2]\text{.}\)</span> This area is the sum of the areas of the triangular region of height <span class="process-math">\(1\)</span> and base length <span class="process-math">\(1\)</span> on the interval <span class="process-math">\([0,1]\)</span> plus the area of the quarter circle of radius <span class="process-math">\(1\)</span> on the interval <span class="process-math">\([1,2]\text{.}\)</span> So the total distance the object traveled on <span class="process-math">\(0 \le t \le 2\)</span> is</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\frac{1}{2}(1)(1) + \frac{1}{4} \pi (1^2) = \frac{1}{2} + \frac{1}{4} \pi \approx 1.285\text{.}
-\end{equation*}
-</div>
+<p>The plot below shows that the rate of pollution appears to be increasing at an increasing rate as time goes on.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/4_1_Ez4Soln.svg" role="img" class="contained"></div></div></div>
 </li>
+<li><p>If we think about an interval on which the rate of pollution is relatively constant and suppose the interval is <span class="process-math">\(\triangle t\)</span> wide, then the area under the curve on that interval is approximately the area of the rectangle whose width is <span class="process-math">\(\triangle t\)</span> and whose height is <span class="process-math">\(p(t)\text{,}\)</span> the polution rate on that interval. When we compute the product <span class="process-math">\(p(t) \cdot \triangle t\)</span> to find the area, the units involved are ``units of pollution per day'' times ``days'', which results in an overall unit of ``units of pollution''. Thus, the area under the curve tells us the total pollution emitted over the time interval <span class="process-math">\([0,30]\text{.}\)</span></p></li>
 <li>
-<p>The meaning of <span class="process-math">\(s(5)-s(2)\)</span> is the change in position, or total displacement, of the object on the time interval <span class="process-math">\([2,5]\text{.}\)</span> Note that <span class="process-math">\(s(2)\)</span> was found to be <span class="process-math">\(\frac{1}{2} + \frac{1}{4} \pi\)</span> in part (a) and</p>
+<p>One way to estimate the total amount of pollution is to suppose the rate of pollution is constant on each of the intervals <span class="process-math">\([0,6]\text{,}\)</span> <span class="process-math">\([6,12]\text{,}\)</span> <span class="process-math">\(\ldots\text{.}\)</span>  For instance, we could assume the rate on <span class="process-math">\([0,6]\)</span> is always <span class="process-math">\(7\)</span> units per day, and then the rate jumps to <span class="process-math">\(8\)</span> units per day on <span class="process-math">\([6,12]\text{,}\)</span> and so on. Doing so, and using the ideas we discussed in (b), one estimate for the total pollution, <span class="process-math">\(P\text{,}\)</span> is</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-s(5) = \frac{1}{2} + \frac{1}{4} \pi - \frac{1}{2} - 1 - \frac{1}{2} = \frac{\pi}{4} - \frac{3}{2}\text{.}
+P = 7 \cdot 6 + 8 \cdot 6 + 10 \cdot 6 + 13 \cdot 6 + 18 \cdot 6 = 336
 \end{equation*}
 </div>
-<p class="continuation">So, <span class="process-math">\(s(5) - s(2) = -2\text{,}\)</span> which means that the object moved 2 feet back toward its original position from time <span class="process-math">\(t=2\)</span> to time <span class="process-math">\(t=5\text{.}\)</span></p>
+<p class="continuation">total units of pollution. Note, for example, that when we compute <span class="process-math">\(13 \cdot 6\)</span> this represents an estimate of the total amount of pollution emitted on the interval <span class="process-math">\([18,24]\)</span> since we are assuming the plant emits <span class="process-math">\(13\)</span> units of pollution per day for 6 days. It is apparent that this particular estimate is an underestimate of the total amount of pollution since the rate is always increasing but we are choosing the lowest value of that rate on a given interval.</p>
 </li>
-<li>
-<p>In part (a) we calculated the distance traveled by the object on the interval <span class="process-math">\([0,2\)</span> to be approximately <span class="process-math">\(1.285\)</span> feet. On the time interval <span class="process-math">\([2,4]\text{,}\)</span> the object is moving in the opposite direction from the motion on the interval <span class="process-math">\([0,2\text{,}\)</span> and the total distance traveled is the area <span class="process-math">\(v(t)\)</span> bounds below the <span class="process-math">\(t\)</span>-axis on the interval <span class="process-math">\([2,4\text{.}\)</span> This area is the sum of the areas of the triangle of height <span class="process-math">\(1\)</span> and base length <span class="process-math">\(1\)</span> on the interval <span class="process-math">\([2,3]\)</span> and the area of the rectangle of height <span class="process-math">\(1\)</span> and length <span class="process-math">\(1\)</span> on the interval <span class="process-math">\([3,4\text{.}\)</span> So the total distance traveled by the object on the interval <span class="process-math">\([2,4]\)</span> is</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\frac{1}{2}(1)(1) + (1)(1) = 1.5\text{.}
-\end{equation*}
-</div>
-<p class="continuation">The total distance traveled by the object on the interval <span class="process-math">\([5,7\)</span> is the area <span class="process-math">\(v(t)\)</span> bounds above the <span class="process-math">\(t\)</span>-axis on the interval <span class="process-math">\([5,7]\text{.}\)</span> This area is the area of the semicircle of radius <span class="process-math">\(1\)</span>on the interval <span class="process-math">\([5,7]\text{.}\)</span> So the total distance traveled by the object on the interval <span class="process-math">\([5,7]\)</span> is</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\frac{1}{2}\pi (1)^2 = \frac{\pi}{2} \approx 1.571\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Thus, the object traveled the greatest distance on the time interval <span class="process-math">\([5,7]\text{.}\)</span></p>
-</li>
-<li><p>We know that the position function is increasing when the velocity is positive, so <span class="process-math">\(s\)</span> is increasing on the intervals <span class="process-math">\((0,2)\)</span> and <span class="process-math">\((5,7)\text{.}\)</span> Since <span class="process-math">\(v(t)\)</span> is positive to the left of <span class="process-math">\(t=2\)</span> and then negative to the right of <span class="process-math">\(t=2\text{,}\)</span> the position function <span class="process-math">\(s\)</span> is increasing to the left of <span class="process-math">\(t=2\)</span> then decreasing to the right of <span class="process-math">\(t=2\text{.}\)</span> Thus, the position function has a relative maximum point at <span class="process-math">\(t=2\text{.}\)</span> There are no other points with this property, so this is the only relative maximum value of <span class="process-math">\(s\)</span> on this interval. We also can note that <span class="process-math">\(s\)</span> increases from <span class="process-math">\(t=5\)</span> to <span class="process-math">\(t=7\text{,}\)</span> culminating in a local maximum value at <span class="process-math">\(t=7\text{.}\)</span></p></li>
 </ol></div></body>
 </html>
