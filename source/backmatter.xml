@@ -104,6 +104,19 @@
             <m>\int \frac{du}{u^2\sqrt{a^2 - u^2}} = -\frac{\sqrt{a^2-u^2}}{a^2 u} + C</m>
           </p>
         </li>
+        
+        <li>
+          <p>
+            <m>\int \sin^n{u}\,du = -\frac{\sin^{n-1}{u}\,\cos{u}}{n}+\frac{n-1}{n}\int \sin^{n-2}{u}\,du+C</m>
+          </p>
+        </li>
+        
+        <li>
+          <p>
+            <m>\int \cos^n{u}\,du = \frac{\cos^{n-1}{u}\,\sin{u}}{n}+\frac{n-1}{n}\int \cos^{n-2}{u}\,du+C</m>
+          </p>
+        </li>
+        
       </ol>
     </p>
   </appendix>

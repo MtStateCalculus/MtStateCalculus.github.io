@@ -14,6 +14,7 @@
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-1-5" permid="tXk">
 
+<!-- This WW problem seems broken, won't compile - RM 2/1/2023 -->
   <exercise xml:id="ez-1-5-WW1" permid="XqR">
     <title>A cooling cup of coffee</title>
     <webwork source="Library/Michigan/Chap2Sec4/Q01.pg" />
