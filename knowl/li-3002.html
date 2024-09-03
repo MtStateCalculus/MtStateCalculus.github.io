@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:37-07:00       *-->
+<!--*       on 2024-09-03T14:27:01-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,9 +14,34 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="li"><h4 class="heading">
-<span class="type">Item</span><span class="period">.</span>
-</h4>
-<p>For any continuous function <span class="process-math">\(f\text{,}\)</span> its definite integral <span class="process-math">\(\int_a^b f(x) \, dx\)</span> represents the net signed area bounded by <span class="process-math">\(y = f(x)\)</span> and the <span class="process-math">\(x\)</span>-axis on <span class="process-math">\([a,b]\text{,}\)</span> where regions that lie below the <span class="process-math">\(x\)</span>-axis have a minus sign associated with their area.</p></article><span class="incontext"><a href="sec-4-4-FTC.html#eqn" class="internal">in-context</a></span>
+<article class="li"><h5 class="heading">
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">c</span><span class="period">.</span>
+</h5>
+<p>The exact average rate at which the person burned calories on <span class="process-math">\(0 \le t \le 40\)</span> is given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+c_{\text{AVG} [0,40]} = \frac{1}{40-0} \int_0^{40} c(t) \, dt\text{.}
+\end{equation*}
+</div>
+<p class="continuation">To calculate <span class="process-math">\(\int_0^{40} c(t) \, dt\text{,}\)</span> we recognize that <span class="process-math">\(c(t)\)</span> is defined in piecewise fashion, and use the additive property of the definite integral, which tells us that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_0^{40} c(t) \, dt = \int_0^{10} c(t) \, dt +  \int_{10}^{30} c(t) \, dt +  \int_{30}^{40} c(t) \, dt\text{.}
+\end{equation*}
+</div>
+<p class="continuation">We know from our work in (a) that <span class="process-math">\(\int_0^{10} c(t) \, dt = \frac{400}{3}\text{.}\)</span> Since <span class="process-math">\(c(t) = 15\)</span> is constant on <span class="process-math">\(10 \le t \le 20\text{,}\)</span> it follows that <span class="process-math">\(\int_{10}^{30} c(t) \, dt  = 15 \cdot 30 = 300\text{.}\)</span> And finally, it is straightforward to show using <span class="process-math">\(c(t) = -0.05t^2 + 3t - 30\)</span> (or symmetry) on <span class="process-math">\(30 \le t \le 40\)</span> that <span class="process-math">\(\int_{30}^{40} c(t) \, dt = \frac{400}{3}\text{.}\)</span> Hence,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+\int_0^{40} c(t) \, dt =\mathstrut \amp  \int_0^{10} c(t) \, dt +  \int_{10}^{30} c(t) \, dt +  \int_{30}^{40} c(t) \, dt\\
+=\mathstrut \amp  \frac{400}{3} + 300 + \frac{400}{3}\\
+=\mathstrut \amp  \frac{1700}{3} \approx 566.67 \ \text{calories}\text{.}
+\end{align*}
+</div>
+<p class="continuation">Now, it follows that the exact average rate at which calories were burned on <span class="process-math">\([0,40]\)</span> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+c_{\text{AVG} [0,40]} = \frac{1}{40-0} \int_0^{40} c(t) \, dt = \frac{1}{40} \cdot \frac{1700}{3} = \frac{1700}{120} \approx 14.17 \ \text{cal/min}\text{.}
+\end{equation*}
+</div></article><span class="incontext"><a href="sec-4-4-FTC.html#TxF" class="internal">in-context</a></span>
 </body>
 </html>

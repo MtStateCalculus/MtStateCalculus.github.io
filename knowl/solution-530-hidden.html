@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:35:27-07:00       *-->
+<!--*       on 2024-09-03T14:28:47-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,25 +15,29 @@
 </head>
 <body class="ignore-math"><div class="solution solution-like"><ol class="lower-alpha">
 <li>
-<p>Recall that</p>
+<p>Note that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-g(x) = \frac{1}{1-x} = \sum_{k=0}^{\infty} x^k
+f'(x) = - x + \frac{x^3}{3!} - \frac{x^5}{5!} + \cdots + (-1)^k \frac{x^{k-1}}{(k-1)!} + \cdots\text{.}
 \end{equation*}
 </div>
-<p class="continuation">for <span class="process-math">\(-1 \lt  x \lt  1\text{.}\)</span></p>
 </li>
 <li>
-<p>Substituting <span class="process-math">\(-x^2\)</span> for <span class="process-math">\(x\)</span> in the power series expansion for <span class="process-math">\(g(x)\)</span> gives</p>
+<p>We recognize <span class="process-math">\(f(x)\)</span> as <span class="process-math">\(\cos(x)\)</span> and <span class="process-math">\(f'(x)\)</span> as <span class="process-math">\(-\sin(x)\text{.}\)</span> This gives the known differentiation formula</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-f(x) \amp = g(-x^2)\\
-\amp = \frac{1}{1-(-x^2)}\\
-\amp = \sum_{k=0}^{\infty} \left(-x^2\right)^k\\
-\amp = \sum_{k=0}^{\infty} (-1)^k x^{2k}\text{.}
-\end{align*}
+\begin{equation*}
+\frac{d}{dx} \cos(x) = -\sin(x)\text{.}
+\end{equation*}
 </div>
 </li>
-<li><p>This power series expansion for <span class="process-math">\(f(x)\)</span> will be valid as long as <span class="process-math">\(-1 \lt (-x)^2 \lt 1\)</span> or for <span class="process-math">\(-1 \lt x \lt 1\text{.}\)</span></p></li>
+<li>
+<p>We see that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f''(x) = - 1 + \frac{x^2}{2!} - \frac{x^4}{4!} + \cdots\text{,}
+\end{equation*}
+</div>
+<p class="continuation">which is the series expansion for <span class="process-math">\(-\cos(x)\)</span> as expected</p>
+</li>
 </ol></div></body>
 </html>

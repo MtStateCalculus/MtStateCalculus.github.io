@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:55-07:00       *-->
+<!--*       on 2024-09-03T14:27:17-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,30 +16,24 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.5.5.1.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.5.5.2.1</span><span class="period">.</span>
 </h4>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\frac{2x}{x^2-25}=\frac{A}{x+5}+\frac{B}{x-5}
+\frac{1}{(x+6)(x+8)}=\frac{A}{x+6}+\frac{B}{x+8},
 \end{equation*}
-</div>so that<div class="displaymath process-math" data-contains-math-knowls="">
+</div>giving<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-2x = A(x-5)+B(x+5) = (A+B)x + 5 (-A+B).
+1 =  A(x+8)+B(x+6),
 \end{equation*}
-</div>Solving, we get <span class="process-math">\(A=B=1\text{,}\)</span> so that<div class="displaymath process-math" data-contains-math-knowls="">
+</div>or<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\int \frac{2x}{x^2-25}\,dx=
-\int \left(\frac{1}{x+5}+\frac{1}{x-5}\right)\,dx
-=\ln|x+5|+\ln|x-5|+C.
+1 = (A+B)x+ (8 A+6 B).
 \end{equation*}
-</div>Using the substitution <span class="process-math">\(w=x^2-25\text{,}\)</span> we get <span class="process-math">\(dw= 2x\,dx\text{,}\)</span> so we have<div class="displaymath process-math" data-contains-math-knowls="">
+</div>Solving for <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> we find <span class="process-math">\(A = 0.5\)</span> and <span class="process-math">\(B = -0.5\text{,}\)</span> so<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\int \frac{2x}{x^2-25}\,dx=
-\int \frac{dw}{w}=\ln|w|+C = \ln|x^2-25|+C.
-\end{equation*}
-</div>The properties of logarithms show that the two results are the same:<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\ln|x+5|+\ln|x-5| = \ln|(x+5)(x-5)| =\ln|x^2-25|.
+\int \frac{1}{(x+6)(x+8)}\,dx= \int\frac{0.5}{x+6}\,dx +
+\int \frac{-0.5}{x+8}\,dx = 0.5\ln\!\left(\left|x+6\right|\right)-0.5\ln\!\left(\left|x+8\right|\right)+C.
 \end{equation*}
 </div>
 </div>

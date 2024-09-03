@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:34:11-07:00       *-->
+<!--*       on 2024-09-03T14:27:35-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,23 +14,18 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="li"><h4 class="heading">
-<span class="type">Item</span><span class="period">.</span>
-</h4>
-<p>For a system of point-masses distributed along an axis, say <span class="process-math">\(m_1, \ldots,
-m_n\)</span> at locations <span class="process-math">\(x_1, \ldots,
-x_n\text{,}\)</span> the center of mass, <span class="process-math">\(\overline{x}\text{,}\)</span> is given by the weighted average</p>
+<article class="li"><h5 class="heading">
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">6.3.5.5.d</span><span class="period">.</span>
+</h5>
+<p>Each piece would have mass <span class="process-math">\(15\)</span> grams. Let <span class="process-math">\(q\)</span> be a value of <span class="process-math">\(x\)</span> between 0 and <span class="process-math">\(a\)</span> so the the mass of the rod on the interval <span class="process-math">\([0, q]\)</span> is 15. Using the substitution <span class="process-math">\(u = -0.1x\)</span> and <span class="process-math">\(du = -0.1 \ dx\)</span> we have that the mass of the rod on the interval <span class="process-math">\([0, q]\)</span> is</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\overline{x} = \frac{\sum_{i=1}^n x_i m_i}{\sum_{i=1}^n m_i}\text{.}
-\end{equation*}
+\begin{align*}
+\int_0^q \rho(x) \ dx  &amp;= \int_0^q 10e^{-0.1x} \ dx\\
+&amp;= \int_0^{-0.1q} -100e^{u} \ du\\
+&amp;= -100e^u\biggm|_0^{-0.1q}\\
+&amp;= 100\left(1-e^{-0.1q}\right)
+\end{align*}
 </div>
-<p class="continuation">If instead we have mass continuously distributed along an axis, such as by a density function <span class="process-math">\(\rho(x)\)</span> for a thin bar of constant cross-sectional area, the center of mass of the portion of the bar between <span class="process-math">\(x = a\)</span> and <span class="process-math">\(x = b\)</span> is given by</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\overline{x} = \frac{\int_a^b x \rho(x) \, dx}{\int_a^b \rho(x) \, dx}\text{.}
-\end{equation*}
-</div>
-<p class="continuation">In each situation, <span class="process-math">\(\overline{x}\)</span> represents the balancing point of the system of masses or of the portion of the bar.</p></article><span class="incontext"><a href="sec-6-3-mass.html#Mnj" class="internal">in-context</a></span>
+<p class="continuation">We want this mass to be <span class="process-math">\(15\)</span> grams, so we find <span class="process-math">\(q\)</span> such that <span class="process-math">\(100\left(1-e^{-0.1q}\right) = 15\text{.}\)</span> Solving for <span class="process-math">\(q\)</span> in the usual way, we find <span class="process-math">\(q = -10\ln(0.85) \approx 1.625\)</span> cm. Note that this is not the same as the center of mass. The center of mass takes into account the torque (determined by distance from the center of mass), which is not incorporated into the calculation of the point to split the object into two pieces of equal mass.</p></article><span class="incontext"><a href="sec-6-3-mass.html#WQO" class="internal">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:34:04-07:00       *-->
+<!--*       on 2024-09-03T14:27:27-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,26 +16,21 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">6.1.5.2.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">6.1.5.4.1</span><span class="period">.</span>
 </h4>
-<div class="image-box" style="width: 16.6666666666667%; margin-left: 41.6666666666667%; margin-right: 41.6666666666667%;"><img src="generated/webwork/images/webwork-160-image-1.png" class="contained"></div> Over the interval <span class="process-math">\([0,\pi]\text{,}\)</span> the graphs <span class="process-math">\(y = 7\sin x\)</span> and <span class="process-math">\(y = 9 \cos x\)</span> intersect when <span class="process-math">\(7\sin x = 9 \cos x\text{,}\)</span> i.e., <span class="process-math">\(\tan x = \frac{9}{7}\text{,}\)</span> i.e., <span class="process-math">\(x=\tan^{-1}(\frac{9}{7})=0.90975315794421\text{.}\)</span> Let <span class="process-math">\(t = \tan^{-1}(\frac{9}{7})\text{.}\)</span> Over the interval <span class="process-math">\(\left[0,  t\right]\text{,}\)</span> the graph of <span class="process-math">\(y = 7\sin x\)</span> lies below that of <span class="process-math">\(y = 9 \cos x\text{.}\)</span> Hence, the area between the two curves is <span class="process-math">\(\int_0^{ t}(9 \cos x-7  \sin x)dx\)</span><div class="displaymath process-math" data-contains-math-knowls="">
+<span class="process-math">\(8 x^{3/2}\)</span> in disguise.  So the arc length is<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\begin{array}{ll}
-\amp =\left.(9\sin x+7\cos x)\right|_0^{ t} \cr
-\amp  =\left(9\sin t+7\cos t\right)-(9\cdot 0+7\cdot 1)\cr
-\amp  =\left(9\sin t+7\cos t\right)-7
-\end{array}
+\int_{0}^{4}\,\sqrt{1 + (f'(x))^2}\,dx = 
+\int_{0}^{4}\,\sqrt{1 + (12 x^{1/2})^2}\,dx = 
+\int_{0}^{4}\,\sqrt{1 + 144 x}\,dx.
+\end{equation*}
+</div>With <span class="process-math">\(w = 1 + 144 x\text{,}\)</span> this becomes<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_{0}^{4}\,\sqrt{1 + 144 x}\,dx = 
+{{1\over 144}} \int_{1}^{577}\,\sqrt{w}\,dw = 
+{{1\over 216}} ( 577^{3/2} - 1^{3/2} ).
 \end{equation*}
 </div>
-<div class="image-box" style="width: 33.3333333333333%; margin-left: 33.3333333333333%; margin-right: 33.3333333333333%;"><img src="generated/webwork/images/webwork-160-image-2.png" class="contained"></div> Since <span class="process-math">\(t = \tan^{-1}(\frac{9}{7})\text{,}\)</span> we have <span class="process-math">\(\tan t = \frac{9}{7}\text{.}\)</span> Considering a rightangle triangle with an angle  which opposite side has length 9 and adjacent side has length 7, we see that the hypotenues is <span class="process-math">\(\sqrt{130}\text{.}\)</span> Thus <span class="process-math">\(\sin t = \frac{9}{\sqrt{130}}\)</span> and <span class="process-math">\(\cos t = \frac{7}{\sqrt{130}}\text{.}\)</span> <span class="process-math">\(9\sin t+7\cos t =  \frac{9^2}{\sqrt{130}} + \frac{7^2}{\sqrt{130}} 
-=  \frac{9^2+7^2}{\sqrt{130}} = \frac{130}{\sqrt{130}}=\sqrt{130}\text{.}\)</span> Thus, <span class="process-math">\(\int_0^{ t}(9 \cos x-7  \sin x)dx= \sqrt{130}-7.\)</span> Over the interval <span class="process-math">\(\left[ t,\pi\right]\text{,}\)</span> the graph of <span class="process-math">\(y = 7\sin x\)</span> lies above that of <span class="process-math">\(y = 9 \cos x\text{.}\)</span> Hence, the area between the two curves is <span class="process-math">\(\int^\pi_{ t}(7\sin x - 9 \cos x)dx\)</span><div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\begin{array}{ll}
-\amp =-\left.(9\sin x+7\cos x)\right|^\pi_{ t} \cr
-\amp  =7 + \sqrt{130}
-\end{array}
-\end{equation*}
-</div>Thus the total area is the sum of the above two integrals, which is <span class="process-math">\(2\sqrt{130}\text{.}\)</span>
 </div>
 <span class="incontext"><a href="sec-6-1-area.html#solution-359" class="internal">in-context</a></span>
 </body>

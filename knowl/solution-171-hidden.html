@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:17-07:00       *-->
+<!--*       on 2024-09-03T14:26:39-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,23 +14,26 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like">
-<p>We differentiate implicitly with respect to <span class="process-math">\(x\text{.}\)</span> This gives</p>
+<p>We differentiate implicitly both sides of the equation with respect to <span class="process-math">\(x\text{.}\)</span></p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-5 x^{4} y - x^{5} \, \frac{dy}{dx}
-- 1 - 8 \, \frac{dy}{dx} = 0,
+\ln y + \frac xy \, \frac{dy}{dx}
++ 7 y^{6}\frac{dy}{dx} = \frac{8}{x},
 \end{equation*}
 </div>
-<p class="continuation">or</p>
+<p class="continuation">so</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-(x^{5}-8) \, \frac{dy}{dx} = 1-5x^{4}y,
+\left( \frac{x}{y} + 7 y^{6} \right) \,
+\frac{dy}{dx} = \frac{8}{x} - \ln y,
 \end{equation*}
 </div>
-<p class="continuation">and so</p>
+<p class="continuation">and thus</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\frac{dy}{dx} = \frac{1 - 5 x^{4} y}{x^{5} - 8}.
+\frac{dy}{dx}
+= \frac{\frac{8}{x} - \ln y}{\frac{x}{y} + 7 y^{6}}
+= \frac{y\!\left(8-x\ln\!\left(y\right)\right)}{x\!\left(x+7y^{7}\right)}.
 \end{equation*}
 </div>
 </div></body>

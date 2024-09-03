@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:17-07:00       *-->
+<!--*       on 2024-09-03T14:26:39-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,28 +16,27 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">2.7.3.2.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">2.7.3.3.1</span><span class="period">.</span>
 </h4>
-<p>We differentiate implicitly both sides of the equation with respect to <span class="process-math">\(x\text{.}\)</span></p>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<span class="process-math">\(x\text{.}\)</span><div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\ln y + \frac xy \, \frac{dy}{dx}
-+ 2 y\frac{dy}{dx} = \frac{5}{x},
+\frac{1}{\sqrt{1 - x^{4} y^2}} (2 x y + x^{2} \frac{dy}{dx}) =
+y^{2} + 2 x y \frac{dy}{dx},
 \end{equation*}
-</div>
-<p class="continuation">so</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
+</div>so, clearing the denominator,<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\left( \frac{x}{y} + 2 y \right) \,
-\frac{dy}{dx} = \frac{5}{x} - \ln y,
+2 x y + x^{2} \frac{dy}{dx} = 
+\sqrt{1 - x^{4} y^2} (y^{2} + 2 x y \frac{dy}{dx}).
 \end{equation*}
-</div>
-<p class="continuation">and thus</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
+</div>Thus<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\frac{dy}{dx}
-= \frac{\frac{5}{x} - \ln y}{\frac{x}{y} + 2 y}
-= \frac{y\!\left(5-x\ln\!\left(y\right)\right)}{x\!\left(x+2y^{2}\right)}.
+( x^{2} - (2 x y) \sqrt{1 - x^{4} y^2} ) \frac{dy}{dx} = 
+y^{2} \sqrt{1 - x^{4} y^2} - 2 x y,
+\end{equation*}
+</div>and finally<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{dy}{dx} = 
+\frac{y^{2} \sqrt{1 - x^{4} y^2} - 2 x y}{x^{2} - (2 x y) \sqrt{1 - x^{4} y^2}}.
 \end{equation*}
 </div>
 </div>

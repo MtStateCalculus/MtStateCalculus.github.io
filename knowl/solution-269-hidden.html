@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:36-07:00       *-->
+<!--*       on 2024-09-03T14:26:59-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,51 +15,88 @@
 </head>
 <body class="ignore-math"><div class="solution solution-like"><ol class="lower-alpha">
 <li>
-<p>We observe that <span class="process-math">\(v(t) = 0\)</span> at <span class="process-math">\(t = 0\text{,}\)</span> <span class="process-math">\(t = 1\text{,}\)</span> and <span class="process-math">\(t = 3\text{,}\)</span> and <span class="process-math">\(v(t)\)</span> is positive on the intervals <span class="process-math">\(0 \lt t \lt 1\)</span> and <span class="process-math">\(3 \lt t \lt 4\text{,}\)</span> while <span class="process-math">\(v(t)\)</span> is negative on <span class="process-math">\(1 \lt t \lt 3\text{.}\)</span> The total change in position, <span class="process-math">\(P\text{,}\)</span> of the object is thus given by</p>
+<p>The sum property of the definite integral tells us that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-P = \int_0^1 v(t) \, dt + \int_1^3 v(t) \, dt + \int_3^4 v(t) \, dt = \int_0^4 v(t) \, dt\text{.}
+\int_0^1 [f(x) + g(x)] \, dx = \int_0^1 f(x) \, dx + \int_0^1 g(x) \, dx
 \end{equation*}
 </div>
-</li>
-<li><p>Using computational technology, we use the midpoint rule to estimate the total change of position, <span class="process-math">\(\int_0^4 v(t) \, dt\text{.}\)</span> We find that <span class="process-math">\(M_{25} = 2.6496\text{,}\)</span> <span class="process-math">\(M_{50} = 2.6624\text{,}\)</span> <span class="process-math">\(M_{75} = 2.66477\text{,}\)</span> and <span class="process-math">\(M_{100} = 2.6656\text{.}\)</span> Since it appears that neither of the first two decimal places are changing as we increase the number of subintervals, it looks like <span class="process-math">\(P = \int_0^4 v(t) \, dt \approx 2.665\)</span> is accurate to two decimal places.</p></li>
-<li>
-<p>We noted in (a) where <span class="process-math">\(v(t)\)</span> is positive and negative. In particular, on <span class="process-math">\(1 \lt t \lt 3\text{,}\)</span> <span class="process-math">\(v(t) \lt 0\text{,}\)</span> and thus <span class="process-math">\(\int_1^3 v(t) \, dt\)</span> will give us a negative change in position; the distance traveled on this interval is therefore <span class="process-math">\(-\int_1^3 v(t) \, dt\text{,}\)</span> and hence the total distance traveled, <span class="process-math">\(D\text{,}\)</span> on <span class="process-math">\([0,4]\)</span> is</p>
+<p class="continuation">Now <span class="process-math">\(\int_0^1 f(x) \, dx\)</span> is the area of a triangle of height <span class="process-math">\(2\)</span> and base <span class="process-math">\(1\text{,}\)</span> so <span class="process-math">\(\int_0^1 f(x) \, dx = 1\text{.}\)</span> Also, <span class="process-math">\(\int_0^1 g(x) \,dx\)</span> is the opposite of the area of a quarter circle of radius <span class="process-math">\(1\text{,}\)</span> so <span class="process-math">\(\int_0^1 g(x) \,dx = \frac{\pi}{4}\text{.}\)</span> Therefore,</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-D = \int_0^1 v(t) \, dt - \int_1^3 v(t) \, dt + \int_3^4 v(t) \, dt\text{.}
+\int_0^1 [f(x) + g(x)] \,dx = \int_0^1 f(x) \,dx + \int_0^1 g(x) \,dx = 1-\frac{\pi}{4}\text{.}
 \end{equation*}
 </div>
 </li>
 <li>
-<p>To use Riemann sums to estimate <span class="process-math">\(D\text{,}\)</span> we have to estimate each of the three integrals individually. We find that</p>
-<ul class="disc">
-<li><p><span class="process-math">\(\int_0^1 v(t) \, dt \approx M_{100} = 0.41669\text{,}\)</span></p></li>
-<li><p><span class="process-math">\(\int_1^3 v(t) \, dt \approx M_{100} = -2.6668\text{,}\)</span> and</p></li>
-<li><p><span class="process-math">\(\displaystyle \int_1^4 v(t) \, dt \approx M_{100} = 4.91667\)</span></p></li>
-</ul>
-<p class="continuation">From experimenting with different <span class="process-math">\(n\)</span>-values in <span class="process-math">\(M_n\text{,}\)</span> it is apparent that each of these individual estimates is accurate to at least <span class="process-math">\(3\)</span> decimal places, and thus we expect their sum to be accurate to at least <span class="process-math">\(2\text{.}\)</span> Hence,</p>
+<p>The value of <span class="process-math">\(\int_1^4 f(x) \,dx\)</span> is the difference of the areas of the regions <span class="process-math">\(f\)</span> bounds above the <span class="process-math">\(x\)</span>-axis minus the areas of the regions <span class="process-math">\(f\)</span> bounds below the <span class="process-math">\(x\)</span>-axis on the interval <span class="process-math">\([1,4]\text{.}\)</span> The area of the triangle <span class="process-math">\(f\)</span> bounds above the <span class="process-math">\(x\)</span>-axis on the interval <span class="process-math">\([1,1.5]\)</span> is <span class="process-math">\((0.5)(2)(0.5) = 0.5\text{,}\)</span> the area of the region <span class="process-math">\(f\)</span> bounds below the <span class="process-math">\(x\)</span>-axis on <span class="process-math">\([1.5,2]\)</span> is also <span class="process-math">\(0.5\text{,}\)</span> the area of the region <span class="process-math">\(f\)</span> bounds below the <span class="process-math">\(x\)</span>-axis on <span class="process-math">\([2,3]\)</span> is the area (<span class="process-math">\(2\)</span>) of a rectangle with height <span class="process-math">\(2\)</span> and base <span class="process-math">\(1\text{,}\)</span> and the area of the region <span class="process-math">\(f\)</span> bounds below the <span class="process-math">\(x\)</span>-axis on <span class="process-math">\([3,4]\)</span> is the area (<span class="process-math">\(1\)</span>) of a triangle with height <span class="process-math">\(2\)</span> and base <span class="process-math">\(1\text{.}\)</span> So</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-D = \int_0^1 v(t) \, dt - \int_1^3 v(t) \, dt + \int_3^4 v(t) \, dt \approx 0.41669 - (-2.6668) + 4.91667 = 8.00016\text{.}
+\int_1^4 f(x) \,dx = 0.5-0.5-2-1 = -3\text{.}
 \end{equation*}
 </div>
-<p class="continuation">Therefore <span class="process-math">\(D \approx 8.00016\)</span> is an estimate of distance traveled accurate to at least <span class="process-math">\(2\)</span> decimal places.</p>
+<p class="continuation">Notice that the graph of <span class="process-math">\(g\)</span> is linear on the interval <span class="process-math">\([1,2]\text{,}\)</span> passing through the points <span class="process-math">\((1,-1)\)</span> and <span class="process-math">\((2,2)\text{.}\)</span> This line has slope <span class="process-math">\(3\)</span> and equation <span class="process-math">\(y = -1+3(x-1)\text{.}\)</span> The <span class="process-math">\(x\)</span>-intercept of this line is <span class="process-math">\(\frac{4}{3}\text{.}\)</span> So the triangle the graph of <span class="process-math">\(g\)</span> bounds on the interval <span class="process-math">\(\left[1, \frac{4}{3}\right]\)</span> has area <span class="process-math">\(\left(\frac{1}{2}\right)\left(\frac{1}{3}\right)(1) = \frac{1}{6}\text{,}\)</span> and the area of the triangle between the graph of <span class="process-math">\(g\)</span> and the <span class="process-math">\(x\)</span>-axis on the interval <span class="process-math">\(\left[\frac{4}{3}, 2\right]\)</span> is <span class="process-math">\(\left(\frac{1}{2}\right)\left(\frac{2}{3}\right)(2) = \frac{2}{3}\text{.}\)</span> Finally, the graph of <span class="process-math">\(g\)</span> bounds a quarter circle of radius <span class="process-math">\(2\)</span> on the interval <span class="process-math">\([2,4]\text{,}\)</span> so</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_1^4 g(x) \,dx = -\frac{1}{6} + \frac{2}{3} + \pi = \frac{1}{2} + \pi\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Therefore,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_1^4 [2f(x) - 3g(x)] \, dx = 2\int_1^4 f(x) \, dx - 3\int_1^4 g(x) \, dx = (2)(-3) - (3)\left(\frac{1}{2} + \pi\right) = -\frac{15}{2} - 3\pi\text{.}
+\end{equation*}
+</div>
 </li>
 <li>
-<p>We know that the average velocity on <span class="process-math">\([0,4]\)</span> is given by the integral expression</p>
+<p>Recall that the average value of a function <span class="process-math">\(f\)</span> on an interval <span class="process-math">\([a,b]\)</span> is</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-v_{\operatorname{AVG} [0,4]} = \frac{1}{4-0} \int_0^4 v(t) \, dt\text{.}
+f_{\operatorname{AVG} [a,b]} = \frac{1}{b-a} \int_a^b f(x) \,dx\text{.}
 \end{equation*}
 </div>
-<p class="continuation">We estimated the definite integral in (b), so using that result,</p>
+<p class="continuation">Combining the results from (a) and (b) gives us</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-v_{\operatorname{AVG} [0,4]} \approx \frac{1}{4-0} 2.665 = 0.66625
+\int_0^4 f(x) \,dx = \int_0^1 f(x) \,dx +\int_1^4 f(x) \,dx = 1 -3 = -2
 \end{equation*}
 </div>
-<p class="continuation">feet per second is the object's average velocity, accurate to at least two decimal places. It makes sense that the average velocity is positive since the total change in position is positive.</p>
+<p class="continuation">and</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_0^4 g(x) \,dx = \int_0^1 g(x) \,dx +\int_1^4 g(x) \,dx = -\frac{\pi}{4} + \frac{1}{2} + \pi =  \frac{1}{2} + \frac{3\pi}{4}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Thus, the average value of <span class="process-math">\(h\)</span> on the interval <span class="process-math">\([0,4]\)</span> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+h_{\operatorname{AVG} [0,4]} &amp;= \frac{1}{4} \int_0^4 [g(x)-f(x)] \,dx\\
+&amp;= \frac{1}{4} \left(\int_0^4 g(x) \,dx - \int_0^4 f(x) \,dx \right)\\
+&amp;= \frac{1}{4} \left(\frac{1}{2} + \frac{3\pi}{4} - (-2) \right)\\
+&amp;= \frac{5}{8} + \frac{3\pi}{16}\text{.}
+\end{align*}
+</div>
+</li>
+<li>
+<p>We know that <span class="process-math">\(\int_0^4 c \, dx\)</span> is the signed area of a rectangle with ``height" <span class="process-math">\(c\)</span> (note that <span class="process-math">\(c\)</span> could be negative), and base <span class="process-math">\(4\text{,}\)</span> so</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_0^4 c \, dx = 4c\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Also, from part (c) we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_0^4 [f(x) + g(x)] \, dx = \int_0^4 f(x) \, dx + \int_0^4 g(x) \, dx = -2+\frac{1}{2} + \frac{3\pi}{4} = -\frac{3}{2} + \frac{3\pi}{4}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Therefore,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_0^4 c \, dx = \int_0^4 [f(x) + g(x)] \, dx
+\end{equation*}
+</div>
+<p class="continuation">from which it follows that <span class="process-math">\(4c = -\frac{3}{2} + \frac{3\pi}{4}\)</span> so <span class="process-math">\(c = -\frac{3}{8} + \frac{3\pi}{16}\text{.}\)</span></p>
 </li>
 </ol></div></body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:50-07:00       *-->
+<!--*       on 2024-09-03T14:27:13-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,20 +15,28 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Using <span class="process-math">\(u = \ln(x)\)</span> and <span class="process-math">\(dv = x dx\text{,}\)</span> we obtain <span class="process-math">\(du = \dfrac{1}{x} dx\)</span> and <span class="process-math">\(v = \dfrac{1}{2}x^2\text{.}\)</span> So</p>
+<p>Using <span class="process-math">\(z = t^2\text{,}\)</span> we obtain <span class="process-math">\(dz = 2t dt\)</span> and <span class="process-math">\(\dfrac{1}{2} dz = t dt\text{.}\)</span> So</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-\int x\ln(x) dx \amp = \frac{1}{2}x^2 \ln(x) - \frac{1}{2} \int x dx\\
-\amp = \frac{1}{2}x^2 \ln(x) - \frac{1}{4}x^2 + c
+\int t^3 \sin(t^2) dt \amp = \int t^2 \sin(t^2) \cdot t dt\\
+\amp = \int z \sin(z) \frac{1}{2} dz\\
+\amp = \frac{1}{2} \int z \sin(z) dz
 \end{align*}
 </div>
-<p class="continuation">We check using differentiation as follows:</p>
+<p class="continuation">Now using integration by parts with <span class="process-math">\(u = z\)</span> and <span class="process-math">\(dv = \sin(z) dz\text{,}\)</span> we obtain <span class="process-math">\(du = dz\)</span> and <span class="process-math">\(v = -\cos(z)\text{.}\)</span> So</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-\frac{d}{dx} \left( \frac{1}{2}x^2 \ln(x) - \frac{1}{4}x^2 + c \right) \amp = \frac{1}{2}x + x \ln(x) - \frac{1}{2} x\\
-\amp = x \ln(x)
+\int t^3 \sin(t^2) dt \amp = \frac{1}{2} \int z \sin(z) dz\\
+\amp = \frac{1}{2} \left( -z \cos(z) + \int \cos(z) dz \right)\\
+\amp = \frac{1}{2} \left( -z \cos(z) + \sin(z) \right)
 \end{align*}
 </div>
-<span class="incontext"><a href="sec-5-4-parts.html#tIL" class="internal">in-context</a></span>
+<p class="continuation">Finally, we use <span class="process-math">\(z = t^2\)</span> and obtain</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int t^3 \sin(t^2) dt = \frac{1}{2} \left( -t^2 \cos\left(t^2 \right) + \sin\left(t^2\right) \right)\text{.}
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-5-4-parts.html#QaJ" class="internal">in-context</a></span>
 </body>
 </html>

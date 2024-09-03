@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:17-07:00       *-->
+<!--*       on 2024-09-03T14:26:39-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,25 +15,28 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>To find where the tangent line to the curve is horizontal, we set <span class="process-math">\(\frac{dy}{dx} = 0\text{,}\)</span> which requires that the numerator be zero, or in other words that</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/F-2-7-Act2.html">
+<p>We differentiate implicitly both sides of the equation with respect to <span class="process-math">\(x\text{.}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-(x-1)(x-2) + x(x-2) + x(x-1) = 0\text{.}
+\ln y + \frac xy \, \frac{dy}{dx}
++ 7 y^{6}\frac{dy}{dx} = \frac{8}{x},
 \end{equation*}
 </div>
-<p class="continuation">Expanding and combining like terms, we find that <span class="process-math">\(3x^2 - 6x + 2 = 0\text{,}\)</span> which occurs where <span class="process-math">\(x = \frac{3\pm\sqrt{3}}{3} \approx 0.42265, 1.57735\text{.}\)</span> From the graph in <a href="" class="xref" data-knowl="./knowl/F-2-7-Act2.html" title="Figure 2.7.6">Figure 2.7.6</a>, we observe that at each such <span class="process-math">\(x\)</span>-value, there are several corresponding <span class="process-math">\(y\)</span>-values for which the tangent line will be horizontal. For instance, when <span class="process-math">\(x = 0.42265\text{,}\)</span> then <span class="process-math">\(y\)</span> must satisfy the equation</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/F-2-7-Act2.html">
+<p class="continuation">so</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-y(y^2-1)(y-2) = 0.42265(0.42265-1)(0.42265-2) = 0.384900\text{.}
+\left( \frac{x}{y} + 7 y^{6} \right) \,
+\frac{dy}{dx} = \frac{8}{x} - \ln y,
 \end{equation*}
 </div>
-<p class="continuation">Because this is a quartic equation (degree 4) equation in <span class="process-math">\(y\text{,}\)</span> we use computational technology to help us find the solutions. Doing so, we find four approximate values for <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(y \approx -1.05782, 0.229478, 0.770522, 2.05782\text{,}\)</span> and thus our estimates for four points at which the tangent line is horizontal are</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/F-2-7-Act2.html">
+<p class="continuation">and thus</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-(0.42265, -1.05782); (0.42265, 0.229478);  (0.42265, 0.770522); (0.42265, 2.05782)\text{.}
+\frac{dy}{dx}
+= \frac{\frac{8}{x} - \ln y}{\frac{x}{y} + 7 y^{6}}
+= \frac{y\!\left(8-x\ln\!\left(y\right)\right)}{x\!\left(x+7y^{7}\right)}.
 \end{equation*}
 </div>
-<p class="continuation">Similar work can be done to find the four points at which the tangent line is horizontal when <span class="process-math">\(x \approx 1.57735\text{.}\)</span></p>
-<span class="incontext"><a href="sec-2-7-implicit.html#STP" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-2-7-implicit.html#p-2987" class="internal">in-context</a></span>
 </body>
 </html>

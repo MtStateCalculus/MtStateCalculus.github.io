@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:35:26-07:00       *-->
+<!--*       on 2024-09-03T14:28:45-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,51 +15,35 @@
 </head>
 <body class="ignore-math">
 <div class="solution solution-like">
-<h3 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">8.6.1.1</span><span class="period">.</span>
-</h3>
-<ol class="lower-alpha">
-<li>
-<p>Differentiation term by term gives</p>
+<h4 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">8.6.2.1</span><span class="period">.</span>
+</h4>
+<p>If we evaluate <span class="process-math">\(f\)</span> at <span class="process-math">\(x=1\)</span> we obtain the series</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-y' = \sum_{k=1}^{\infty} ka_kx_{k-1}\text{.}
+\sum_{k=0}^{\infty} \frac{1}{2^k}
 \end{equation*}
 </div>
-<p>We then substitute this series into the differential equation <a href="" class="xref" data-knowl="./knowl/eq-PA-8-6-Resistance-ode.html" title="Equation 8.6.1">(8.6.1)</a> to obtain the equation</p>
-</li>
-<li>
-<p>When we write the first few terms of the series on either side of our differential equation we obtain</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-\amp a_1 + (2)a_2x + (3)a_3x^2 + (4)a_4x^3 + \cdots + (k+1)a_{k+1}x^{k} + \cdots\\
-\amp= a_0 + a_1x + a_2x^2 + \cdots + a_kx^k + \cdots\text{.}
-\end{align*}
-</div>
-<p>Equating the constant terms gives us <span class="process-math">\(a_1 = a_0\text{.}\)</span></p>
-</li>
-<li><p>Equating the degree 1 terms gives us <span class="process-math">\(2a_2 = a_1\)</span> or <span class="process-math">\(a_2 = \frac{a_1}{2}\text{.}\)</span> Since <span class="process-math">\(a_1 = a_0\text{,}\)</span> we have <span class="process-math">\(a_2 = \frac{a_0}{2}\text{.}\)</span></p></li>
-<li><p>Equating the degree 2 terms gives us <span class="process-math">\(3a_3 = a_2\)</span> or <span class="process-math">\(a_3 = \frac{a_2}{3}\text{.}\)</span> Since <span class="process-math">\(a_2 = \frac{a_0}{2}\text{,}\)</span> we have <span class="process-math">\(a_3 = \frac{a_0}{3!}\text{.}\)</span></p></li>
-<li><p>Equating the degree 3 terms gives us <span class="process-math">\(4a_4 = a_3\)</span> or <span class="process-math">\(a_4 = \frac{a_3}{4}\text{.}\)</span> Since <span class="process-math">\(a_3 = \frac{a_0}{3!}\text{,}\)</span> we have <span class="process-math">\(a_4 = \frac{a_0}{4!}\text{.}\)</span></p></li>
-<li>
-<p>Equating the degree <span class="process-math">\(k-1\)</span> terms gives us <span class="process-math">\(ka_k = a_{k-1}\)</span> or <span class="process-math">\(a_k = \frac{a_{k-1}}{k}\text{.}\)</span> It appears that <span class="process-math">\(a_{k-1} = \frac{a_0}{(k-1)!}\text{,}\)</span> so we have</p>
+<p class="continuation">which is a geometric series with ratio <span class="process-math">\(\frac{1}{2}\text{.}\)</span> So we can sum this series and find that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-a_k = \frac{a_0}{k!}\text{.}
+f(1) = \frac{1}{1-\frac{1}{2}} = 2\text{.}
 \end{equation*}
 </div>
-</li>
-<li>
-<p>Since <span class="process-math">\(a_k = \frac{a_0}{k!}\)</span> we have</p>
+<p>Similarly,</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-y = a_0 \sum_{k=0}^{\infty} \frac{x^k}{k!}\text{.}
+f(3/2) = \sum_{k=0}^{\infty} \left(\frac{3}{4}\right)^k = \frac{1}{1-\frac{3}{4}} = 4\text{.}
 \end{equation*}
 </div>
-<p>So the functions that satisfy the differential equation <a href="" class="xref" data-knowl="./knowl/eq-PA-8-6-Resistance-ode.html" title="Equation 8.6.1">(8.6.1)</a> are the exponential functions of the form <span class="process-math">\(y = a_0e^x\text{.}\)</span></p>
-</li>
-</ol>
+<p>In general, <span class="process-math">\(f(x)\)</span> is a geometric series with ratio <span class="process-math">\(\frac{x}{2}\text{,}\)</span> so</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x) = \sum_{k=0}^{\infty} \left(\frac{x}{2}\right)^k = \frac{1}{1-\frac{x}{2}} = \frac{2}{2-x}
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-8-6-powerseries.html#DLV" class="internal">in-context</a></span>
+<p class="continuation">provided that <span class="process-math">\(-1 \lt  \frac{x}{2} \lt  1\)</span> (which ensures that the ratio is less than 1 in absolute value). Thus, the power series that defines <span class="process-math">\(f(x)=\frac{2}{2-x}\)</span> converges for <span class="process-math">\(-2 \lt  x \lt  2\text{.}\)</span></p>
+</div>
+<span class="incontext"><a href="sec-8-6-powerseries.html#tOT" class="internal">in-context</a></span>
 </body>
 </html>

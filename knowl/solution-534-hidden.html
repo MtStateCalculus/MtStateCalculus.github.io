@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:35:29-07:00       *-->
+<!--*       on 2024-09-03T14:28:48-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,12 +14,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like">
-<span class="process-math">\(\displaystyle \frac{4}{1-9 x} = 4 \cdot \sum_{n=0}^\infty (9 x)^n\text{.}\)</span> Then we can see that <span class="process-math">\(c_n = 4 \cdot 9^n\text{,}\)</span> making <span class="process-math">\(c_0 = 4\text{,}\)</span> <span class="process-math">\(c_1 = 4 \cdot 9 = 36\text{,}\)</span> <span class="process-math">\(c_2 = 4 \cdot 9^2 = 324\text{,}\)</span> etc. Regarding the radius of convergence, we perform the standard ratio test:<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\lim_{n\to\infty} \left| \frac{4(9 x)^{n+1}}{4(9 x)^n} \right|
-=	\lim_{n\to\infty} \left| 9 x \right|
-=	\left| 9 x \right|
-\end{equation*}
-</div>And then <span class="process-math">\(\left| 9 x \right| \lt  1 \iff \left| x \right| \lt  \frac 1 {9}\text{,}\)</span> making <span class="process-math">\(R = \frac 1 {9}\text{.}\)</span>
+<span class="process-math">\(\displaystyle c_n = \frac{f^{(n)}(0)}{n!}\text{,}\)</span> e.g. <span class="process-math">\(\displaystyle c_0 = \frac{f(0)}{0!} = 0\text{.}\)</span> <span class="process-math">\(\displaystyle c_1 = \frac{f'(0)}{1!}\text{;}\)</span> <span class="process-math">\(\displaystyle f'(x)=3 \arctan(7 x) + 3 x\frac{1}{(7 x)^2+1}7 
+= 3 \arctan(7 x) + \frac{21 x}{49 x^2+1}\text{;}\)</span> <span class="process-math">\(c_1 = 0\text{.}\)</span> <span class="process-math">\(\displaystyle c_2 = \frac{f''(0)}{2!}\text{;}\)</span> <span class="process-math">\(\displaystyle 
+f''(x) = \left( 3 \arctan(7 x) + \frac{21 x}{49 x^2+1} \right)'\)</span><span class="process-math">\(\displaystyle = 
+\frac{21}{49 x^2+1} + \frac{21(49 x^2+1)-21 x49\cdot 2x}{(49 x^2+1)^2}\)</span><span class="process-math">\(\displaystyle
+= \frac{1029 x^2 + 21}{(49 x^2+1)^2} + \frac{21 - 1029 x^2}{(49 x^2+1)^2}
+= \frac{42}{(49 x^2+1)^2}\text{;}\)</span> <span class="process-math">\(\displaystyle c_2 = \frac{42}{2} = 21\text{;}\)</span> and so on. Another way is to use the power series for arctan: <span class="process-math">\(\displaystyle \arctan(t) = \sum_{n=0}^{\infty} (-1)^n \frac{t^{2n+1}}{2n+1} 
+= t-\frac{t^3}{3}+\frac{t^5}{5}-\frac{t^7}{7}+...\text{.}\)</span> Then <span class="process-math">\(\displaystyle 3 x \arctan(7 x) = 
+3 x \sum_{n=0}^\infty (-1)^n \frac{(7 x)^{2n+1}}{2n+1} = 
+\sum_{n=0}^\infty (-1)^n \frac{3\cdot 7^{2n+1}}{2n+1} x^{2n+2}\)</span><span class="process-math">\(\displaystyle  
+= 21 x^2 - \frac{1029}{3} x^4 + \frac{50421}{5} x^6 - \frac{2470629}{7} x^7+...\text{.}\)</span> So <span class="process-math">\(c_0=0\text{,}\)</span> <span class="process-math">\(c_1=0\text{,}\)</span> <span class="process-math">\(c_2=21\text{,}\)</span> <span class="process-math">\(c_3=0\text{,}\)</span> <span class="process-math">\(c_4=-\frac{1029}{3}=-343\text{...}\)</span> This is an alternating series. It converges if and only if <span class="process-math">\(\displaystyle \lim_{n\to\infty}\frac{3 \cdot (7 x)^{2n+1}}{2n+1}=0\text{.}\)</span> This limit is equal to 0 if and only if <span class="process-math">\(|7 x| \le 1\text{,}\)</span> so <span class="process-math">\(\displaystyle |x|\le \frac{1}{7}\text{.}\)</span> Therefore the radius of convergence is <span class="process-math">\(\displaystyle \frac{1}{7}\text{.}\)</span>
 </div></body>
 </html>

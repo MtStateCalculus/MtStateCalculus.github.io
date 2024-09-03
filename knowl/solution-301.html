@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:44-07:00       *-->
+<!--*       on 2024-09-03T14:27:07-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,11 +16,17 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.2.5.2.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.2.5.3.1</span><span class="period">.</span>
 </h4>
-<span class="process-math">\(\frac{d}{dx} \int_x^a {\sin(\cos(t)) \,dt} =
-\frac{d}{dx}\left(-\int_{a}^x{\sin(\cos(t)) \,dt}\right) = 
-- \sin(\cos(x)).\)</span>
+<span class="process-math">\(F'(x)=e^{-x^2/5}\)</span> and <span class="process-math">\(F(0)=2\text{,}\)</span> we have<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+F(x)=F(0)+\int_0^x e^{-t^2/5}\,dt = 2 + \int_0^x e^{-t^2/5}\,dt.
+\end{equation*}
+</div>Substituting <span class="process-math">\(x=2\)</span> and evaluating the integral numerically gives<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+F(2)=2 + \int_0^{2} e^{-t^2/5}\,dt \approx 3.57363.
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="sec-5-2-FTC2.html#solution-301" class="internal">in-context</a></span>
 </body>

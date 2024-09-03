@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:34:20-07:00       *-->
+<!--*       on 2024-09-03T14:27:42-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,17 +16,16 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">6.5.5.3.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">6.5.5.4.1</span><span class="period">.</span>
 </h4>
-<span class="process-math">\(w = 1 + e^{5 x}\text{,}\)</span> we have<div class="displaymath process-math" data-contains-math-knowls="">
+<span class="process-math">\(1/v\)</span> is undefined at <span class="process-math">\(v=0\text{.}\)</span> To evaluate it, we must split the region of integration up into two pieces, from 0 to 8 and from <span class="process-math">\(-8\)</span> to 0.  But notice,<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\int_{-\infty}^{0}\,{e^{5 x}\over 1 + e^{5 x}}\,dx = 
-\lim\limits_{b\to 1^{+}} \int_b^{1 + e^{0}} {1\over 5}{dw\over w} = 
-\lim\limits_{b\to 1^{+}} {1\over 5}(\ln(1 + e^{0}) - \ln(b)) = 
-{1\over 5}\ln(1 + e^{0}).
+\int_0^{8}{1\over v}\, dv =
+\lim_{b\to 0^+}\int_b^{8} {1\over v}\, dv =
+\lim_{b\to 0^+}\left({\ln v}\bigg|_b^{8}\right) =
+\ln(8) - \ln b.
 \end{equation*}
-</div>
-</div>
+</div>As <span class="process-math">\(b\to 0^+\text{,}\)</span> this goes to infinity and the integral diverges, so our original integral also diverges.</div>
 <span class="incontext"><a href="sec-6-5-improper.html#solution-404" class="internal">in-context</a></span>
 </body>
 </html>

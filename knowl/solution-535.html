@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:35:30-07:00       *-->
+<!--*       on 2024-09-03T14:28:49-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,19 +16,53 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">8.6.4.2.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">8.6.4.3.1</span><span class="period">.</span>
 </h4>
-<span class="process-math">\(\displaystyle c_n = \frac{f^{(n)}(0)}{n!}\text{,}\)</span> e.g. <span class="process-math">\(\displaystyle c_0 = \frac{f(0)}{0!} = 0\text{.}\)</span> <span class="process-math">\(\displaystyle c_1 = \frac{f'(0)}{1!}\text{;}\)</span> <span class="process-math">\(\displaystyle f'(x)=4 \arctan(5 x) + 4 x\frac{1}{(5 x)^2+1}5 
-= 4 \arctan(5 x) + \frac{20 x}{25 x^2+1}\text{;}\)</span> <span class="process-math">\(c_1 = 0\text{.}\)</span> <span class="process-math">\(\displaystyle c_2 = \frac{f''(0)}{2!}\text{;}\)</span> <span class="process-math">\(\displaystyle 
-f''(x) = \left( 4 \arctan(5 x) + \frac{20 x}{25 x^2+1} \right)'\)</span><span class="process-math">\(\displaystyle = 
-\frac{20}{25 x^2+1} + \frac{20(25 x^2+1)-20 x25\cdot 2x}{(25 x^2+1)^2}\)</span><span class="process-math">\(\displaystyle
-= \frac{500 x^2 + 20}{(25 x^2+1)^2} + \frac{20 - 500 x^2}{(25 x^2+1)^2}
-= \frac{40}{(25 x^2+1)^2}\text{;}\)</span> <span class="process-math">\(\displaystyle c_2 = \frac{40}{2} = 20\text{;}\)</span> and so on. Another way is to use the power series for arctan: <span class="process-math">\(\displaystyle \arctan(t) = \sum_{n=0}^{\infty} (-1)^n \frac{t^{2n+1}}{2n+1} 
-= t-\frac{t^3}{3}+\frac{t^5}{5}-\frac{t^7}{7}+...\text{.}\)</span> Then <span class="process-math">\(\displaystyle 4 x \arctan(5 x) = 
-4 x \sum_{n=0}^\infty (-1)^n \frac{(5 x)^{2n+1}}{2n+1} = 
-\sum_{n=0}^\infty (-1)^n \frac{4\cdot 5^{2n+1}}{2n+1} x^{2n+2}\)</span><span class="process-math">\(\displaystyle  
-= 20 x^2 - \frac{500}{3} x^4 + \frac{12500}{5} x^6 - \frac{312500}{7} x^7+...\text{.}\)</span> So <span class="process-math">\(c_0=0\text{,}\)</span> <span class="process-math">\(c_1=0\text{,}\)</span> <span class="process-math">\(c_2=20\text{,}\)</span> <span class="process-math">\(c_3=0\text{,}\)</span> <span class="process-math">\(c_4=-\frac{500}{3}=-166.666666666667\text{...}\)</span> This is an alternating series. It converges if and only if <span class="process-math">\(\displaystyle \lim_{n\to\infty}\frac{4 \cdot (5 x)^{2n+1}}{2n+1}=0\text{.}\)</span> This limit is equal to 0 if and only if <span class="process-math">\(|5 x| \le 1\text{,}\)</span> so <span class="process-math">\(\displaystyle |x|\le \frac{1}{5}\text{.}\)</span> Therefore the radius of convergence is <span class="process-math">\(\displaystyle \frac{1}{5}\text{.}\)</span>
+<ol class="lower-alpha">
+<li>
+<p>The Taylor series expansion for <span class="process-math">\(\sin(x)\)</span> centered at <span class="process-math">\(x=0\)</span> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin(x) = \sum_{k=0}^{\infty} (-1)^k\frac{x^{2k+1}}{(2k+1)!}\text{.}
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-8-6-powerseries.html#solution-535" class="internal">in-context</a></span>
+<p class="continuation">Substituting <span class="process-math">\(x^2\)</span> for <span class="process-math">\(x\)</span> gives us</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin(x^2) = \sum_{k=0}^{\infty} (-1)^k\frac{x^{2(2k+1)}}{(2k+1)!}\text{,}
+\end{equation*}
+</div>
+<p class="continuation">as the Taylor series for <span class="process-math">\(\sin(x^2)\)</span> centered at <span class="process-math">\(x=0\text{.}\)</span> Since the interval of convergence for the Taylor series for <span class="process-math">\(\sin(x)\)</span> is <span class="process-math">\((-\infty, \infty)\text{,}\)</span> it follows that the interval of convergence of the Taylor series for <span class="process-math">\(\sin(x^2)\)</span> is also <span class="process-math">\((-\infty, \infty)\text{.}\)</span></p>
+</li>
+<li>
+<p>We can integrate a Taylor series term by term on its interval of convergence, so</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+\int \sin(x^2) \, dx &amp;= \int \sum_{k=0}^{\infty} (-1)^k\frac{x^{2(2k+1)}}{(2k+1)!} \, dx\\
+&amp;= \sum_{k=0}^{\infty} \int (-1)^k\frac{x^{2(2k+1)}}{(2k+1)!} \, dx\\
+&amp;= \sum_{k=0}^{\infty} \int (-1)^k\frac{x^{4k+2}}{(2k+1)!} \, dx\\
+&amp;= \sum_{k=0}^{\infty} (-1)^k\frac{x^{4k+3}}{(2k+1)!(4k+3)} + C\text{.}
+\end{align*}
+</div>
+</li>
+<li>
+<p>To evaluate <span class="process-math">\(\int_0^1 \sin(x^2) \ dx\text{,}\)</span> we evaluate the antiderivative <span class="process-math">\(\sum_{k=0}^{\infty} (-1)^k\frac{x^{4k+3}}{(2k+1)!(4k+2)}\)</span> at <span class="process-math">\(1\)</span> and <span class="process-math">\(0\)</span> and subtract. So</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+\int_0^1 \sin(x^2) \, dx &amp;= \left. \sum_{k=0}^{\infty} (-1)^k\frac{x^{4k+3}}{(2k+1)!(4k+3)}\right|_{0}^{1}\\
+&amp;= \sum_{k=0}^{\infty} (-1)^k\frac{1}{(2k+1)!(4k+3)}\text{.}
+\end{align*}
+</div>
+<p class="continuation">The resulting series is an alternating series, so we can find a value of <span class="process-math">\(n\)</span> that makes the <span class="process-math">\(n\)</span>th partial sum of the series approximate the sum of the series to <span class="process-math">\(3\)</span> decimal places by determining a value of <span class="process-math">\(n\)</span> such that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+a_{n+1} = \frac{1}{(2(n+1)+1)!(4(n+1)+3)} \lt 0.001\text{.}
+\end{equation*}
+</div>
+<p class="continuation">This is not an inequality that we can solve algebraically, so we use trial and error. Doing so shows that <span class="process-math">\(n = 1\)</span> will work.</p>
+</li>
+</ol>
+</div>
+<span class="incontext"><a href="sec-8-6-powerseries.html#HJq" class="internal">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:34:07-07:00       *-->
+<!--*       on 2024-09-03T14:27:30-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,16 +14,20 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like">
-<div class="displaymath process-math" data-contains-math-knowls="">
+<span class="process-math">\(\Delta y\)</span> and radius <span class="process-math">\(x=\root 6\of{y}\text{.}\)</span> Thus<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-V=\int_{-2}^{-1}\pi y^2\,dx = \int_{-2}^{-1}\pi(e^{2 x})^2\,dx = 
-\int_{-2}^{-1}\pi e^{4 x}\,dx
+\hbox{Volume of slice }\approx \pi x^2\Delta y =\pi y^{1/3}\,\Delta y,
+\end{equation*}
+</div>and<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\hbox{Volume of solid } = 
+\lim_{\Delta y\to 0}\Sigma\pi y^{1/3}\,\Delta y
+= \int_0^1 \pi y^{1/3}\, dy
 \end{equation*}
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-= \frac{\pi}{4}e^{4 x}\bigg|_{-2}^{-1} =
-\frac{\pi}{4}(e^{-4} - e^{-8}).
+= {3 \pi\over 4} y^{1 + 1/3}\bigg|_0^1 = {3 \pi\over 4}.
 \end{equation*}
 </div>
 </div></body>

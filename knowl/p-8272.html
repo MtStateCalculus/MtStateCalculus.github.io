@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:34:45-07:00       *-->
+<!--*       on 2024-09-03T14:28:06-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,8 +14,34 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>The logistic equation is good for modeling any situation in which limited growth is possible. For instance, it could model the spread of a flu virus through a population contained on a cruise ship, the rate at which a rumor spreads within a small town, or the behavior of an animal population on an island. Through our work in this section, we have completely solved the logistic equation, regardless of the values of the constants <span class="process-math">\(N\text{,}\)</span> <span class="process-math">\(k\text{,}\)</span> and <span class="process-math">\(P_0\text{.}\)</span> Anytime we encounter a logistic equation, we can apply the formula we found in Equation <a href="" class="xref" data-knowl="./knowl/E-7-6-logistic-solution.html" title="Equation 7.6.2">(7.6.2)</a>.</p>
-<span class="incontext"><a href="sec-7-6-logistic.html#NAg" class="internal">in-context</a></span>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<p>The solution for the general logistic initial value problem is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+P(t) = \frac{N}{\left( \frac{N - P_0}{P_0} \right) e^{-kNt} + 1}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">For this solution, we see that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+P(0) \amp = \frac{N}{\left( \frac{N - P_0}{P_0} \right) + 1}\\
+\amp = \frac{N}{\frac{N - P_0 + P_0}{P_0}}\\
+\amp = \frac{N P_0}{N}\\
+\amp = P_0
+\end{align*}
+</div>
+<p class="continuation">To determine <span class="process-math">\(\lim_{t \to \infty} P(t)\text{,}\)</span> we first note that since <span class="process-math">\(-kN \lt  0\text{,}\)</span> <span class="process-math">\(\lim_{t \to \infty} e^{-kNt} = 0\text{.}\)</span> Hence,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{t \to \infty}\left[ \left( \frac{N - P_0}{P_0} \right)e^{-kNt} + 1 \right] = 1\text{,}
+\end{equation*}
+</div>
+<p class="continuation">and therefore,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{t \to \infty} P(t) = \lim_{t\to \infty} \frac{N}{\left( \frac{N - P_0}{P_0} \right) e^{-kNt} + 1} = \frac{N}{1} = N\text{.}
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-7-6-logistic.html#MEN" class="internal">in-context</a></span>
 </body>
 </html>

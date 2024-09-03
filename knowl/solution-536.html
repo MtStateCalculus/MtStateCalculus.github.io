@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:35:30-07:00       *-->
+<!--*       on 2024-09-03T14:28:49-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,53 +16,42 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">8.6.4.3.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">8.6.4.4.1</span><span class="period">.</span>
 </h4>
 <ol class="lower-alpha">
 <li>
-<p>The Taylor series expansion for <span class="process-math">\(\sin(x)\)</span> centered at <span class="process-math">\(x=0\)</span> is</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\sin(x) = \sum_{k=0}^{\infty} (-1)^k\frac{x^{2k+1}}{(2k+1)!}\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Substituting <span class="process-math">\(x^2\)</span> for <span class="process-math">\(x\)</span> gives us</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\sin(x^2) = \sum_{k=0}^{\infty} (-1)^k\frac{x^{2(2k+1)}}{(2k+1)!}\text{,}
-\end{equation*}
-</div>
-<p class="continuation">as the Taylor series for <span class="process-math">\(\sin(x^2)\)</span> centered at <span class="process-math">\(x=0\text{.}\)</span> Since the interval of convergence for the Taylor series for <span class="process-math">\(\sin(x)\)</span> is <span class="process-math">\((-\infty, \infty)\text{,}\)</span> it follows that the interval of convergence of the Taylor series for <span class="process-math">\(\sin(x^2)\)</span> is also <span class="process-math">\((-\infty, \infty)\text{.}\)</span></p>
-</li>
-<li>
-<p>We can integrate a Taylor series term by term on its interval of convergence, so</p>
+<p>Observe that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-\int \sin(x^2) \, dx &amp;= \int \sum_{k=0}^{\infty} (-1)^k\frac{x^{2(2k+1)}}{(2k+1)!} \, dx\\
-&amp;= \sum_{k=0}^{\infty} \int (-1)^k\frac{x^{2(2k+1)}}{(2k+1)!} \, dx\\
-&amp;= \sum_{k=0}^{\infty} \int (-1)^k\frac{x^{4k+2}}{(2k+1)!} \, dx\\
-&amp;= \sum_{k=0}^{\infty} (-1)^k\frac{x^{4k+3}}{(2k+1)!(4k+3)} + C\text{.}
+f'(x) \amp = \sum_{k=1}^{\infty} ka_kx^{k-1}\\
+f''(x) \amp = \sum_{k=2}^{\infty} k(k-1)a_kx^{k-2}\\
+f^{(3)}(x) \amp = \sum_{k=3}^{\infty} k(k-1)(k-2)a_kx^{k-3}\\
+f^{(4)}(x) \amp = \sum_{k=4}^{\infty} k(k-1)(k-2)(k-3)a_kx^{k-4}
+\end{align*}
+</div>
+<p class="continuation">and therefore</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+f(0) \amp = a_0\\
+f'(0) \amp = a_1\\
+f''(0) \amp = 2!a_2\\
+f^{(3)}(0) \amp = 3!a_3\\
+f^{(4)}(0) \amp = 4!a_4\text{.}
 \end{align*}
 </div>
 </li>
 <li>
-<p>To evaluate <span class="process-math">\(\int_0^1 \sin(x^2) \ dx\text{,}\)</span> we evaluate the antiderivative <span class="process-math">\(\sum_{k=0}^{\infty} (-1)^k\frac{x^{4k+3}}{(2k+1)!(4k+2)}\)</span> at <span class="process-math">\(1\)</span> and <span class="process-math">\(0\)</span> and subtract. So</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-\int_0^1 \sin(x^2) \, dx &amp;= \left. \sum_{k=0}^{\infty} (-1)^k\frac{x^{4k+3}}{(2k+1)!(4k+3)}\right|_{0}^{1}\\
-&amp;= \sum_{k=0}^{\infty} (-1)^k\frac{1}{(2k+1)!(4k+3)}\text{.}
-\end{align*}
-</div>
-<p class="continuation">The resulting series is an alternating series, so we can find a value of <span class="process-math">\(n\)</span> that makes the <span class="process-math">\(n\)</span>th partial sum of the series approximate the sum of the series to <span class="process-math">\(3\)</span> decimal places by determining a value of <span class="process-math">\(n\)</span> such that</p>
+<p>Since</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-a_{n+1} = \frac{1}{(2(n+1)+1)!(4(n+1)+3)} \lt 0.001\text{.}
+f^{(n)}(x) = \sum_{k=n}^{\infty} k(k-1)(k-2) \cdots (k-n+1) a_kx^{k-n}
 \end{equation*}
 </div>
-<p class="continuation">This is not an inequality that we can solve algebraically, so we use trial and error. Doing so shows that <span class="process-math">\(n = 1\)</span> will work.</p>
+<p class="continuation">every term of this series vanishes at <span class="process-math">\(x = 0\)</span> except the first. Thus it follows <span class="process-math">\(f^{(n)}(0) = n(n-1)(n-2) \cdots (1) a_n\text{,}\)</span> so <span class="process-math">\(f^{(n)}(0) = n! a_n\text{.}\)</span></p>
 </li>
+<li><p>Since <span class="process-math">\(a_k = \frac{f^{(k)}(0)}{k!}\)</span> for each <span class="process-math">\(k \geq 0\text{,}\)</span> we see that these are just the coefficients of the Taylor series expansion of <span class="process-math">\(f\text{,}\)</span> and thus we get the unsurprising result that the coefficients of a power series are identical to the Taylor series of the power series.</p></li>
 </ol>
 </div>
-<span class="incontext"><a href="sec-8-6-powerseries.html#HJq" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-8-6-powerseries.html#TXI" class="internal">in-context</a></span>
 </body>
 </html>

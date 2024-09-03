@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:56-07:00       *-->
+<!--*       on 2024-09-03T14:27:19-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,26 +16,64 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.5.5.8.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.6.2.1</span><span class="period">.</span>
 </h4>
 <ol class="lower-alpha">
+<li><p><span class="process-math">\(\int_1^2 \dfrac{1}{x^2} dx = \left. -x^{-1} \right|_1^2 = -\dfrac{1}{2} + 1 = \dfrac{1}{2}\text{.}\)</span></p></li>
 <li>
-<p>Looking at the composite functions that are present, there are two possible <span class="process-math">\(u\)</span>-substitutions to try. One is <span class="process-math">\(u = 1+x^2\text{,}\)</span> for which <span class="process-math">\(du = 2x \, dx\)</span> and <span class="process-math">\(x = \sqrt{u-1}\text{.}\)</span> Because there is no <span class="process-math">\(x \, dx\)</span> term present in the integral, this substitution will not work.</p>
-<p>A second subsitution to attempt is letting <span class="process-math">\(u = x + \sqrt{1+x^2}\text{,}\)</span> for which <span class="process-math">\(du = \left(1 + x(1+x^2)^{-1/2} \right) \, dx\text{.}\)</span> Here, too, the needed product is not present in the integral in order for the subsitution to work.</p>
+<p>The table below gives values of the trapezoid rule and corresponding errors for different <span class="process-math">\(n\)</span>-values.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular" id="uzW">
+<tr>
+<td class="l m b2 r0 l0 t1 lines"><span class="process-math">\(n\)</span></td>
+<td class="l m b2 r0 l0 t1 lines"><span class="process-math">\(T_n\)</span></td>
+<td class="l m b2 r0 l0 t1 lines"><span class="process-math">\(E_{T,n}\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0.50899\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0.00899\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(8\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0.50227\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0.00227\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(16\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0.50057\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0.00057\)</span></td>
+</tr>
+</table></div></div></div>
 </li>
 <li>
-<p>For integration by parts to work, we normally need a choice of <span class="process-math">\(u\)</span> that is straightforward to differentiate, and <span class="process-math">\(dv\)</span> that is straightforward to antidifferentiate. Noting that the integrand can really only be written as the product of <span class="process-math">\(\frac{1}{x}\)</span> and <span class="process-math">\(\sqrt{x+\sqrt{1+x^2}}\text{,}\)</span> it appears that the most natural possible option is to let <span class="process-math">\(u = \sqrt{x+\sqrt{1+x^2}}\)</span> and <span class="process-math">\(dv = \frac{1}{x} \, dx\text{,}\)</span> since we can antidifferentiate <span class="process-math">\(\frac{1}{x}\text{.}\)</span> Here, however, the approach stalls, because integration by parts requires us to evaluate <span class="process-math">\(\int v \, du\text{,}\)</span> and that integral is</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\int \ln|x| \cdot \frac{1}{2} \left( x + \sqrt{1+x^2} \right)^{-1/2} \cdot \left( 1 + x(1+x^2)^{-1/2} \right) \, dx
-\end{equation*}
-</div>
-<p class="continuation">which is far more complicated than the already-complicated integral we started with. From this it appears that integration by parts will not be productive.</p>
+<p>The table below gives values of the midpoint rule and corresponding errors for different <span class="process-math">\(n\)</span>-values.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular" id="aHf">
+<tr>
+<td class="l m b2 r0 l0 t1 lines"><span class="process-math">\(n\)</span></td>
+<td class="l m b2 r0 l0 t1 lines"><span class="process-math">\(M_n\)</span></td>
+<td class="l m b2 r0 l0 t1 lines"><span class="process-math">\(E_{M,n}\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0.49555\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(-0.00445\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(8\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0.49887\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(-0.00113\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(16\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0.49972\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(-0.00028\)</span></td>
+</tr>
+</table></div></div></div>
 </li>
-<li><p>Since we can't seem to find a <span class="process-math">\(u\)</span>-substitution that simplifies the given integral, and there are no formulas in the Appendix that use nested square roots, it appears that the table doesn't offer any help in evaluating this particular integral.</p></li>
-<li><p>WolframAlpha returns results that either involve inverse hyperbolic trigonometric functions or complex numbers. As such, it appears that the function <span class="process-math">\(\frac{\sqrt{x+\sqrt{1+x^2}}}{x}\)</span> does not have an elementary antiderivative that we can find.</p></li>
+<li><p>From the errors in comparision to the known exact value, we see that the trapezoid rule overestimates this definite integral and the midpoint rule underestimates this definite integral.</p></li>
+<li><p>The graph of the function given by <span class="process-math">\(f(x) = \dfrac{1}{x^2}\)</span> is concave up on the interval <span class="process-math">\([1, 2]\text{.}\)</span> Because of this fact, we can see graphically that the line forming the top of each trapezoid lies fully above the curve, and thus the trapezoid rule overestimates the true value of the definite integral. Later in this section we'll see graphically why this concavity makes the midpoint rule an underestimate.</p></li>
 </ol>
 </div>
-<span class="incontext"><a href="sec-5-5-other-opt.html#BpB" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-5-6-num-int.html#uVv" class="internal">in-context</a></span>
 </body>
 </html>

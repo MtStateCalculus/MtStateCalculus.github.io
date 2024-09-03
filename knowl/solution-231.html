@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:26-07:00       *-->
+<!--*       on 2024-09-03T14:26:50-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,55 +16,40 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.5.5.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.5.3.1.1</span><span class="period">.</span>
 </h4>
-<p>We let <span class="process-math">\(x\)</span> denote the position of the ball at time <span class="process-math">\(t\)</span> and <span class="process-math">\(z\)</span> the distance from the ball to first base, as pictured below.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/3_5_Act4Soln1.svg" role="img" class="contained"></div></div></div>
-<p>By the Pythagorean Theorem, we know that <span class="process-math">\(x^2 + 90^2 = z^2\text{;}\)</span> differentiating with respect to <span class="process-math">\(t\text{,}\)</span> we have</p>
+<p>We are given that the diameter and height are always the same, so <span class="process-math">\(2r = h\text{,}\)</span>or <span class="process-math">\(r = \frac12 h\text{.}\)</span> Hence, the volume of the pile is</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-2x\frac{dx}{dt} = 2z\frac{dz}{dt}\text{.}
+\textstyle
+V =  \frac13 \pi r^2 h
+= \frac13 \pi \bigl( \frac12 h \bigr)^2 h
+= \frac1{12} \pi h^3.
 \end{equation*}
 </div>
-<p>At the instant the ball is halfway to third base, we know <span class="process-math">\(x = 45\)</span> and <span class="process-math">\(\left. \frac{dx}{dt} \right|_{x = 45} = 100\text{.}\)</span> Moreover, by Pythagoras, <span class="process-math">\(z^2 = 90^2 + 45^2\text{,}\)</span> so <span class="process-math">\(z = 45\sqrt{5}\text{.}\)</span> Thus,</p>
+<p class="continuation">Differentiating with respect to time (<span class="process-math">\(t\)</span>) gives</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-2 \cdot 45 \cdot 100 = 2 \cdot 45 \sqrt{5} \cdot \left. \frac{dz}{dt} \right|_{x = 45}\text{,}
+\frac{dV}{dt} =
+{\textstyle  \frac{1}{12} \pi \, 3 h^2} \, \frac{dh}{dt}
+= {\textstyle \frac14 \pi h^2} \, \frac{dh}{dt},
 \end{equation*}
 </div>
-<p class="continuation">so</p>
+<p class="continuation">and so</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\left. \frac{dz}{dt} \right|_{x = 45} = \frac{100}{\sqrt{5}} \approx 44.7214 \ \text{feet/sec}\text{.}
+\frac{dh}{dt} = \frac{4}{\pi h^2} \frac{dV}{dt}.
 \end{equation*}
 </div>
-<p>For the second question, we still let <span class="process-math">\(x\)</span> represent the ball's position at time <span class="process-math">\(t\text{,}\)</span> but now we introduce <span class="process-math">\(r\)</span> as the runner's position at time <span class="process-math">\(t\)</span> and let <span class="process-math">\(s\)</span> be the distance between the runner and the ball. In this setting, as seen in the diagram below,</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/3_5_Act4Soln2.svg" role="img" class="contained"></div></div></div>
-<p><span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(r\text{,}\)</span> and <span class="process-math">\(s\)</span> form the sides of a right triangle, so that</p>
+<p class="continuation">If <span class="process-math">\(\frac{dV}{dt} = 50\)</span> and <span class="process-math">\(h = 19\text{,}\)</span> then</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-x^2 + r^2 = s^2\text{,}
+\frac{dh}{dt} = \frac{4 \cdot 50}{19 ^2 \pi}
+= \frac{200}{361\pi }.
 \end{equation*}
 </div>
-<p class="continuation">by the Pythagorean Theorem. Differentiating each side with respect to <span class="process-math">\(t\text{,}\)</span> it follows that the three rates of change are related by the equation</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-2x \frac{dx}{dt} + 2r \frac{dr}{dt} = 2s \frac{ds}{dt}\text{.}
-\end{equation*}
+<p class="continuation">Hence, when the pile is <span class="process-math">\(19\)</span> feet high its height is increasing at a rate of <span class="process-math">\(\frac{200}{361\pi }\)</span> feet per minute.</p>
 </div>
-<p>We are given that at the instant <span class="process-math">\(x = 45\text{,}\)</span> <span class="process-math">\(r = \frac{90}{8}\text{,}\)</span> so by Pythagoras, <span class="process-math">\(s = \frac{45}{4}\sqrt{17}\text{.}\)</span> In addition, at this same instant we know that <span class="process-math">\(\left. \frac{dx}{dt} \right|_{x = 45} = 100\)</span> and <span class="process-math">\(\left. \frac{dr}{dt} \right|_{x = 45} = 30\text{.}\)</span> Applying this information,</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-2 \cdot 45 \cdot 100 + 2 \cdot \frac{45}{4} \cdot 30 = 2 \cdot \frac{45}{4}\sqrt{17} \cdot \left. \frac{ds}{dt} \right|_{x = 45}
-\end{equation*}
-</div>
-<p class="continuation">and therefore</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\left. \frac{ds}{dt} \right|_{x = 45} = \frac{430}{\sqrt{17}} \approx 104.2903 \ \text{feet/sec}\text{.}
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="sec-3-5-rel-rates.html#Jmv" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-3-5-rel-rates.html#solution-231" class="internal">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:38-07:00       *-->
+<!--*       on 2024-09-03T14:27:02-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,37 +15,18 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>To find the average velocity of the object on <span class="process-math">\([12,24]\text{,}\)</span> we first evaluate <span class="process-math">\(\int_{12}^{24} v(t) \, dt\text{.}\)</span> To do so, we use the fact that <span class="process-math">\(v\)</span> is piecewise linear and employ standard geometric formulas to determine the value of the integral. The area of the trapezoid formed by <span class="process-math">\(v(t)\)</span> and the vertical line segments at <span class="process-math">\(t = 12\)</span> and <span class="process-math">\(t = 16\)</span> is</p>
+<p>For the Riemann sum <span class="process-math">\(M_5\text{,}\)</span> we have <span class="process-math">\(5\)</span> subintervals. Given the original data, this means that we need to evaluate the function at every other known data point. In particular,</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-A_1 = \frac{1}{2}(f(12) + f(16))(4) = 2(9 + 15) = 48\text{.}
-\end{equation*}
+\begin{align*}
+\int_{0}^{10000} m(h) \, dh &amp;\approx M_5\\
+&amp;= m(1000) \cdot 2000 + m(3000) \cdot 2000 + m(5000) \cdot 2000\\
+&amp;+ m(7000) \cdot 2000 + m(9000) \cdot 2000\\
+&amp;= \left( \frac{1}{875} + \frac{1}{780} + \frac{1}{685} + \frac{1}{585} + \frac{1}{490} \right) \cdot 2000\\
+&amp;\approx 0.007634980475 \cdot 2000\\
+&amp;\approx 15.27\text{.}
+\end{align*}
 </div>
-<p class="continuation">The area of the rectangle formed by <span class="process-math">\(v(t)\)</span> and the vertical line segments at <span class="process-math">\(t = 16\)</span> and <span class="process-math">\(t = 20\)</span> is</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-A_2 = 4 \cdot 15 = 60\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Finally, the area of the trapezoid formed by <span class="process-math">\(v(t)\)</span> and the vertical line segments at <span class="process-math">\(t = 20\)</span> and <span class="process-math">\(t = 24\)</span> is</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-A_3 = \frac{1}{2}(f(20) + f(24))(4) = 2(15 + 6) = 42\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Thus,</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\int_{12}^{24} v(t) \, dt = A_1 + A_2 + A_3 = 48 + 60 + 42 = 150\text{,}
-\end{equation*}
-</div>
-<p class="continuation">from which it follows that</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\displaystyle v_{\operatorname{AVG} [12,24]}  = \frac{1}{24-12} \int_{12}^{24} v(t) \, dt = \frac{150}{12} = 12.5
-\end{equation*}
-</div>
-<p class="continuation">meters per minute.</p>
-<span class="incontext"><a href="sec-4-4-FTC.html#SBH" class="internal">in-context</a></span>
+<p class="continuation">Thus, it takes the plane a bit more than <span class="process-math">\(15\)</span> minutes to climb to an altitude of 10,000 feet.</p>
+<span class="incontext"><a href="sec-4-4-FTC.html#dKG" class="internal">in-context</a></span>
 </body>
 </html>

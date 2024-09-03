@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:24-07:00       *-->
+<!--*       on 2024-09-03T14:26:48-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,31 +14,23 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like">
-<p>Let <span class="process-math">\(x\)</span> be the length of one side of the square bottom and <span class="process-math">\(h\)</span> the height of one of the sides. We first note that the volume, <span class="process-math">\(V\text{,}\)</span> of the box is <span class="process-math">\(V = x^2 h\text{,}\)</span> and the surface area of the box is <span class="process-math">\(S = 2x^2 +  4xh\text{,}\)</span> since there are two square sides (bottom and top) of area <span class="process-math">\(x^2\)</span> and four identical sides of area <span class="process-math">\(xh\text{.}\)</span> Since the material for the top and bottom costs $3.00 per square foot and the material for the sides costs $1.50 per square foot, it follows that the total cost of a box with surface area <span class="process-math">\(S\)</span> is</p>
+<p>The farmer will fence a rectangular area whose length <span class="process-math">\(x\)</span> and width <span class="process-math">\(y\)</span> are unknown. The total area of the rectangular area is composed of 4 equal area rectangles. There are two ways to do this as shown in the figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/3_4_Ez2Soln.svg" role="img" class="contained"></div></div></div>
+<p>We want to maximize the area of each subrectangular region, which is the same as maximizing the total area <span class="process-math">\(A = xy\)</span> of the entire rectangular region. Since <span class="process-math">\(A\)</span> has two variables, we can't yet directly apply calculus techniques to it. We use the information about the amount of fencing to relate <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in order to write <span class="process-math">\(A\)</span> in terms of just one variable.</p>
+<p>In the case of the fencing option on the left in the figure, the total amount of fencing that is needed to enclose the four grazing areas is <span class="process-math">\(2x+5y\text{.}\)</span> We assume that all of the <span class="process-math">\(7500\)</span> feet of fencing will be used, so <span class="process-math">\(2x+5y=7500\text{.}\)</span> Solving for <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(x = 3750 - 2.5y\text{.}\)</span> Substituting this expression for <span class="process-math">\(x\)</span> into the area formula allows us to write <span class="process-math">\(A\)</span> in terms of <span class="process-math">\(y\)</span> alone:</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-C = 1.50 (2x^2) +  3.00 (4xh) = 3x^2 + 12xh\text{.}
+A(y) = (3750-2.5y)y = 3750y - 2.5y^2\text{.}
 \end{equation*}
 </div>
-<p>We are interested in building box of largest volume for which we spend $15. This cost constraint implies that</p>
+<p class="continuation">To enclose any area, we of course must have <span class="process-math">\(y \gt 0\)</span> and <span class="process-math">\(x \gt 0\text{,}\)</span> and since <span class="process-math">\(x = 3750 - 2.5y\text{,}\)</span> it follows that we need to have <span class="process-math">\(2.5y \lt 3750\)</span> so <span class="process-math">\(y \lt 1500\text{.}\)</span> To find the maximum value of <span class="process-math">\(A\)</span> on this domain, we find the critical numbers of <span class="process-math">\(A\text{.}\)</span> Since <span class="process-math">\(A'(y) = 3750 - 5y\text{,}\)</span> we see that <span class="process-math">\(A'(y) = 0\)</span> when and only when <span class="process-math">\(y = 750\text{.}\)</span> For <span class="process-math">\(0 \lt y \lt 750\text{,}\)</span> we see that <span class="process-math">\(A'(y) \gt 0\)</span> and for <span class="process-math">\(750 \lt y \lt 1500\)</span> we have <span class="process-math">\(A'(y) \lt 0\text{.}\)</span> So <span class="process-math">\(A(750) = 1406250\)</span> square feet is the absolute maximum value of <span class="process-math">\(A\text{.}\)</span> The maximum possible area that each of the four pens can enclose is one quarter of the total, or <span class="process-math">\(351562.5\)</span> square feet.</p>
+<p>In the case of the fencing option on the right in the figure, the total amount of fencing that is needed to enclose the four grazing areas is <span class="process-math">\(3x+3y\text{.}\)</span> We assume that all of the <span class="process-math">\(7500\)</span> feet of fencing will be used, so <span class="process-math">\(3x + 3y = 7500\text{.}\)</span> Solving for <span class="process-math">\(x\)</span> and substituting into <span class="process-math">\(A\text{,}\)</span> we find <span class="process-math">\(x = 2500 - y\)</span> and</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-15 = 3x^2 + 12xh\text{,}
+A(y) = (2500-y)y = 2500y - y^2\text{.}
 \end{equation*}
 </div>
-<p class="continuation">which allows us to express <span class="process-math">\(h\)</span> as a function of <span class="process-math">\(x\)</span> by solving for <span class="process-math">\(h\text{.}\)</span> Doing so, we see that <span class="process-math">\(12xh = 15 - 3x^2\text{,}\)</span> so</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-h = \frac{15-3x^2}{12x}\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Using this relationship, we are now able to express the volume, <span class="process-math">\(V\text{,}\)</span> of the box as a function of the single variable <span class="process-math">\(x\text{.}\)</span> Subsituting the expression for <span class="process-math">\(h\text{,}\)</span> we have</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-V = x^2 h = x^2 \frac{15-3x^2}{12x} = \frac{1}{12}x(15 - 3x^2) = \frac{15}{12}x - \frac{1}{4}x^3\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Note particularly that in order to have a box, we require that both <span class="process-math">\(x \gt 0\)</span> and <span class="process-math">\(h \gt 0\text{.}\)</span> The latter condition along with the fact that <span class="process-math">\(h = \frac{15-3x^2}{12x}\)</span> shows that we need <span class="process-math">\(15 - 3x^2 \gt 0\text{,}\)</span> and thus <span class="process-math">\(x^2 \lt 5\text{,}\)</span> so <span class="process-math">\(x \lt \sqrt{5}\text{.}\)</span> Hence we are considering <span class="process-math">\(V(x)\)</span> on the domain <span class="process-math">\(0 \lt x \lt \sqrt{5}\text{.}\)</span></p>
-<p>It is apparent that the box vanishes (and its volume tends to zero) as either <span class="process-math">\(x \to 0^+\)</span> or <span class="process-math">\(x \to \sqrt{5}^-\text{,}\)</span> and thus the absolute maximum volume must appear between these values at a critical number. Differentiating <span class="process-math">\(V\text{,}\)</span> we find that <span class="process-math">\(V'(x) = \frac{15}{12} - \frac{3}{4}x^2\text{.}\)</span> Solving <span class="process-math">\(V'(x) = 0\)</span> to find all critical numbers of <span class="process-math">\(V\)</span> in the domain, we see that <span class="process-math">\(x^2 = \frac{15}{12} \cdot \frac{4}{3} = \frac{5}{3}\text{,}\)</span> and thus <span class="process-math">\(x = \pm \sqrt{\frac{5}{3}}\text{,}\)</span> so only <span class="process-math">\(x = \sqrt{\frac{5}{3}}\)</span> is a critical number that lies in <span class="process-math">\(0 \lt x \lt \sqrt{5}\text{.}\)</span> Noting that the absolute minimum volume <span class="process-math">\(V = 0\)</span> occurs at each endpoint, it must be the case that the absolute maximum volume is <span class="process-math">\(V\left( \sqrt{\frac{5}{3}} \right) = \frac{15}{12}\left( \sqrt{\frac{5}{3}} \right) - \frac{1}{4}\left( \sqrt{\frac{5}{3}} \right)^3 \approx 1.07583\)</span> cubic feet.</p>
+<p class="continuation">To enclose any area, we of course must have <span class="process-math">\(y \gt 0\)</span> and <span class="process-math">\(x \gt 0\text{,}\)</span> and since <span class="process-math">\(x = 2500 - y\text{,}\)</span> it follows that we need to have <span class="process-math">\(y \lt 2500\text{.}\)</span> To find the maximum value of <span class="process-math">\(A\)</span> on this domain, we find the critical numbers of <span class="process-math">\(A\text{.}\)</span> Since <span class="process-math">\(A'(y) = 2500 - 2y\text{,}\)</span> we see that <span class="process-math">\(A'(y) = 0\)</span> when and only when <span class="process-math">\(y = 1250\text{.}\)</span> For <span class="process-math">\(0 \lt y \lt 1250\text{,}\)</span> we see that <span class="process-math">\(A'(y) \gt 0\)</span> and for <span class="process-math">\(1250 \lt y \lt 2500\)</span> we have <span class="process-math">\(A'(y) \lt 0\text{.}\)</span> So <span class="process-math">\(A(1250) = 1406250\)</span> square feet is the absolute maximum value of <span class="process-math">\(A\text{.}\)</span> The maximum possible area that each of the four pens can enclose is one quarter of the total, or <span class="process-math">\(390625\)</span> square feet.</p>
+<p>So the maximum possible area that each of the four pens can enclose is 390625 square feet.</p>
 </div></body>
 </html>

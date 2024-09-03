@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:35:19-07:00       *-->
+<!--*       on 2024-09-03T14:28:39-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -17,6 +17,14 @@
 <article class="li"><h5 class="heading">
 <span class="type">Item</span><span class="space"> </span><span class="codenumber">a</span><span class="period">.</span>
 </h5>
-<p>It appears that as we increase the order of the Taylor polynomials, they fit the graph of <span class="process-math">\(f\)</span> better and better over larger intervals.</p></article><span class="incontext"><a href="sec-8-5-taylor.html#Erh" class="internal">in-context</a></span>
+<p>Using the Ratio Test with the <span class="process-math">\(k\)</span>th term <span class="process-math">\(\frac{|x|^{2k}}{(2k)!}\)</span> we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+\lim_{k \to \infty} \frac{ \frac{|x|^{2(k+1)}}{(2(k+1))!} }{ \frac{|x|^{2k}}{(2k)!} } \amp = \lim_{k \to \infty} \frac{|x|^{2(k+1)}(2k)!}{|x|^{2k}(2(k+1))!}\\
+\amp = \lim_{k \to \infty} \frac{|x|^{2}}{(2k+2)(2k+1)}\\
+\amp = 0\text{.}
+\end{align*}
+</div>
+<p class="continuation">So the interval of convergence of the Taylor series for <span class="process-math">\(f(x) = \cos(x)\)</span> centered at <span class="process-math">\(x=0\)</span> is <span class="process-math">\((-\infty, \infty)\text{.}\)</span></p></article><span class="incontext"><a href="sec-8-5-taylor.html#GQo" class="internal">in-context</a></span>
 </body>
 </html>

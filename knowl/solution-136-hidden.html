@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:13-07:00       *-->
+<!--*       on 2024-09-03T14:26:35-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,16 +14,29 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like">
-<p>By the rules given for <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{,}\)</span></p>
+<p>Using the double angle identity for the sine function, we write</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-C(x) =\mathstrut \amp  f(g(x))\\
-=\mathstrut \amp  f(3x-5)\\
-=\mathstrut \amp  -4(3x-5) + 7\\
-=\mathstrut \amp  -12x + 20 + 7\\
-=\mathstrut \amp  -12x + 27\text{.}
-\end{align*}
+\begin{equation*}
+C(x) = \sin(2x) = 2\sin(x)\cos(x)\text{.}
+\end{equation*}
 </div>
-<p>Thus, <span class="process-math">\(C'(x) = -12\text{.}\)</span> Noting that <span class="process-math">\(f'(x) = -4\)</span> and <span class="process-math">\(g'(x) = 3\text{,}\)</span> we observe that <span class="process-math">\(C'\)</span> appears to be the product of <span class="process-math">\(f'\)</span> and <span class="process-math">\(g'\text{.}\)</span></p>
+<p>Applying the product rule and simplifying, we find</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+C'(x) = 2\sin(x)(-\sin(x)) + \cos(x)(2\cos(x)) = 2(\cos^2(x) - \sin^2(x))\text{.}
+\end{equation*}
+</div>
+<p>Next, we recall that the double angle identity for the cosine,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos(2x) = \cos^2(x) - \sin^2(x)\text{.}
+\end{equation*}
+</div>
+<p>Substituting this result into our expression for <span class="process-math">\(C'(x)\text{,}\)</span> we now have that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+C'(x) = 2 \cos(2x)\text{.}
+\end{equation*}
+</div>
 </div></body>
 </html>

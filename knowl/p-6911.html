@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:34:14-07:00       *-->
+<!--*       on 2024-09-03T14:27:36-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,12 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Now suppose that the bucket in (b) does not leak at a constant rate, but rather that its weight at a height <span class="process-math">\(h\)</span> feet above the water is given by <span class="process-math">\(B(h) = 25 + 15e^{-0.05h}\text{.}\)</span> What is the total work required to lift the bucket 100 feet? What is the average force exerted on the bucket on the interval <span class="process-math">\(h = 0\)</span> to <span class="process-math">\(h = 100\text{?}\)</span></p>
-<span class="incontext"><a href="sec-6-4-physics.html#qVW" class="internal">in-context</a></span>
+<p>Since <span class="process-math">\(B(h)\)</span> changes at a constant rate, <span class="process-math">\(B\)</span> is a linear function. We know that <span class="process-math">\(B(0) = 40\)</span> and that <span class="process-math">\(B\)</span> loses weight at a rate of 0.1 pounds per foot of rope hauled in. Thus, <span class="process-math">\(B(h) = 40 - 0.1h\text{.}\)</span> It follows that the total work to life the leaky bucket 100 feet is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+W = int_0^{100} (40-0.1h) \, dh = 3500 \text{foot-pounds}\text{.}
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-6-4-physics.html#lgK" class="internal">in-context</a></span>
 </body>
 </html>

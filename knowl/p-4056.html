@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:26-07:00       *-->
+<!--*       on 2024-09-03T14:26:50-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,37 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p><span class="process-math">\(3s = 2x\text{.}\)</span></p>
-<span class="incontext"><a href="sec-3-5-rel-rates.html#WGg" class="internal">in-context</a></span>
+<p>We are given that the diameter and height are always the same, so <span class="process-math">\(2r = h\text{,}\)</span>or <span class="process-math">\(r = \frac12 h\text{.}\)</span> Hence, the volume of the pile is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\textstyle
+V =  \frac13 \pi r^2 h
+= \frac13 \pi \bigl( \frac12 h \bigr)^2 h
+= \frac1{12} \pi h^3.
+\end{equation*}
+</div>
+<p class="continuation">Differentiating with respect to time (<span class="process-math">\(t\)</span>) gives</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{dV}{dt} =
+{\textstyle  \frac{1}{12} \pi \, 3 h^2} \, \frac{dh}{dt}
+= {\textstyle \frac14 \pi h^2} \, \frac{dh}{dt},
+\end{equation*}
+</div>
+<p class="continuation">and so</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{dh}{dt} = \frac{4}{\pi h^2} \frac{dV}{dt}.
+\end{equation*}
+</div>
+<p class="continuation">If <span class="process-math">\(\frac{dV}{dt} = 50\)</span> and <span class="process-math">\(h = 19\text{,}\)</span> then</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{dh}{dt} = \frac{4 \cdot 50}{19 ^2 \pi}
+= \frac{200}{361\pi }.
+\end{equation*}
+</div>
+<p class="continuation">Hence, when the pile is <span class="process-math">\(19\)</span> feet high its height is increasing at a rate of <span class="process-math">\(\frac{200}{361\pi }\)</span> feet per minute.</p>
+<span class="incontext"><a href="sec-3-5-rel-rates.html#p-4056" class="internal">in-context</a></span>
 </body>
 </html>

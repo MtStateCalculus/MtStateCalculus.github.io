@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:34:36-07:00       *-->
+<!--*       on 2024-09-03T14:27:58-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,42 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>In order to determine the temperature of the coffee after 20 minutes, we need to first determine the value of the constant <span class="process-math">\(C\)</span> in the solution <span class="process-math">\(T = 75 + Ce^{-t/30}\text{.}\)</span> To do this, we use the fact that the temperature of the coffee at <span class="process-math">\(t = 0\)</span> is <span class="process-math">\(105^\circ\)</span>F. Thus, <span class="process-math">\(105 = 75 + Ce^0\text{,}\)</span> so <span class="process-math">\(C = 30\text{.}\)</span> Now we know that <span class="process-math">\(T = 75 + 30e^{-t/30}\text{,}\)</span> and when <span class="process-math">\(t = 20\text{,}\)</span> <span class="process-math">\(T(20) = 75 + 30e^{-2/3}\text{.}\)</span> The temperature of the coffee after 20 minutes is approximately <span class="process-math">\(90.4^\circ\)</span>F.</p>
-<span class="incontext"><a href="sec-7-4-separable.html#LdI" class="internal">in-context</a></span>
+<p>For the IVP <span class="process-math">\(\frac{dy}{dt} = \frac{-2ty}{t^2 + 1}\text{,}\)</span> <span class="process-math">\(y(0) = 4\text{,}\)</span> we first separate variables and write</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{1}{y} \frac{dy}{dt} = \frac{-2t}{t^2 + 1}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Integrating with respect to <span class="process-math">\(t\)</span> we find</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int \frac{1}{y} dy = -\int \frac{2t}{t^2 + 1} dt\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Using the substitution <span class="process-math">\(u = t^2 + 1\)</span> on the right, it follows that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ln|y|  = -\ln\left| t^2 + 1 \right| + c\text{.}
+\end{equation*}
+</div>
+<p class="continuation">By definition and properties of the logarithm,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+|y| = e^{-\ln\left| t^2 + 1 \right|}e^c = e^{\ln\left| t^2 + 1 \right|^{-1}}e^c = \left| t^2 + 1 \right|^{-1} e^c\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Writing <span class="process-math">\(C = e^c\)</span> and absorbing the absolute value from the left side, we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = \frac{C}{t^2 + 1}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Using the initial condition <span class="process-math">\(y(0) = 4\text{,}\)</span> we obtain <span class="process-math">\(4 = \frac{C}{1}\)</span> or <span class="process-math">\(C = 4\text{.}\)</span> Thus, the solution to the initial value problem is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = \frac{4}{t^2 + 1}\text{.}
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-7-4-separable.html#mfz" class="internal">in-context</a></span>
 </body>
 </html>

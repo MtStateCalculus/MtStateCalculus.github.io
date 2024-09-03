@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:35:11-07:00       *-->
+<!--*       on 2024-09-03T14:28:30-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,22 +16,48 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">8.4.4.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">8.4.5.1</span><span class="period">.</span>
 </h4>
-<p>First note that the sequence <span class="process-math">\(\left\{\frac{1}{k^4}\right\}\)</span> decreases to 0, so the series <span class="process-math">\(\sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k^4}\)</span> converges by the Alternating Series Test. Let <span class="process-math">\(S\)</span> be the sum <span class="process-math">\(\sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k^4}\)</span> and <span class="process-math">\(S_n\)</span> the <span class="process-math">\(n\)</span>th partial sum of the series. We know that</p>
+<ol class="lower-alpha">
+<li>
+<p>Each term in the series</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-|S - S_n| \lt  a_{n+1} = \frac{1}{(n+1)^4}\text{.}
+1 - \frac{1}{4} - \frac{1}{9} + \frac{1}{16} + \frac{1}{25} + \frac{1}{36} - \frac{1}{49}  - \frac{1}{64}  - \frac{1}{81}  - \frac{1}{100}  + \cdots
 \end{equation*}
 </div>
-<p>So we only need to determine the value of <span class="process-math">\(n\)</span> so that</p>
+<p class="continuation">is of the form <span class="process-math">\(\frac{1}{k^2}\)</span> or <span class="process-math">\(-\frac{1}{k^2}\text{.}\)</span> Since each of these terms is less than or equal to <span class="process-math">\(\frac{1}{k^2}\)</span> it follows that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\frac{1}{(n+1)^4} \lt  0.0001\text{.}
+1 - \frac{1}{4} - \frac{1}{9} + \frac{1}{16} + \frac{1}{25} + \frac{1}{36} - \frac{1}{49}  - \frac{1}{64}  - \frac{1}{81}  - \frac{1}{100}  + \cdots \lt  \sum_{k=1}^{\infty} \frac{1}{k^2}\text{.}
 \end{equation*}
 </div>
-<p>This happens when <span class="process-math">\((n+1)^4 \lt 10000\)</span> or when <span class="process-math">\(n+1 \gt 10\text{.}\)</span> So <span class="process-math">\(n = 10\)</span> will do. A computer algebra system gives <span class="process-math">\(S_{10} \approx 0.9469925924\)</span> while <span class="process-math">\(\frac{7}{720} \pi^4 \approx 0.9470328299\text{.}\)</span> These do agree to <span class="process-math">\(0.0001\text{.}\)</span></p>
+</li>
+<li>
+<p>Each term in the series</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1 - \frac{1}{4} - \frac{1}{9} + \frac{1}{16} + \frac{1}{25} + \frac{1}{36} - \frac{1}{49}  - \frac{1}{64}  - \frac{1}{81}  - \frac{1}{100}  + \cdots
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-8-4-alternating.html#Xes" class="internal">in-context</a></span>
+<p class="continuation">is of the form <span class="process-math">\(\frac{1}{k^2}\)</span> or <span class="process-math">\(-\frac{1}{k^2}\text{.}\)</span> Since each of these terms is greater than or equal to <span class="process-math">\(-\frac{1}{k^2}\)</span> it follows that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1 - \frac{1}{4} - \frac{1}{9} + \frac{1}{16} + \frac{1}{25} + \frac{1}{36} - \frac{1}{49}  - \frac{1}{64}  - \frac{1}{81}  - \frac{1}{100}  + \cdots \gt \sum_{k=1}^{\infty} -\frac{1}{k^2}\text{.}
+\end{equation*}
+</div>
+</li>
+<li>
+<p>We know that <span class="process-math">\(\sum_{k=1}^{\infty} \frac{1}{k^2}\)</span> is a <span class="process-math">\(p\)</span>-series with <span class="process-math">\(p = 2 \gt 1\)</span> and so is a convergent series. Since <span class="process-math">\(\sum_{k=1}^{\infty} \frac{1}{k^2} = -\sum_{k=1}^{\infty} \frac{1}{k^2}\text{,}\)</span> the series <span class="process-math">\(\sum_{k=1}^{\infty} -\frac{1}{k^2}\)</span> also converges. Since the terms in the series</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1 - \frac{1}{4} - \frac{1}{9} + \frac{1}{16} + \frac{1}{25} + \frac{1}{36} - \frac{1}{49}  - \frac{1}{64}  - \frac{1}{81}  - \frac{1}{100}  + \cdots
+\end{equation*}
+</div>
+<p class="continuation">converge to 0 and the series itself is bounded between two convergent series, we should expect this series to converge to some finite number between <span class="process-math">\(\sum_{k=1}^{\infty} -\frac{1}{k^2}\)</span> and <span class="process-math">\(\sum_{k=1}^{\infty} \frac{1}{k^2}\text{.}\)</span></p>
+</li>
+</ol>
+</div>
+<span class="incontext"><a href="sec-8-4-alternating.html#YTF" class="internal">in-context</a></span>
 </body>
 </html>

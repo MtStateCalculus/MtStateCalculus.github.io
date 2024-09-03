@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:35:31-07:00       *-->
+<!--*       on 2024-09-03T14:28:50-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,53 +15,79 @@
 </head>
 <body class="ignore-math">
 <article class="exercise exercise-like"><h4 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5<span class="period">.</span></span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">6<span class="period">.</span></span>
 </h4>
-<p>In this exercise we will begin with a strange power series and then find its sum. The Fibonacci sequence <span class="process-math">\(\{f_n\}\)</span> is a famous sequence whose first few terms are</p>
+<p>Airy's equation<a href="" class="fn-knowl original" data-knowl="./knowl/fn-129-hidden.html" title="Footnote 8.6.2"><sup> 2 </sup></a></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation}
+y'' - xy = 0\text{,}\tag{8.6.4}
+\end{equation}
+</div>
+<p class="continuation">can be used to model an undamped vibrating spring with spring constant <span class="process-math">\(x\)</span> (note that <span class="process-math">\(y\)</span> is an unknown function of <span class="process-math">\(x\)</span>). So the solution to this differential equation will tell us the behavior of a spring-mass system as the spring ages (like an automobile shock absorber). Assume that a solution <span class="process-math">\(y=f(x)\)</span> has a Taylor series that can be written in the form</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-f_0 = 0, f_1 = 1, f_2 = 1, f_3 = 2, f_4 = 3, f_5 = 5, f_6 = 8, f_7 = 13, \cdots\text{,}
+y = \sum_{k=0}^{\infty} a_kx^k\text{,}
 \end{equation*}
 </div>
-<p class="continuation">where each term in the sequence after the first two is the sum of the preceding two terms. That is, <span class="process-math">\(f_0 = 0\text{,}\)</span> <span class="process-math">\(f_1 = 1\)</span> and for <span class="process-math">\(n \geq 2\)</span> we have</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-f_n = f_{n-1} + f_{n-2}\text{.}
-\end{equation*}
-</div>
-<p>Now consider the power series</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-F(x) = \sum_{k=0}^{\infty} f_kx^k\text{.}
-\end{equation*}
-</div>
-<p>We will determine the sum of this power series in this exercise.</p>
+<p class="continuation">where the coefficients are undetermined. Our job is to find the coefficients.</p>
 <ol class="lower-alpha">
+<li><p>Differentiate the series for <span class="process-math">\(y\)</span> term by term to find the series for <span class="process-math">\(y'\text{.}\)</span> Then repeat to find the series for <span class="process-math">\(y''\text{.}\)</span></p></li>
 <li>
-<p>Explain why each of the following is true.</p>
+<p>Substitute your results from part (a) into the Airy equation and show that we can write Equation <a href="" class="xref" data-knowl="./knowl/eq-PA-8-6-Airy-equation.html" title="Equation 8.6.4">(8.6.4)</a> in the form</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq-PA-8-6-Airy-equation.html">
+\begin{equation}
+\sum_{k=2}^{\infty} (k-1)ka_kx^{k-2} - \sum_{k=0}^{\infty} a_kx^{k+1} = 0\text{.}\tag{8.6.5}
+\end{equation}
+</div>
+</li>
+<li>
+<p>At this point, it would be convenient if we could combine the series on the left in <a href="" class="xref" data-knowl="./knowl/eq-PA-8-6-Airy-1.html" title="Equation 8.6.5">(8.6.5)</a>, but one written with terms of the form <span class="process-math">\(x^{k-2}\)</span> and the other with terms in the form <span class="process-math">\(x^{k+1}\text{.}\)</span> Explain why</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq-PA-8-6-Airy-1.html">
+\begin{equation}
+\sum_{k=2}^{\infty} (k-1)ka_kx^{k-2} = \sum_{k=0}^{\infty} (k+1)(k+2)a_{k+2}x^{k}\text{.}\tag{8.6.6}
+\end{equation}
+</div>
+</li>
+<li>
+<p>Now show that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation}
+\sum_{k=0}^{\infty} a_kx^{k+1} = \sum_{k=1}^{\infty} a_{k-1}x^k\text{.}\tag{8.6.7}
+\end{equation}
+</div>
+</li>
+<li>
+<p>We can now substitute <a href="" class="xref" data-knowl="./knowl/eq-PA-8-6-Airy-sum-1.html" title="Equation 8.6.6">(8.6.6)</a> and <a href="" class="xref" data-knowl="./knowl/eq-PA-8-6-Airy-sum-2.html" title="Equation 8.6.7">(8.6.7)</a> into <a href="" class="xref" data-knowl="./knowl/eq-PA-8-6-Airy-1.html" title="Equation 8.6.5">(8.6.5)</a> to obtain</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq-PA-8-6-Airy-sum-1.html ./knowl/eq-PA-8-6-Airy-sum-2.html ./knowl/eq-PA-8-6-Airy-1.html">
+\begin{equation}
+\sum_{n=0}^{\infty} (n+1)(n+2)a_{n+2}x^{n} - \sum_{n=1}^{\infty} a_{n-1}x^{n} = 0\text{.}\tag{8.6.8}
+\end{equation}
+</div>
+<p>Combine the like powers of <span class="process-math">\(x\)</span> in the two series to show that our solution must satisfy</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation}
+2a_2 + \sum_{k=1}^{\infty} \left[(k+1)(k+2)a_{k+2}-a_{k-1} \right] x^{k} = 0\text{.}\tag{8.6.9}
+\end{equation}
+</div>
+</li>
+<li>
+<p>Use equation <a href="" class="xref" data-knowl="./knowl/eq-PA-8-6-Airy-sum-3.html" title="Equation 8.6.9">(8.6.9)</a> to show the following:</p>
 <ol class="lower-roman">
-<li><p><span class="process-math">\(\displaystyle xF(x) = \sum_{k=1}^{\infty} f_{k-1}x^k\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle x^2F(x) = \sum_{k=2}^{\infty} f_{k-2}x^k\)</span></p></li>
+<li><p><span class="process-math">\(a_{3k+2} = 0\)</span> for every positive integer <span class="process-math">\(k\text{,}\)</span></p></li>
+<li><p><span class="process-math">\(a_{3k} = \frac{1}{(2)(3)(5)(6) \cdots (3k-1)(3k)} a_0 \text{ for } k \geq 1\text{,}\)</span></p></li>
+<li><p><span class="process-math">\(a_{3k+1} = \frac{1}{(3)(4)(6)(7) \cdots (3k)(3k+1)} a_1 \text{ for } k \geq 1\text{.}\)</span></p></li>
 </ol>
 </li>
 <li>
-<p>Show that</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-F(x) - xF(x) - x^2F(x) = x\text{.}
-\end{equation*}
+<p>Use the previous part to conclude that the general solution to the Airy equation <a href="" class="xref" data-knowl="./knowl/eq-PA-8-6-Airy-equation.html" title="Equation 8.6.4">(8.6.4)</a> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq-PA-8-6-Airy-equation.html">
+\begin{align*}
+y \amp= a_0\left( 1+\sum_{k=1}^{\infty} \frac{x^{3k}}{(2)(3)(5)(6) \cdots (3k-1)(3k)} \right)\\
+\amp\phantom{={}}+ a_1 \left( x + \sum_{k=1}^{\infty} \frac{x^{3k+1}}{(3)(4)(6)(7) \cdots (3k)(3k+1)} \right)\text{.}
+\end{align*}
 </div>
+<p>Any values for <span class="process-math">\(a_0\)</span> and <span class="process-math">\(a_1\)</span> then determine a specific solution that we can approximate as closely as we like using this series solution.</p>
 </li>
-<li>
-<p>Now use the equation</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-F(x) - xF(x) - x^2F(x) = x
-\end{equation*}
-</div>
-<p class="continuation">to find a simple form for <span class="process-math">\(F(x)\)</span> that doesn't involve a sum.</p>
-</li>
-<li><p>Use a computer algebra system or some other method to calculate the first 8 derivatives of <span class="process-math">\(\frac{x}{1-x-x^2}\)</span> evaluated at 0. Why shouldn't the results surprise you?</p></li>
-</ol></article><span class="incontext"><a href="sec-8-6-powerseries.html#vuY" class="internal">in-context</a></span>
+</ol></article><span class="incontext"><a href="sec-8-6-powerseries.html#bCh" class="internal">in-context</a></span>
 </body>
 </html>

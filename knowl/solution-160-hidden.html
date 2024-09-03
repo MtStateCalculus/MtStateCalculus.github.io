@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-02-03T12:33:16-07:00       *-->
+<!--*       on 2024-09-03T14:26:38-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,9 +14,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like">
-<span class="process-math">\(f'(x) = \frac{1}{1+x^2}+\frac{1}{1+\frac{1}{x^2}}\cdot
-(-\frac{1}{x^2})\text{,}\)</span> or, simplifying the second term, <span class="process-math">\(f'(x) = \frac{1}{1+x^2}+\left(-\frac{1}{x^2+1}\right) 
-= \frac{1}{1+x^2}-\frac{1}{1+x^2}
-= 0\text{.}\)</span> Thus <span class="process-math">\(f\)</span> is a constant function!  We can check a few values to confirm this: <span class="process-math">\(f(1) = \arctan(1) + \arctan(1) \approx 0.785392 + 0.7853982 = 1.5707963\text{,}\)</span> <span class="process-math">\(f(2) = \arctan(2) + \arctan(\frac12) \approx 1.1071487 + 0.4636476 = 1.5707963\text{,}\)</span> and <span class="process-math">\(f(3) = \arctan(3) + \arctan(\frac13) \approx 1.2490458 + 0.3217506 = 1.5707963\text{.}\)</span>
+<span class="process-math">\((2,5)\)</span> is on the curve, we know <span class="process-math">\(f(2)=5\text{.}\)</span> The point <span class="process-math">\((2.1,5.4)\)</span> is on the tangent line, so<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\hbox{Slope of tangent} = \frac{5.4-5}{2.1-2} = \frac{0.4}{0.1} = 4.
+\end{equation*}
+</div>Thus, <span class="process-math">\(f'(2)=4\text{.}\)</span> By the chain rule<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+h'(2) = 5(f(2))^{4}\cdot f'(2) =5\cdot 5^{4}\cdot 4 = 12500.
+\end{equation*}
+</div>Because <span class="process-math">\(g(x)\)</span> is the inverse function of <span class="process-math">\(f\text{,}\)</span> we know that <span class="process-math">\(g(5) = 2\text{.}\)</span>  Then note that <span class="process-math">\(f(g(x)) = f(f^{-1}(x)) = x\text{,}\)</span> so <span class="process-math">\(f(g(x)) = x\text{.}\)</span>  Differentiating both sides of the equation, <span class="process-math">\(f'(g(x))\cdot g'(x) = 1\text{,}\)</span> so <span class="process-math">\(g'(x) = \frac{1}{f'(g(x))}\text{.}\)</span> Thus <span class="process-math">\(g'(5) = \frac{1}{f'(g(5))} = \frac{1}{f'(2)} = \frac1{4}\text{.}\)</span>
 </div></body>
 </html>
