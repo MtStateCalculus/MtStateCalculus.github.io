@@ -107,13 +107,13 @@
         
         <li>
           <p>
-            <m>\int \sin^n{u}\,du = -\frac{\sin^{n-1}{u}\,\cos{u}}{n}+\frac{n-1}{n}\int \sin^{n-2}{u}\,du+C</m>
+            <m>\int \sin^n{u}\,du = -\frac{\sin^{n-1}{u}\,\cos{u}}{n}+\frac{n-1}{n}\int \sin^{n-2}{u}\,du</m>
           </p>
         </li>
         
         <li>
           <p>
-            <m>\int \cos^n{u}\,du = \frac{\cos^{n-1}{u}\,\sin{u}}{n}+\frac{n-1}{n}\int \cos^{n-2}{u}\,du+C</m>
+            <m>\int \cos^n{u}\,du = \frac{\cos^{n-1}{u}\,\sin{u}}{n}+\frac{n-1}{n}\int \cos^{n-2}{u}\,du</m>
           </p>
         </li>
         

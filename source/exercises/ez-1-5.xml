@@ -15,11 +15,11 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-1-5" permid="tXk">
 
 <!-- This WW problem seems broken, won't compile - RM 2/1/2023 -->
-  <exercise xml:id="ez-1-5-WW1" permid="XqR">
+<!--  <exercise xml:id="ez-1-5-WW1" permid="XqR">
     <title>A cooling cup of coffee</title>
     <webwork source="Library/Michigan/Chap2Sec4/Q01.pg" />
   </exercise>
-
+-->
   <exercise xml:id="ez-1-5-WW2" permid="Dya">
     <title>A cost function</title>
     <webwork source="Library/Michigan/Chap2Sec4/Q03.pg" />
@@ -414,7 +414,7 @@
           <li permid="Mwn">
             <p permid="iOl">
               <m>
-              AV_{[40000,55000]} \approx -0.153 
+              AV_{[40000,55000]} \approx -0.153
               </m>
               dollars per mile.
             </p>
